@@ -6,6 +6,10 @@ url: ""
 markdown: kramdown
 theme: null
 
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
 collections:
   resources:
     output: true
