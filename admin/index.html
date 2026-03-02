@@ -15,10 +15,14 @@
     <script>
       // Optional: redirect logged-in editors back to the site root
       if (window.netlifyIdentity) {
-        window.netlifyIdentity.on('login', function () {
-          document.location.href = '/admin/';
-        });
-      }
+      window.netlifyIdentity.on('init', user => {
+        if (!user) {
+          window.netlifyIdentity.on('login', () => {
+            document.location.href = '/admin/';
+          });
+        }
+      });
+    }
     </script>
   </body>
 </html>
