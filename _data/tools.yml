@@ -1,0 +1,36 @@
+# Similar Tools & Initiatives – linked from the home page
+- name: Club Invoice Calculator
+  description: Estimate your Club Invoices with precision and ease.
+  icon: receipt_long
+  accent_color: blue
+  url: https://dues.rsamdio.org/
+
+- name: Rotaract Buddy
+  description: AI-powered chatbot for your Rotary and Rotaract questions.
+  icon: smart_toy
+  accent_color: emerald
+  url: https://buddy.rsamdio.org/
+
+- name: NAVIGATE
+  description: Navigate your Rotaract journey with guided pathways.
+  icon: explore
+  accent_color: sky
+  url: https://navigate.rsamdio.org/
+
+- name: Publications Hub
+  description: Access District publications and resources from across South Asia.
+  icon: library_books
+  accent_color: amber
+  url: https://connect.rsamdio.org/publications
+
+- name: RSA Certify
+  description: Celebrate and showcase your Rotaract contributions and achievements.
+  icon: workspace_premium
+  accent_color: rose
+  url: https://certify.rsamdio.org/
+
+- name: News Submission
+  description: Submit your updates for the official Rotaract News Magazine.
+  icon: article
+  accent_color: indigo
+  url: https://connect.rsamdio.org/rotaractnews

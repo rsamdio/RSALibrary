@@ -1,0 +1,105 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>
+      {% if page.seo_title %}
+        {{ page.seo_title }}
+      {% elsif page.title %}
+        {{ page.title }} | RSA Library
+      {% else %}
+        RSA Library – Rotaract South Asia MDIO
+      {% endif %}
+    </title>
+    {% assign meta_description = page.description | default: site.description %}
+    <meta name="description" content="{{ meta_description }}" />
+
+    {%- comment -%}
+    Open Graph & Twitter cards
+    {%- endcomment -%}
+    {% assign canonical_path = page.url | default: "/" | relative_url %}
+    {% if site.url %}
+      {% assign canonical_url = site.url | append: canonical_path %}
+      <link rel="canonical" href="{{ canonical_url }}" />
+      <meta property="og:url" content="{{ canonical_url }}" />
+    {% endif %}
+    <meta property="og:type" content="{% if page.og_type %}{{ page.og_type }}{% else %}website{% endif %}" />
+    <meta property="og:site_name" content="RSA Library" />
+    <meta property="og:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }} | RSA Library{% else %}RSA Library – Rotaract South Asia MDIO{% endif %}" />
+    <meta property="og:description" content="{{ meta_description }}" />
+    {% assign og_image = page.og_image | default: '/images/rsalibraryog.webp' | relative_url %}
+    <meta property="og:image" content="{{ og_image }}" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }} | RSA Library{% else %}RSA Library – Rotaract South Asia MDIO{% endif %}" />
+    <meta name="twitter:description" content="{{ meta_description }}" />
+    <meta name="twitter:image" content="{{ og_image }}" />
+    <link rel="icon" type="image/x-icon" href="{{ '/images/favicon.ico' | relative_url }}" />
+    <link rel="icon" type="image/webp" href="{{ '/images/favicon.webp' | relative_url }}" />
+    <link rel="shortcut icon" href="{{ '/images/favicon.ico' | relative_url }}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#da1b5b",
+              "primary-dark": "#b9154a",
+              "background-light": "#fbf8f9",
+              "background-dark": "#211116",
+              "surface-light": "#ffffff",
+              "surface-dark": "#2d1b22",
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+            boxShadow: {
+              soft: "0 4px 20px -2px rgba(0, 0, 0, 0.05)",
+              hover:
+                "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)",
+            },
+            screens: {
+              xs: "480px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="min-h-screen flex flex-col bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-50 font-display transition-colors duration-300"
+  >
+    {% include header-shell.html %}
+
+    <main id="main-content" class="flex-grow">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+    {% include search-lunr.html %}
+  </body>
+</html>
+

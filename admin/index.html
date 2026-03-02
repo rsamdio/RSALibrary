@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Resource Center Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <!-- Netlify Identity widget provides auth for Decap CMS -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <!-- Decap CMS (Netlify CMS successor) -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+    <script>
+      // Optional: redirect logged-in editors back to the site root
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('login', function () {
+          document.location.href = '/';
+        });
+      }
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,97 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "resources"
+public_folder: "/resources"
+
+collections:
+  - name: "resources"
+    label: "Resource Groups"
+    label_singular: "Resource Group"
+    folder: "_resources"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "Icon"
+        name: "icon"
+        widget: "select"
+        options:
+          - { label: "People (group_add)", value: "group_add" }
+          - { label: "Payments (payments)", value: "payments" }
+          - { label: "Forum (forum)", value: "forum" }
+          - { label: "Service (volunteer_activism)", value: "volunteer_activism" }
+          - { label: "Event (event)", value: "event" }
+          - { label: "Campaign (campaign)", value: "campaign" }
+          - { label: "Checklist (checklist)", value: "checklist" }
+          - { label: "Documents (description)", value: "description" }
+          - { label: "Ideas (lightbulb)", value: "lightbulb" }
+          - { label: "Awards (workspace_premium)", value: "workspace_premium" }
+          - { label: "Training (school)", value: "school" }
+          - { label: "Insights (insights)", value: "insights" }
+          - { label: "Community (diversity_3)", value: "diversity_3" }
+      - label: "Icon Color"
+        name: "icon_color"
+        widget: "select"
+        default: "blue"
+        options:
+          - { label: "Blue", value: "blue" }
+          - { label: "Sky", value: "sky" }
+          - { label: "Emerald", value: "emerald" }
+          - { label: "Teal", value: "teal" }
+          - { label: "Amber", value: "amber" }
+          - { label: "Orange", value: "orange" }
+          - { label: "Rose", value: "rose" }
+          - { label: "Red", value: "red" }
+          - { label: "Purple", value: "purple" }
+          - { label: "Indigo", value: "indigo" }
+          - { label: "Slate", value: "slate" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Empty State Text", name: "placeholder", widget: "string", required: false }
+      - label: "Resources"
+        name: "resources"
+        widget: "list"
+        collapsed: false
+        summary: "{{fields.name}} ({{fields.type}})"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "File Type Label", name: "type", widget: "string", hint: "e.g. PPTX, PDF, MP4, ZIP" }
+          - label: "Type Icon"
+            name: "type_icon"
+            widget: "select"
+            default: "description"
+            options:
+              - { label: "Generic File (description)", value: "description" }
+              - { label: "Document (article)", value: "article" }
+              - { label: "PDF (picture_as_pdf)", value: "picture_as_pdf" }
+              - { label: "Spreadsheet / Table (table_chart)", value: "table_chart" }
+              - { label: "Image (image)", value: "image" }
+              - { label: "Slide Deck (extension)", value: "extension" }
+              - { label: "Archive (folder_zip)", value: "folder_zip" }
+              - { label: "Folder (folder)", value: "folder" }
+              - { label: "Video (movie)", value: "movie" }
+              - { label: "Audio (audio_file)", value: "audio_file" }
+              - { label: "Link (link)", value: "link" }
+              - { label: "Checklist (checklist)", value: "checklist" }
+          - label: "Preview Image"
+            name: "preview_image_url"
+            widget: "image"
+            required: false
+            hint: "External URL (https://...) or upload to /resources"
+          - label: "View URL"
+            name: "view_url"
+            widget: "string"
+            required: false
+            hint: "External link or local path like /resources/file.pdf"
+          - label: "Download URL"
+            name: "download_url"
+            widget: "string"
+            required: false
+            hint: "Leave empty for link-only resources; otherwise external or local path"
+

@@ -1,0 +1,30 @@
+title: "RSA Library"
+description: "RSA Library – curated project templates, checklists, and tools for Rotaract South Asia MDIO leaders."
+baseurl: ""
+url: ""
+
+markdown: kramdown
+theme: null
+
+collections:
+  resources:
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "resources"
+    values:
+      layout: resource_group
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
+

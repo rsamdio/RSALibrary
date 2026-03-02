@@ -1,0 +1,130 @@
+<section class="py-12 px-4 sm:px-6 md:px-8 lg:px-12 bg-background-light dark:bg-background-dark">
+    <div class="mx-auto max-w-screen-sm md:max-w-5xl lg:max-w-6xl xl:max-w-[90rem] transition-all duration-300 px-0 sm:px-4 lg:px-8">
+        <div class="flex items-center justify-between mb-8">
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary">folder_open</span>
+                Resource Groups
+            </h2>
+            <div class="flex items-center gap-4 text-sm">
+                <span class="text-slate-500 hidden sm:inline">{{ site.resources | size }} Active Groups</span>
+            </div>
+        </div>
+        <div class="space-y-6">
+            {% for group in site.resources %}
+            {% assign resource_count = group.resources | size %}
+            {% case group.icon_color %}
+                {% when "emerald" %}
+                    {% assign icon_bg = "bg-emerald-100 dark:bg-emerald-900/30" %}{% assign icon_text = "text-emerald-600" %}{% assign badge_bg = "bg-emerald-50 dark:bg-emerald-900/40" %}{% assign badge_text = "text-emerald-600 dark:text-emerald-300" %}
+                {% when "amber" %}
+                    {% assign icon_bg = "bg-amber-100 dark:bg-amber-900/30" %}{% assign icon_text = "text-amber-600" %}{% assign badge_bg = "bg-amber-50 dark:bg-amber-900/40" %}{% assign badge_text = "text-amber-600 dark:text-amber-300" %}
+                {% when "purple" %}
+                    {% assign icon_bg = "bg-purple-100 dark:bg-purple-900/30" %}{% assign icon_text = "text-purple-600" %}{% assign badge_bg = "bg-purple-50 dark:bg-purple-900/40" %}{% assign badge_text = "text-purple-600 dark:text-purple-300" %}
+                {% when "sky" %}
+                    {% assign icon_bg = "bg-sky-100 dark:bg-sky-900/30" %}{% assign icon_text = "text-sky-600" %}{% assign badge_bg = "bg-sky-50 dark:bg-sky-900/40" %}{% assign badge_text = "text-sky-600 dark:text-sky-300" %}
+                {% when "teal" %}
+                    {% assign icon_bg = "bg-teal-100 dark:bg-teal-900/30" %}{% assign icon_text = "text-teal-600" %}{% assign badge_bg = "bg-teal-50 dark:bg-teal-900/40" %}{% assign badge_text = "text-teal-600 dark:text-teal-300" %}
+                {% when "orange" %}
+                    {% assign icon_bg = "bg-orange-100 dark:bg-orange-900/30" %}{% assign icon_text = "text-orange-600" %}{% assign badge_bg = "bg-orange-50 dark:bg-orange-900/40" %}{% assign badge_text = "text-orange-600 dark:text-orange-300" %}
+                {% when "rose" %}
+                    {% assign icon_bg = "bg-rose-100 dark:bg-rose-900/30" %}{% assign icon_text = "text-rose-600" %}{% assign badge_bg = "bg-rose-50 dark:bg-rose-900/40" %}{% assign badge_text = "text-rose-600 dark:text-rose-300" %}
+                {% when "red" %}
+                    {% assign icon_bg = "bg-red-100 dark:bg-red-900/30" %}{% assign icon_text = "text-red-600" %}{% assign badge_bg = "bg-red-50 dark:bg-red-900/40" %}{% assign badge_text = "text-red-600 dark:text-red-300" %}
+                {% when "indigo" %}
+                    {% assign icon_bg = "bg-indigo-100 dark:bg-indigo-900/30" %}{% assign icon_text = "text-indigo-600" %}{% assign badge_bg = "bg-indigo-50 dark:bg-indigo-900/40" %}{% assign badge_text = "text-indigo-600 dark:text-indigo-300" %}
+                {% when "slate" %}
+                    {% assign icon_bg = "bg-slate-100 dark:bg-slate-800" %}{% assign icon_text = "text-slate-700" %}{% assign badge_bg = "bg-slate-50 dark:bg-slate-800/70" %}{% assign badge_text = "text-slate-700 dark:text-slate-200" %}
+                {% else %}
+                    {% assign icon_bg = "bg-blue-100 dark:bg-blue-900/30" %}{% assign icon_text = "text-blue-600" %}{% assign badge_bg = "bg-blue-50 dark:bg-blue-900/40" %}{% assign badge_text = "text-blue-600 dark:text-blue-300" %}
+            {% endcase %}
+            <div class="border border-slate-200 dark:border-slate-800 bg-white dark:bg-surface-dark rounded-2xl overflow-hidden shadow-soft">
+                <details class="group w-full">
+                    <summary class="flex items-center justify-between p-4 sm:p-6 cursor-pointer list-none hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl {{ icon_bg }} flex items-center justify-center {{ icon_text }} flex-shrink-0">
+                                <span class="material-symbols-outlined text-xl sm:text-2xl">{{ group.icon }}</span>
+                            </div>
+                            <div>
+                                <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">{{ group.title }}</h3>
+                                <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">{{ group.summary }}</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="inline-flex items-center px-3 py-1 {{ badge_bg }} {{ badge_text }} text-[10px] sm:text-xs font-bold rounded-full uppercase tracking-wider whitespace-nowrap">
+                                {{ resource_count }} RESOURCE{% if resource_count != 1 %}S{% endif %}
+                            </span>
+                            <span class="material-symbols-outlined text-slate-400 transition-transform group-open:rotate-180">expand_more</span>
+                        </div>
+                    </summary>
+                    <div class="px-6 pb-8 border-t border-slate-100 dark:border-slate-800 pt-6">
+                        {% if group.resources and group.resources.size > 0 %}
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            {% for card in group.resources %}
+                            {% assign raw_preview = card.preview_image_url %}
+                            {% assign raw_view = card.view_url %}
+                            {% assign raw_download = card.download_url %}
+
+                            {% assign preview_src = nil %}
+                            {% if raw_preview %}
+                              {% if raw_preview contains "://" %}
+                                {% assign preview_src = raw_preview %}
+                              {% else %}
+                                {% assign preview_src = raw_preview | relative_url %}
+                              {% endif %}
+                            {% endif %}
+
+                            {% assign view_href = "#" %}
+                            {% if raw_view %}
+                              {% if raw_view contains "://" %}
+                                {% assign view_href = raw_view %}
+                              {% else %}
+                                {% assign view_href = raw_view | relative_url %}
+                              {% endif %}
+                            {% endif %}
+
+                            {% assign download_href = "" %}
+                            {% if raw_download != "" %}
+                              {% if raw_download contains "://" %}
+                                {% assign download_href = raw_download %}
+                              {% else %}
+                                {% assign download_href = raw_download | relative_url %}
+                              {% endif %}
+                            {% endif %}
+
+                            <div class="flex flex-col bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all group/card">
+                                <div class="aspect-video w-full bg-slate-100 dark:bg-slate-800 relative overflow-hidden">
+                                    {% if preview_src %}
+                                    <img alt="Preview" class="w-full h-full object-cover group-hover/card:scale-105 transition-transform duration-500" src="{{ preview_src }}"/>
+                                    {% endif %}
+                                    <div class="absolute top-3 left-3 px-2 py-1 bg-white/90 dark:bg-surface-dark/90 backdrop-blur rounded text-[10px] font-bold text-slate-600 dark:text-slate-300 flex items-center gap-1 shadow-sm">
+                                        <span class="material-symbols-outlined text-[14px]">{{ card.type_icon }}</span> {{ card.type }}
+                                    </div>
+                                </div>
+                                <div class="p-4 flex-grow">
+                                    <h4 class="text-base font-bold text-slate-900 dark:text-white mb-1">{{ card.name }}</h4>
+                                    <p class="text-sm text-slate-500 dark:text-slate-400">{{ card.description }}</p>
+                                </div>
+                                <div class="p-4 pt-0 flex items-center justify-between gap-3 mt-auto">
+                                    {% if view_href != "#" %}
+                                    <a href="{{ view_href }}" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 text-sm font-semibold hover:bg-slate-50 dark:hover:bg-white/5 transition-colors flex items-center justify-center gap-2">
+                                        <span class="material-symbols-outlined text-lg">visibility</span> View
+                                    </a>
+                                    {% endif %}
+                                    {% if download_href != "" %}
+                                    <a href="{{ download_href }}" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-white text-sm font-semibold transition-all flex items-center justify-center gap-2">
+                                        <span class="material-symbols-outlined text-lg">download</span> Download
+                                    </a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        {% else %}
+                        <div class="px-6 pb-6 text-center text-slate-500 text-sm">{{ group.placeholder | default: "No resources in this group yet." }}</div>
+                        {% endif %}
+                    </div>
+                </details>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

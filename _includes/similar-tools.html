@@ -1,0 +1,37 @@
+<section class="py-16 bg-background-light dark:bg-background-dark border-t border-slate-200/70 dark:border-slate-800/70">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+            <h2 class="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-2">Similar Tools &amp; Initiatives</h2>
+            <p class="text-sm md:text-base text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
+                Explore other interactive tools and resources from Rotaract South Asia MDIO that support your club operations.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for tool in site.data.tools %}
+            {% case tool.accent_color %}
+                {% when "emerald" %}{% assign card_icon = "bg-emerald-50 text-emerald-600" %}
+                {% when "sky" %}{% assign card_icon = "bg-sky-50 text-sky-600" %}
+                {% when "amber" %}{% assign card_icon = "bg-amber-50 text-amber-600" %}
+                {% when "rose" %}{% assign card_icon = "bg-rose-50 text-rose-600" %}
+                {% when "indigo" %}{% assign card_icon = "bg-indigo-50 text-indigo-600" %}
+                {% else %}{% assign card_icon = "bg-blue-50 text-blue-600" %}
+            {% endcase %}
+            <article class="flex flex-col bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 rounded-2xl shadow-soft hover:shadow-hover transition-shadow p-5">
+                <div class="mb-4 flex items-center justify-between gap-3">
+                    <div class="inline-flex h-10 w-10 items-center justify-center rounded-xl {{ card_icon }}">
+                        <span class="material-symbols-outlined text-xl">{{ tool.icon }}</span>
+                    </div>
+                </div>
+                <h3 class="text-sm font-semibold text-slate-900 dark:text-white mb-1">{{ tool.name }}</h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">
+                    {{ tool.description }}
+                </p>
+                <a href="{{ tool.url }}" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center text-xs font-semibold text-primary hover:text-primary-dark gap-1">
+                    View Resource
+                    <span class="material-symbols-outlined text-sm">open_in_new</span>
+                </a>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
