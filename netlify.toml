@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://rsalibrary.netlify.app/*"
+  to = "https://library.rsamdio.org/:splat"
+  status = 301
+  force = true
