@@ -10,6 +10,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
 
+request_form_endpoint: "https://script.google.com/macros/s/AKfycbzNoSNmdYRuWAUNKfmcZK6Hb-C5SgD6NtYua3VFOe5bNF0qyONyeB4P5WuBSQSVDwSp/exec"
+
 collections:
   resources:
     output: true

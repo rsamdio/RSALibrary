@@ -1,0 +1,176 @@
+---
+layout: page
+title: Submit Resource Request
+description: "Use this form to request new templates, toolkits, and checklists for the RSA Library."
+permalink: /request/
+og_type: "WebPage"
+---
+
+<div class="space-y-6">
+  <p class="text-slate-600 dark:text-slate-300 text-sm md:text-base">
+    Can't find the exact template or toolkit you need? Share the details below and the
+    RSA Library team will review and add it to the collection.
+  </p>
+
+  <form id="rsa-request-form" class="space-y-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div>
+        <label for="name" class="block text-sm font-medium text-slate-700 dark:text-slate-200">
+          Your Name
+        </label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          class="mt-1 block w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-surface-dark px-3 py-2 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/60"
+          required
+        />
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-medium text-slate-700 dark:text-slate-200">
+          Email
+        </label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          class="mt-1 block w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-surface-dark px-3 py-2 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/60"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div>
+        <label for="club" class="block text-sm font-medium text-slate-700 dark:text-slate-200">
+          Club / Role
+        </label>
+        <input
+          id="club"
+          name="club"
+          type="text"
+          class="mt-1 block w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-surface-dark px-3 py-2 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/60"
+          placeholder="e.g. Rotaract Club of XYZ, DRR Team"
+        />
+      </div>
+      <div>
+        <label for="district" class="block text-sm font-medium text-slate-700 dark:text-slate-200">
+          District (optional)
+        </label>
+        <input
+          id="district"
+          name="district"
+          type="text"
+          class="mt-1 block w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-surface-dark px-3 py-2 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/60"
+          placeholder="e.g. RID 3292"
+        />
+      </div>
+    </div>
+
+    <div>
+      <label for="resource_group" class="block text-sm font-medium text-slate-700 dark:text-slate-200">
+        Which area does this resource belong to?
+      </label>
+      <input
+        id="resource_group"
+        name="resource_group"
+        type="text"
+        class="mt-1 block w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-surface-dark px-3 py-2 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/60"
+        placeholder="e.g. Fundraising Gala, Service Project Planning"
+      />
+    </div>
+
+    <div>
+      <label for="resource_details" class="block text-sm font-medium text-slate-700 dark:text-slate-200">
+        What kind of resource do you need?
+      </label>
+      <textarea
+        id="resource_details"
+        name="resource_details"
+        rows="4"
+        class="mt-1 block w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-surface-dark px-3 py-2 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/60"
+        placeholder="Describe the template, checklist, or toolkit you're looking for and how you'd use it."
+        required
+      ></textarea>
+    </div>
+
+    <div>
+      <label for="reference_link" class="block text-sm font-medium text-slate-700 dark:text-slate-200">
+        Reference link (optional)
+      </label>
+      <input
+        id="reference_link"
+        name="reference_link"
+        type="url"
+        class="mt-1 block w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-surface-dark px-3 py-2 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/60"
+        placeholder="If you have an example or reference, paste the URL here."
+      />
+    </div>
+
+    <div class="flex items-center justify-between gap-4">
+      <p id="rsa-request-status" class="text-xs text-slate-500 dark:text-slate-400">
+        Your request will be sent securely to the RSA Library team.
+      </p>
+      <button
+        type="submit"
+        class="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-2.5 text-sm font-semibold text-white shadow-soft hover:bg-primary-dark transition-colors"
+      >
+        <span class="material-symbols-outlined text-base">send</span>
+        Submit Request
+      </button>
+    </div>
+  </form>
+</div>
+
+<script>
+  (function () {
+    const form = document.getElementById("rsa-request-form");
+    const status = document.getElementById("rsa-request-status");
+    const endpoint = "{{ site.request_form_endpoint | strip }}";
+
+    if (!form) return;
+
+    if (!endpoint) {
+      if (status) {
+        status.textContent =
+          "The request form is not yet configured. Please contact the RSA Library team to enable submissions.";
+        status.classList.add("text-amber-600");
+      }
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+      });
+      return;
+    }
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      if (!status) return;
+
+      status.textContent = "Sending your request…";
+      status.classList.remove("text-amber-600");
+      status.classList.remove("text-emerald-600");
+      status.classList.add("text-slate-500");
+
+      const formData = new FormData(form);
+
+      fetch(endpoint, {
+        method: "POST",
+        mode: "no-cors",
+        body: formData,
+      })
+        .then(function () {
+          form.reset();
+          status.textContent = "Thank you! Your request has been submitted to the RSA Library team.";
+          status.classList.remove("text-slate-500");
+          status.classList.add("text-emerald-600");
+        })
+        .catch(function () {
+          status.textContent =
+            "There was a problem sending your request. Please try again later or email rsamdio@gmail.com.";
+          status.classList.remove("text-slate-500");
+          status.classList.add("text-amber-600");
+        });
+    });
+  })();
+</script>
+
