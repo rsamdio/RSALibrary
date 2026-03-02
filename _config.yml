@@ -1,7 +1,7 @@
 title: "RSA Library"
-description: "RSA Library – curated project templates, checklists, and tools for Rotaract South Asia MDIO leaders."
+description: "RSA Library – an initiative by Rotaract South Asia MDIO to provide a curated library of project templates, checklists, and tools for Rotaract leaders across South Asia."
 baseurl: ""
-url: ""
+url: "https://library.rsamdio.org/"
 
 markdown: kramdown
 theme: null
