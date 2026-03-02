@@ -56,7 +56,7 @@ collections:
       - label: "Resources"
         name: "resources"
         widget: "list"
-        collapsed: false
+        collapsed: true
         summary: "{{fields.name}} ({{fields.type}})"
         fields:
           - { label: "Name", name: "name", widget: "string" }
