@@ -3,3 +3,9 @@
   to = "https://library.rsamdio.org/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  # Fallback 404 page for any unmatched route
+  from = "/*"
+  to = "/404.html"
+  status = 404
