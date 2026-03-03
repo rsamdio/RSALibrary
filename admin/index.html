@@ -31,8 +31,11 @@
       (function() {
         var CMS = window.CMS;
         if (!CMS) return;
-        var createClass = CMS.createClass;
-        var h = CMS.h || (window.React && window.React.createElement);
+        // Decap exposes createClass/h as globals; fall back to those to avoid
+        // \"createClass is not a function\" errors in the CDN bundle.
+        var createClass = window.createClass || (CMS && CMS.createClass);
+        var h = window.h || (CMS && CMS.h) || (window.React && window.React.createElement);
+        if (!createClass || !h) return;
 
         function optionsToArray(field) {
           var raw = field.get('options');

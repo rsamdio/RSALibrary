@@ -2255,7 +2255,7 @@ collections:
           - { label: "File Type Label", name: "type", widget: "string", hint: "e.g. PPTX, PDF, MP4, ZIP" }
           - label: "Type Icon"
             name: "type_icon"
-            widget: "select"
+            widget: "materialIconSelect"
             default: "description"
             options:
               - { label: "Generic File (description)", value: "description" }
