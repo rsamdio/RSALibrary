@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <title>Resource Center Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Material Symbols Outlined for icon preview in admin -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   </head>
   <body>
     <!-- Netlify Identity widget provides auth for Decap CMS -->
@@ -23,6 +25,146 @@
         }
       });
     }
+    </script>
+
+    <script>
+      (function() {
+        var CMS = window.CMS;
+        if (!CMS) return;
+        var createClass = CMS.createClass;
+        var h = CMS.h || (window.React && window.React.createElement);
+
+        function optionsToArray(field) {
+          var raw = field.get('options');
+          if (!raw) return [];
+          if (raw.toJS) return raw.toJS();
+          return Array.isArray(raw) ? raw : [];
+        }
+
+        var MaterialIconSelectControl = createClass({
+          getInitialState: function() {
+            return { open: false, search: '' };
+          },
+
+          handleToggle: function() {
+            this.setState({ open: !this.state.open, search: '' });
+          },
+
+          handleSelect: function(value) {
+            this.props.onChange(value);
+            this.setState({ open: false, search: '' });
+          },
+
+          handleSearchChange: function(e) {
+            this.setState({ search: (e.target.value || '').trim().toLowerCase() });
+          },
+
+          handleClickOutside: function(e) {
+            if (this._drop && this._drop.contains(e.target)) return;
+            if (this._trigger && this._trigger.contains(e.target)) return;
+            this.setState({ open: false });
+          },
+
+          componentDidMount: function() {
+            document.addEventListener('click', this.handleClickOutside);
+          },
+
+          componentWillUnmount: function() {
+            document.removeEventListener('click', this.handleClickOutside);
+          },
+
+          render: function() {
+            var self = this;
+            var value = this.props.value;
+            var options = optionsToArray(this.props.field);
+            var search = this.state.search;
+            var filtered = options;
+            if (search) {
+              filtered = options.filter(function(o) {
+                var l = (o.label || '').toLowerCase();
+                var v = (o.value || '').toLowerCase();
+                return l.indexOf(search) !== -1 || v.indexOf(search) !== -1;
+              });
+            }
+            var current = options.find(function(o) { return o.value === value; }) || { label: value || 'Choose icon…', value: value };
+
+            return h('div', { className: this.props.classNameWrapper, style: { position: 'relative' } },
+              h('button', {
+                type: 'button',
+                ref: function(r) { self._trigger = r; },
+                onClick: this.handleToggle,
+                className: 'material-icon-select-trigger',
+                style: {
+                  display: 'flex', alignItems: 'center', gap: '8px', width: '100%',
+                  padding: '8px 12px', textAlign: 'left', border: '1px solid #ccc',
+                  borderRadius: '4px', background: '#fff', cursor: 'pointer', fontSize: '14px'
+                }
+              },
+                value ? h('span', {
+                  className: 'material-symbols-outlined',
+                  style: { fontSize: '22px', color: '#333', flexShrink: 0 }
+                }, value) : null,
+                h('span', { style: { flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' } }, current.label)
+              ),
+              this.state.open ? h('div', {
+                ref: function(r) { self._drop = r; },
+                className: 'material-icon-select-dropdown',
+                style: {
+                  position: 'absolute', left: 0, right: 0, top: '100%', marginTop: '4px', zIndex: 1000,
+                  background: '#fff', border: '1px solid #ccc', borderRadius: '6px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+                  maxHeight: '320px', display: 'flex', flexDirection: 'column', overflow: 'hidden'
+                }
+              },
+                h('input', {
+                  type: 'text',
+                  placeholder: 'Search icons…',
+                  value: this.state.search,
+                  onChange: this.handleSearchChange,
+                  onFocus: function(e) { e.stopPropagation(); },
+                  onClick: function(e) { e.stopPropagation(); },
+                  style: {
+                    margin: '8px', padding: '8px 10px', border: '1px solid #ddd', borderRadius: '4px', fontSize: '14px'
+                  }
+                }),
+                h('div', {
+                  style: { overflowY: 'auto', flex: 1, minHeight: '200px', padding: '4px' }
+                }, [
+                  search && filtered.length > 0 ? h('div', { key: 'hint', style: { padding: '4px 10px', fontSize: '12px', color: '#666' } }, filtered.length + ' match' + (filtered.length !== 1 ? 'es' : '')) : null,
+                  !search && filtered.length > 200 ? h('div', { key: 'tip', style: { padding: '4px 10px', fontSize: '12px', color: '#666' } }, 'Type to search. Showing first 200.') : null
+                ].concat(filtered.slice(0, search ? 300 : 200).map(function(opt) {
+                  var isSelected = opt.value === value;
+                  return h('button', {
+                    key: opt.value,
+                    type: 'button',
+                    onClick: function() { self.handleSelect(opt.value); },
+                    style: {
+                      display: 'flex', alignItems: 'center', gap: '8px', width: '100%',
+                      padding: '6px 10px', textAlign: 'left', border: 'none', borderRadius: '4px',
+                      background: isSelected ? '#e0f2fe' : 'transparent', cursor: 'pointer', fontSize: '13px'
+                    }
+                  },
+                    h('span', { className: 'material-symbols-outlined', style: { fontSize: '20px', color: '#333', flexShrink: 0 } }, opt.value),
+                    h('span', { style: { overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' } }, opt.label)
+                  );
+                })))
+              ) : null
+            );
+          }
+        });
+
+        var MaterialIconSelectPreview = createClass({
+          render: function() {
+            var value = this.props.value;
+            if (!value) return h('span', { style: { color: '#999' } }, 'No icon selected');
+            return h('span', { style: { display: 'inline-flex', alignItems: 'center', gap: '6px' } },
+              h('span', { className: 'material-symbols-outlined', style: { fontSize: '20px' } }, value),
+              h('span', null, value)
+            );
+          }
+        });
+
+        CMS.registerWidget('materialIconSelect', MaterialIconSelectControl, MaterialIconSelectPreview);
+      })();
     </script>
   </body>
 </html>
