@@ -2221,7 +2221,7 @@ collections:
           - { label: "Zoom Out Map (zoom_out_map)", value: "zoom_out_map" }
       - label: "Icon Color"
         name: "icon_color"
-        widget: "select"
+        widget: "iconColorSelect"
         default: "blue"
         options:
           - { label: "Blue", value: "blue" }
@@ -2252,7 +2252,7 @@ collections:
         fields:
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Description", name: "description", widget: "text" }
-          - { label: "File Type Label", name: "type", widget: "string", hint: "e.g. PPTX, PDF, MP4, ZIP" }
+          - { label: "File Type Label", name: "type", widget: "fileTypeCombo", hint: "e.g. PPTX, PDF, MP4, ZIP" }
           - label: "Type Icon"
             name: "type_icon"
             widget: "materialIconSelect"

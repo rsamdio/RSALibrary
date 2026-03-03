@@ -167,6 +167,235 @@
         });
 
         CMS.registerWidget('materialIconSelect', MaterialIconSelectControl, MaterialIconSelectPreview);
+
+        // Icon color select widget with visual swatches
+        var colorSwatches = {
+          blue: '#2563eb',
+          sky: '#0ea5e9',
+          cyan: '#06b6d4',
+          teal: '#14b8a6',
+          emerald: '#10b981',
+          green: '#22c55e',
+          lime: '#84cc16',
+          amber: '#f59e0b',
+          yellow: '#eab308',
+          orange: '#f97316',
+          rose: '#f43f5e',
+          pink: '#ec4899',
+          red: '#ef4444',
+          fuchsia: '#d946ef',
+          purple: '#a855f7',
+          violet: '#8b5cf6',
+          indigo: '#4f46e5',
+          slate: '#64748b'
+        };
+
+        var IconColorSelectControl = createClass({
+          getInitialState: function() {
+            return { open: false };
+          },
+
+          handleToggle: function() {
+            this.setState({ open: !this.state.open });
+          },
+
+          handleSelect: function(value) {
+            this.props.onChange(value);
+            this.setState({ open: false });
+          },
+
+          handleClickOutside: function(e) {
+            if (this._drop && this._drop.contains(e.target)) return;
+            if (this._trigger && this._trigger.contains(e.target)) return;
+            this.setState({ open: false });
+          },
+
+          componentDidMount: function() {
+            document.addEventListener('click', this.handleClickOutside);
+          },
+
+          componentWillUnmount: function() {
+            document.removeEventListener('click', this.handleClickOutside);
+          },
+
+          render: function() {
+            var self = this;
+            var value = this.props.value || this.props.field.get('default');
+            var options = optionsToArray(this.props.field);
+            var current = options.find(function(o) { return o.value === value; }) || options[0] || { label: 'Choose color', value: null };
+            var swatchColor = colorSwatches[current.value] || '#64748b';
+
+            return h('div', { className: this.props.classNameWrapper, style: { position: 'relative' } },
+              h('button', {
+                type: 'button',
+                ref: function(r) { self._trigger = r; },
+                onClick: this.handleToggle,
+                style: {
+                  display: 'flex', alignItems: 'center', gap: '8px', width: '100%',
+                  padding: '8px 12px', textAlign: 'left', border: '1px solid #ccc',
+                  borderRadius: '4px', background: '#fff', cursor: 'pointer', fontSize: '14px'
+                }
+              },
+                h('span', {
+                  style: {
+                    width: '18px', height: '18px', borderRadius: '999px',
+                    backgroundColor: swatchColor, border: '1px solid rgba(15,23,42,0.15)',
+                    boxShadow: 'inset 0 0 0 1px rgba(255,255,255,0.4)', flexShrink: 0
+                  }
+                }),
+                h('span', { style: { flex: 1 } }, current.label)
+              ),
+              this.state.open ? h('div', {
+                ref: function(r) { self._drop = r; },
+                style: {
+                  position: 'absolute', left: 0, right: 0, top: '100%', marginTop: '4px', zIndex: 1000,
+                  background: '#fff', border: '1px solid #ccc', borderRadius: '6px',
+                  boxShadow: '0 4px 12px rgba(0,0,0,0.15)', maxHeight: '260px', overflowY: 'auto'
+                }
+              },
+                options.map(function(opt) {
+                  var c = colorSwatches[opt.value] || '#64748b';
+                  var isSelected = opt.value === value;
+                  return h('button', {
+                    key: opt.value,
+                    type: 'button',
+                    onClick: function() { self.handleSelect(opt.value); },
+                    style: {
+                      display: 'flex', alignItems: 'center', gap: '8px', width: '100%',
+                      padding: '6px 10px', textAlign: 'left', border: 'none',
+                      background: isSelected ? 'rgba(191, 219, 254, 0.7)' : 'transparent',
+                      cursor: 'pointer', fontSize: '13px'
+                    }
+                  },
+                    h('span', {
+                      style: {
+                        width: '16px', height: '16px', borderRadius: '999px',
+                        backgroundColor: c, border: '1px solid rgba(15,23,42,0.15)',
+                        boxShadow: 'inset 0 0 0 1px rgba(255,255,255,0.4)', flexShrink: 0
+                      }
+                    }),
+                    h('span', null, opt.label)
+                  );
+                })
+              ) : null
+            );
+          }
+        });
+
+        var IconColorSelectPreview = createClass({
+          render: function() {
+            var value = this.props.value;
+            if (!value) return h('span', { style: { color: '#999' } }, 'No color selected');
+            var label = value;
+            var field = this.props.field;
+            if (field) {
+              var opts = optionsToArray(field);
+              var found = opts.find(function(o) { return o.value === value; });
+              if (found) label = found.label;
+            }
+            var c = colorSwatches[value] || '#64748b';
+            return h('span', { style: { display: 'inline-flex', alignItems: 'center', gap: '6px' } },
+              h('span', {
+                style: {
+                  width: '14px', height: '14px', borderRadius: '999px',
+                  backgroundColor: c, border: '1px solid rgba(15,23,42,0.15)',
+                  boxShadow: 'inset 0 0 0 1px rgba(255,255,255,0.4)'
+                }
+              }),
+              h('span', null, label)
+            );
+          }
+        });
+
+        CMS.registerWidget('iconColorSelect', IconColorSelectControl, IconColorSelectPreview);
+
+        // File type label widget: text input + common types dropdown
+        var standardFileTypes = [
+          'PDF',
+          'PPTX',
+          'DOCX',
+          'XLSX',
+          'CSV',
+          'ZIP',
+          'MP4',
+          'MP3',
+          'IMG',
+          'Spreadsheet',
+          'Slides',
+          'Document',
+          'List',
+          'Form',
+          'Link'
+        ];
+
+        var FileTypeComboControl = createClass({
+          handleInputChange: function(e) {
+            this.props.onChange(e.target.value);
+          },
+
+          handleSelectChange: function(e) {
+            var v = e.target.value;
+            if (!v) return;
+            this.props.onChange(v);
+          },
+
+          render: function() {
+            var value = this.props.value || '';
+            var forID = this.props.forID;
+
+            return h('div', { className: this.props.classNameWrapper },
+              h('input', {
+                id: forID,
+                type: 'text',
+                value: value,
+                onChange: this.handleInputChange,
+                placeholder: 'e.g. PPTX, PDF, MP4, ZIP',
+                style: {
+                  width: '100%',
+                  padding: '8px 10px',
+                  borderRadius: '4px',
+                  border: '1px solid #ccc',
+                  fontSize: '14px',
+                  boxSizing: 'border-box',
+                  marginBottom: '6px'
+                }
+              }),
+              h('div', { style: { display: 'flex', alignItems: 'center', gap: '6px' } },
+                h('label', {
+                  htmlFor: forID + '-preset',
+                  style: { fontSize: '12px', color: '#555', whiteSpace: 'nowrap' }
+                }, 'Quick pick:'),
+                h('select', {
+                  id: forID + '-preset',
+                  onChange: this.handleSelectChange,
+                  value: '',
+                  style: {
+                    flex: 1,
+                    padding: '6px 8px',
+                    borderRadius: '4px',
+                    border: '1px solid #ccc',
+                    fontSize: '13px'
+                  }
+                },
+                  [h('option', { key: '', value: '' }, '-- Choose common type --')]
+                    .concat(standardFileTypes.map(function(t) {
+                      return h('option', { key: t, value: t }, t);
+                    }))
+                )
+              )
+            );
+          }
+        });
+
+        var FileTypeComboPreview = createClass({
+          render: function() {
+            var value = this.props.value;
+            if (!value) return h('span', { style: { color: '#999' } }, 'No file type set');
+            return h('span', null, value);
+          }
+        });
+
+        CMS.registerWidget('fileTypeCombo', FileTypeComboControl, FileTypeComboPreview);
       })();
     </script>
   </body>
