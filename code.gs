@@ -22,10 +22,10 @@ function doPost(e) {
   ]);
 
   if (email) {
-    var subject = "Thank you for your RSA Library request";
+    var subject = "Thank you for your Rotaract Library request";
     var body =
       "Dear " + (name || "Rotaractor") + ",\n\n" +
-      "Thank you for submitting a request to the RSA Library. Here is a copy of what we received:\n\n" +
+      "Thank you for submitting a request to the Rotaract Library. Here is a copy of what we received:\n\n" +
       "Name: " + name + "\n" +
       "Email: " + email + "\n" +
       "Club: " + club + "\n" +
@@ -33,7 +33,7 @@ function doPost(e) {
       "Resource Group: " + resourceGroup + "\n" +
       "Details: " + details + "\n" +
       "Reference Link: " + referenceLink + "\n\n" +
-      "The RSA Library team will review your request and follow up if we need more information.\n\n" +
+      "The Rotaract Library team will review your request and follow up if we need more information.\n\n" +
       "Yours in Rotaract,\n" +
       "Rotaract South Asia MDIO";
 

@@ -10,7 +10,7 @@ layout: compress
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    {% assign rsa_suffix = "RSA Library - An initiative by Rotaract South Asia MDIO" %}
+    {% assign rsa_suffix = "Rotaract Library - An initiative by Rotaract South Asia MDIO" %}
     <title>
       {% if page.seo_title %}
         {{ page.seo_title }}
@@ -35,10 +35,10 @@ layout: compress
       <meta property="og:url" content="{{ canonical_url }}" />
     {% endif %}
     <meta property="og:type" content="{% if page.og_type %}{{ page.og_type }}{% else %}website{% endif %}" />
-    <meta property="og:site_name" content="RSA Library" />
+    <meta property="og:site_name" content="Rotaract Library" />
     <meta property="og:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.url == '/' or page.url == '/index.html' %}{{ rsa_suffix }}{% elsif page.title %}{{ page.title }} | {{ rsa_suffix }}{% else %}{{ rsa_suffix }}{% endif %}" />
     <meta property="og:description" content="{{ meta_description }}" />
-    {% assign og_image_path = page.og_image | default: '/images/rsalibraryog.webp' %}
+    {% assign og_image_path = page.og_image | default: '/images/rotaractlibrary.webp' %}
     {% assign og_image = og_image_path | relative_url | absolute_url %}
     <meta property="og:image" content="{{ og_image }}" />
 
@@ -57,7 +57,7 @@ layout: compress
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "RSA Library",
+      "name": "Rotaract Library",
       "url": "{% if site.url %}{{ site.url | append: site.baseurl }}{% else %}{{ '/' | relative_url | absolute_url }}{% endif %}",
       "potentialAction": {
         "@type": "SearchAction",
@@ -118,6 +118,17 @@ layout: compress
         },
       };
     </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3WWXPED6S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-D3WWXPED6S');
+    </script>
+    
   </head>
   <body
     class="min-h-screen flex flex-col bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-50 font-display transition-colors duration-300"

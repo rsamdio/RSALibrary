@@ -1,8 +1,8 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3cc42b96-b587-425b-87fd-f24908053820/deploy-status)](https://app.netlify.com/projects/rsalibrary/deploys)
 
-## RSA Library
+## Rotaract Library
 
-RSA Library is a public resource center for **Rotaract South Asia MDIO**, providing curated templates, checklists, and toolkits for Rotaract projects across South Asia.
+Rotaract Library is a public resource center for **Rotaract South Asia MDIO**, providing curated templates, checklists, and toolkits for Rotaract projects across South Asia.
 
 Production site: `https://library.rsamdio.org/`
 

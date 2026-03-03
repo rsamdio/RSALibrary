@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Submit Resource Request
-description: "Use this form to request new templates, toolkits, and checklists for the RSA Library."
+description: "Use this form to request new templates, toolkits, and checklists for the Rotaract Library."
 permalink: /request/
 og_type: "WebPage"
 ---
@@ -9,7 +9,7 @@ og_type: "WebPage"
 <div class="space-y-6">
   <p class="text-slate-600 dark:text-slate-300 text-sm md:text-base">
     Can't find the exact template or toolkit you need? Share the details below and the
-    RSA Library team will review and add it to the collection.
+    Rotaract Library team will review and add it to the collection.
   </p>
 
   <form id="rsa-request-form" class="space-y-6">
@@ -110,7 +110,7 @@ og_type: "WebPage"
 
     <div class="flex items-center justify-between gap-4">
       <p id="rsa-request-status" class="text-xs text-slate-500 dark:text-slate-400">
-        Your request will be sent securely to the RSA Library team.
+        Your request will be sent securely to the Rotaract Library team.
       </p>
       <button
         type="submit"
@@ -132,9 +132,9 @@ og_type: "WebPage"
     if (!form) return;
 
     if (!endpoint) {
-      if (status) {
+          if (status) {
         status.textContent =
-          "The request form is not yet configured. Please contact the RSA Library team to enable submissions.";
+          "The request form is not yet configured. Please contact the Rotaract Library team to enable submissions.";
         status.classList.add("text-amber-600");
       }
       form.addEventListener("submit", function (event) {
@@ -161,7 +161,7 @@ og_type: "WebPage"
       })
         .then(function () {
           form.reset();
-          status.textContent = "Thank you! Your request has been submitted to the RSA Library team.";
+          status.textContent = "Thank you! Your request has been submitted to the Rotaract Library team.";
           status.classList.remove("text-slate-500");
           status.classList.add("text-emerald-600");
         })
