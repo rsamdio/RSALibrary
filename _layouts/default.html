@@ -38,7 +38,8 @@ layout: compress
     <meta property="og:site_name" content="RSA Library" />
     <meta property="og:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.url == '/' or page.url == '/index.html' %}{{ rsa_suffix }}{% elsif page.title %}{{ page.title }} | {{ rsa_suffix }}{% else %}{{ rsa_suffix }}{% endif %}" />
     <meta property="og:description" content="{{ meta_description }}" />
-    {% assign og_image = page.og_image | default: '/images/rsalibraryog.webp' | relative_url %}
+    {% assign og_image_path = page.og_image | default: '/images/rsalibraryog.webp' %}
+    {% assign og_image = og_image_path | relative_url | absolute_url %}
     <meta property="og:image" content="{{ og_image }}" />
 
     <meta name="twitter:card" content="summary_large_image" />
