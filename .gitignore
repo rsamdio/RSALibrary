@@ -9,3 +9,4 @@ node_modules/
 .env
 .env.*.local
 gemfile.lock
+_resources/template.md

@@ -24,19 +24,2201 @@ collections:
         name: "icon"
         widget: "select"
         options:
-          - { label: "People (group_add)", value: "group_add" }
-          - { label: "Payments (payments)", value: "payments" }
-          - { label: "Forum (forum)", value: "forum" }
-          - { label: "Service (volunteer_activism)", value: "volunteer_activism" }
-          - { label: "Event (event)", value: "event" }
+          - { label: "10k (10k)", value: "10k" }
+          - { label: "10mp (10mp)", value: "10mp" }
+          - { label: "11mp (11mp)", value: "11mp" }
+          - { label: "123 (123)", value: "123" }
+          - { label: "12mp (12mp)", value: "12mp" }
+          - { label: "13mp (13mp)", value: "13mp" }
+          - { label: "14mp (14mp)", value: "14mp" }
+          - { label: "15mp (15mp)", value: "15mp" }
+          - { label: "16mp (16mp)", value: "16mp" }
+          - { label: "17mp (17mp)", value: "17mp" }
+          - { label: "18 Up Rating (18_up_rating)", value: "18_up_rating" }
+          - { label: "18mp (18mp)", value: "18mp" }
+          - { label: "19mp (19mp)", value: "19mp" }
+          - { label: "1k (1k)", value: "1k" }
+          - { label: "1k Plus (1k_plus)", value: "1k_plus" }
+          - { label: "1x Mobiledata (1x_mobiledata)", value: "1x_mobiledata" }
+          - { label: "20mp (20mp)", value: "20mp" }
+          - { label: "21mp (21mp)", value: "21mp" }
+          - { label: "22mp (22mp)", value: "22mp" }
+          - { label: "23mp (23mp)", value: "23mp" }
+          - { label: "24mp (24mp)", value: "24mp" }
+          - { label: "2k (2k)", value: "2k" }
+          - { label: "2k Plus (2k_plus)", value: "2k_plus" }
+          - { label: "2mp (2mp)", value: "2mp" }
+          - { label: "30fps (30fps)", value: "30fps" }
+          - { label: "30fps Select (30fps_select)", value: "30fps_select" }
+          - { label: "360 (360)", value: "360" }
+          - { label: "3d Rotation (3d_rotation)", value: "3d_rotation" }
+          - { label: "3g Mobiledata (3g_mobiledata)", value: "3g_mobiledata" }
+          - { label: "3k (3k)", value: "3k" }
+          - { label: "3k Plus (3k_plus)", value: "3k_plus" }
+          - { label: "3mp (3mp)", value: "3mp" }
+          - { label: "3p (3p)", value: "3p" }
+          - { label: "4g Mobiledata (4g_mobiledata)", value: "4g_mobiledata" }
+          - { label: "4g Plus Mobiledata (4g_plus_mobiledata)", value: "4g_plus_mobiledata" }
+          - { label: "4k (4k)", value: "4k" }
+          - { label: "4k Plus (4k_plus)", value: "4k_plus" }
+          - { label: "4mp (4mp)", value: "4mp" }
+          - { label: "5g (5g)", value: "5g" }
+          - { label: "5k (5k)", value: "5k" }
+          - { label: "5k Plus (5k_plus)", value: "5k_plus" }
+          - { label: "5mp (5mp)", value: "5mp" }
+          - { label: "60fps (60fps)", value: "60fps" }
+          - { label: "60fps Select (60fps_select)", value: "60fps_select" }
+          - { label: "6 Ft Apart (6_ft_apart)", value: "6_ft_apart" }
+          - { label: "6k (6k)", value: "6k" }
+          - { label: "6k Plus (6k_plus)", value: "6k_plus" }
+          - { label: "6mp (6mp)", value: "6mp" }
+          - { label: "7k (7k)", value: "7k" }
+          - { label: "7k Plus (7k_plus)", value: "7k_plus" }
+          - { label: "7mp (7mp)", value: "7mp" }
+          - { label: "8k (8k)", value: "8k" }
+          - { label: "8k Plus (8k_plus)", value: "8k_plus" }
+          - { label: "8mp (8mp)", value: "8mp" }
+          - { label: "9k (9k)", value: "9k" }
+          - { label: "9k Plus (9k_plus)", value: "9k_plus" }
+          - { label: "9mp (9mp)", value: "9mp" }
+          - { label: "Abc (abc)", value: "abc" }
+          - { label: "Ac Unit (ac_unit)", value: "ac_unit" }
+          - { label: "Access Alarm (access_alarm)", value: "access_alarm" }
+          - { label: "Access Alarms (access_alarms)", value: "access_alarms" }
+          - { label: "Access Time (access_time)", value: "access_time" }
+          - { label: "Access Time Filled (access_time_filled)", value: "access_time_filled" }
+          - { label: "Accessibility (accessibility)", value: "accessibility" }
+          - { label: "Accessibility New (accessibility_new)", value: "accessibility_new" }
+          - { label: "Accessible (accessible)", value: "accessible" }
+          - { label: "Accessible Forward (accessible_forward)", value: "accessible_forward" }
+          - { label: "Account Balance (account_balance)", value: "account_balance" }
+          - { label: "Account Balance Wallet (account_balance_wallet)", value: "account_balance_wallet" }
+          - { label: "Account Box (account_box)", value: "account_box" }
+          - { label: "Account Circle (account_circle)", value: "account_circle" }
+          - { label: "Account Tree (account_tree)", value: "account_tree" }
+          - { label: "Ad Units (ad_units)", value: "ad_units" }
+          - { label: "Adb (adb)", value: "adb" }
+          - { label: "Add (add)", value: "add" }
+          - { label: "Add A Photo (add_a_photo)", value: "add_a_photo" }
+          - { label: "Add Alarm (add_alarm)", value: "add_alarm" }
+          - { label: "Add Alert (add_alert)", value: "add_alert" }
+          - { label: "Add Box (add_box)", value: "add_box" }
+          - { label: "Add Business (add_business)", value: "add_business" }
+          - { label: "Add Card (add_card)", value: "add_card" }
+          - { label: "Add Chart (add_chart)", value: "add_chart" }
+          - { label: "Add Circle (add_circle)", value: "add_circle" }
+          - { label: "Add Circle Outline (add_circle_outline)", value: "add_circle_outline" }
+          - { label: "Add Comment (add_comment)", value: "add_comment" }
+          - { label: "Add Home (add_home)", value: "add_home" }
+          - { label: "Add Home Work (add_home_work)", value: "add_home_work" }
+          - { label: "Add Ic Call (add_ic_call)", value: "add_ic_call" }
+          - { label: "Add Link (add_link)", value: "add_link" }
+          - { label: "Add Location (add_location)", value: "add_location" }
+          - { label: "Add Location Alt (add_location_alt)", value: "add_location_alt" }
+          - { label: "Add Moderator (add_moderator)", value: "add_moderator" }
+          - { label: "Add Photo Alternate (add_photo_alternate)", value: "add_photo_alternate" }
+          - { label: "Add Reaction (add_reaction)", value: "add_reaction" }
+          - { label: "Add Road (add_road)", value: "add_road" }
+          - { label: "Add Shopping Cart (add_shopping_cart)", value: "add_shopping_cart" }
+          - { label: "Add Task (add_task)", value: "add_task" }
+          - { label: "Add To Drive (add_to_drive)", value: "add_to_drive" }
+          - { label: "Add To Home Screen (add_to_home_screen)", value: "add_to_home_screen" }
+          - { label: "Add To Photos (add_to_photos)", value: "add_to_photos" }
+          - { label: "Add To Queue (add_to_queue)", value: "add_to_queue" }
+          - { label: "Addchart (addchart)", value: "addchart" }
+          - { label: "Adf Scanner (adf_scanner)", value: "adf_scanner" }
+          - { label: "Adjust (adjust)", value: "adjust" }
+          - { label: "Admin Panel Settings (admin_panel_settings)", value: "admin_panel_settings" }
+          - { label: "Adobe (adobe)", value: "adobe" }
+          - { label: "Ads Click (ads_click)", value: "ads_click" }
+          - { label: "Agriculture (agriculture)", value: "agriculture" }
+          - { label: "Air (air)", value: "air" }
+          - { label: "Airline Seat Flat (airline_seat_flat)", value: "airline_seat_flat" }
+          - { label: "Airline Seat Flat Angled (airline_seat_flat_angled)", value: "airline_seat_flat_angled" }
+          - { label: "Airline Seat Individual Suite (airline_seat_individual_suite)", value: "airline_seat_individual_suite" }
+          - { label: "Airline Seat Legroom Extra (airline_seat_legroom_extra)", value: "airline_seat_legroom_extra" }
+          - { label: "Airline Seat Legroom Normal (airline_seat_legroom_normal)", value: "airline_seat_legroom_normal" }
+          - { label: "Airline Seat Legroom Reduced (airline_seat_legroom_reduced)", value: "airline_seat_legroom_reduced" }
+          - { label: "Airline Seat Recline Extra (airline_seat_recline_extra)", value: "airline_seat_recline_extra" }
+          - { label: "Airline Seat Recline Normal (airline_seat_recline_normal)", value: "airline_seat_recline_normal" }
+          - { label: "Airline Stops (airline_stops)", value: "airline_stops" }
+          - { label: "Airlines (airlines)", value: "airlines" }
+          - { label: "Airplane Ticket (airplane_ticket)", value: "airplane_ticket" }
+          - { label: "Airplanemode Active (airplanemode_active)", value: "airplanemode_active" }
+          - { label: "Airplanemode Inactive (airplanemode_inactive)", value: "airplanemode_inactive" }
+          - { label: "Airplanemode Off (airplanemode_off)", value: "airplanemode_off" }
+          - { label: "Airplanemode On (airplanemode_on)", value: "airplanemode_on" }
+          - { label: "Airplay (airplay)", value: "airplay" }
+          - { label: "Airport Shuttle (airport_shuttle)", value: "airport_shuttle" }
+          - { label: "Alarm (alarm)", value: "alarm" }
+          - { label: "Alarm Add (alarm_add)", value: "alarm_add" }
+          - { label: "Alarm Off (alarm_off)", value: "alarm_off" }
+          - { label: "Alarm On (alarm_on)", value: "alarm_on" }
+          - { label: "Album (album)", value: "album" }
+          - { label: "Align Horizontal Center (align_horizontal_center)", value: "align_horizontal_center" }
+          - { label: "Align Horizontal Left (align_horizontal_left)", value: "align_horizontal_left" }
+          - { label: "Align Horizontal Right (align_horizontal_right)", value: "align_horizontal_right" }
+          - { label: "Align Vertical Bottom (align_vertical_bottom)", value: "align_vertical_bottom" }
+          - { label: "Align Vertical Center (align_vertical_center)", value: "align_vertical_center" }
+          - { label: "Align Vertical Top (align_vertical_top)", value: "align_vertical_top" }
+          - { label: "All Inbox (all_inbox)", value: "all_inbox" }
+          - { label: "All Inclusive (all_inclusive)", value: "all_inclusive" }
+          - { label: "All Out (all_out)", value: "all_out" }
+          - { label: "Alt Route (alt_route)", value: "alt_route" }
+          - { label: "Alternate Email (alternate_email)", value: "alternate_email" }
+          - { label: "Amp Stories (amp_stories)", value: "amp_stories" }
+          - { label: "Analytics (analytics)", value: "analytics" }
+          - { label: "Anchor (anchor)", value: "anchor" }
+          - { label: "Android (android)", value: "android" }
+          - { label: "Animation (animation)", value: "animation" }
+          - { label: "Announcement (announcement)", value: "announcement" }
+          - { label: "Aod (aod)", value: "aod" }
+          - { label: "Apartment (apartment)", value: "apartment" }
+          - { label: "Api (api)", value: "api" }
+          - { label: "App Blocking (app_blocking)", value: "app_blocking" }
+          - { label: "App Registration (app_registration)", value: "app_registration" }
+          - { label: "App Settings Alt (app_settings_alt)", value: "app_settings_alt" }
+          - { label: "App Shortcut (app_shortcut)", value: "app_shortcut" }
+          - { label: "Apple (apple)", value: "apple" }
+          - { label: "Approval (approval)", value: "approval" }
+          - { label: "Apps (apps)", value: "apps" }
+          - { label: "Apps Outage (apps_outage)", value: "apps_outage" }
+          - { label: "Architecture (architecture)", value: "architecture" }
+          - { label: "Archive (archive)", value: "archive" }
+          - { label: "Area Chart (area_chart)", value: "area_chart" }
+          - { label: "Arrow Back (arrow_back)", value: "arrow_back" }
+          - { label: "Arrow Back Ios (arrow_back_ios)", value: "arrow_back_ios" }
+          - { label: "Arrow Back Ios New (arrow_back_ios_new)", value: "arrow_back_ios_new" }
+          - { label: "Arrow Circle Down (arrow_circle_down)", value: "arrow_circle_down" }
+          - { label: "Arrow Circle Left (arrow_circle_left)", value: "arrow_circle_left" }
+          - { label: "Arrow Circle Right (arrow_circle_right)", value: "arrow_circle_right" }
+          - { label: "Arrow Circle Up (arrow_circle_up)", value: "arrow_circle_up" }
+          - { label: "Arrow Downward (arrow_downward)", value: "arrow_downward" }
+          - { label: "Arrow Drop Down (arrow_drop_down)", value: "arrow_drop_down" }
+          - { label: "Arrow Drop Down Circle (arrow_drop_down_circle)", value: "arrow_drop_down_circle" }
+          - { label: "Arrow Drop Up (arrow_drop_up)", value: "arrow_drop_up" }
+          - { label: "Arrow Forward (arrow_forward)", value: "arrow_forward" }
+          - { label: "Arrow Forward Ios (arrow_forward_ios)", value: "arrow_forward_ios" }
+          - { label: "Arrow Left (arrow_left)", value: "arrow_left" }
+          - { label: "Arrow Outward (arrow_outward)", value: "arrow_outward" }
+          - { label: "Arrow Right (arrow_right)", value: "arrow_right" }
+          - { label: "Arrow Right Alt (arrow_right_alt)", value: "arrow_right_alt" }
+          - { label: "Arrow Upward (arrow_upward)", value: "arrow_upward" }
+          - { label: "Art Track (art_track)", value: "art_track" }
+          - { label: "Article (article)", value: "article" }
+          - { label: "Aspect Ratio (aspect_ratio)", value: "aspect_ratio" }
+          - { label: "Assessment (assessment)", value: "assessment" }
+          - { label: "Assignment (assignment)", value: "assignment" }
+          - { label: "Assignment Ind (assignment_ind)", value: "assignment_ind" }
+          - { label: "Assignment Late (assignment_late)", value: "assignment_late" }
+          - { label: "Assignment Return (assignment_return)", value: "assignment_return" }
+          - { label: "Assignment Returned (assignment_returned)", value: "assignment_returned" }
+          - { label: "Assignment Turned In (assignment_turned_in)", value: "assignment_turned_in" }
+          - { label: "Assist Walker (assist_walker)", value: "assist_walker" }
+          - { label: "Assistant (assistant)", value: "assistant" }
+          - { label: "Assistant Direction (assistant_direction)", value: "assistant_direction" }
+          - { label: "Assistant Photo (assistant_photo)", value: "assistant_photo" }
+          - { label: "Assured Workload (assured_workload)", value: "assured_workload" }
+          - { label: "Atm (atm)", value: "atm" }
+          - { label: "Attach Email (attach_email)", value: "attach_email" }
+          - { label: "Attach File (attach_file)", value: "attach_file" }
+          - { label: "Attach Money (attach_money)", value: "attach_money" }
+          - { label: "Attachment (attachment)", value: "attachment" }
+          - { label: "Attractions (attractions)", value: "attractions" }
+          - { label: "Attribution (attribution)", value: "attribution" }
+          - { label: "Audio File (audio_file)", value: "audio_file" }
+          - { label: "Audiotrack (audiotrack)", value: "audiotrack" }
+          - { label: "Auto Awesome (auto_awesome)", value: "auto_awesome" }
+          - { label: "Auto Awesome Mosaic (auto_awesome_mosaic)", value: "auto_awesome_mosaic" }
+          - { label: "Auto Awesome Motion (auto_awesome_motion)", value: "auto_awesome_motion" }
+          - { label: "Auto Delete (auto_delete)", value: "auto_delete" }
+          - { label: "Auto Fix High (auto_fix_high)", value: "auto_fix_high" }
+          - { label: "Auto Fix Normal (auto_fix_normal)", value: "auto_fix_normal" }
+          - { label: "Auto Fix Off (auto_fix_off)", value: "auto_fix_off" }
+          - { label: "Auto Graph (auto_graph)", value: "auto_graph" }
+          - { label: "Auto Mode (auto_mode)", value: "auto_mode" }
+          - { label: "Auto Stories (auto_stories)", value: "auto_stories" }
+          - { label: "Autofps Select (autofps_select)", value: "autofps_select" }
+          - { label: "Autorenew (autorenew)", value: "autorenew" }
+          - { label: "Av Timer (av_timer)", value: "av_timer" }
+          - { label: "Baby Changing Station (baby_changing_station)", value: "baby_changing_station" }
+          - { label: "Back Hand (back_hand)", value: "back_hand" }
+          - { label: "Backpack (backpack)", value: "backpack" }
+          - { label: "Backspace (backspace)", value: "backspace" }
+          - { label: "Backup (backup)", value: "backup" }
+          - { label: "Backup Table (backup_table)", value: "backup_table" }
+          - { label: "Badge (badge)", value: "badge" }
+          - { label: "Bakery Dining (bakery_dining)", value: "bakery_dining" }
+          - { label: "Balance (balance)", value: "balance" }
+          - { label: "Balcony (balcony)", value: "balcony" }
+          - { label: "Ballot (ballot)", value: "ballot" }
+          - { label: "Bar Chart (bar_chart)", value: "bar_chart" }
+          - { label: "Batch Prediction (batch_prediction)", value: "batch_prediction" }
+          - { label: "Bathroom (bathroom)", value: "bathroom" }
+          - { label: "Bathtub (bathtub)", value: "bathtub" }
+          - { label: "Battery 0 Bar (battery_0_bar)", value: "battery_0_bar" }
+          - { label: "Battery 1 Bar (battery_1_bar)", value: "battery_1_bar" }
+          - { label: "Battery 2 Bar (battery_2_bar)", value: "battery_2_bar" }
+          - { label: "Battery 3 Bar (battery_3_bar)", value: "battery_3_bar" }
+          - { label: "Battery 4 Bar (battery_4_bar)", value: "battery_4_bar" }
+          - { label: "Battery 5 Bar (battery_5_bar)", value: "battery_5_bar" }
+          - { label: "Battery 6 Bar (battery_6_bar)", value: "battery_6_bar" }
+          - { label: "Battery Alert (battery_alert)", value: "battery_alert" }
+          - { label: "Battery Charging Full (battery_charging_full)", value: "battery_charging_full" }
+          - { label: "Battery Full (battery_full)", value: "battery_full" }
+          - { label: "Battery Saver (battery_saver)", value: "battery_saver" }
+          - { label: "Battery Std (battery_std)", value: "battery_std" }
+          - { label: "Battery Unknown (battery_unknown)", value: "battery_unknown" }
+          - { label: "Beach Access (beach_access)", value: "beach_access" }
+          - { label: "Bed (bed)", value: "bed" }
+          - { label: "Bedroom Baby (bedroom_baby)", value: "bedroom_baby" }
+          - { label: "Bedroom Child (bedroom_child)", value: "bedroom_child" }
+          - { label: "Bedroom Parent (bedroom_parent)", value: "bedroom_parent" }
+          - { label: "Bedtime (bedtime)", value: "bedtime" }
+          - { label: "Bedtime Off (bedtime_off)", value: "bedtime_off" }
+          - { label: "Beenhere (beenhere)", value: "beenhere" }
+          - { label: "Bento (bento)", value: "bento" }
+          - { label: "Bike Scooter (bike_scooter)", value: "bike_scooter" }
+          - { label: "Biotech (biotech)", value: "biotech" }
+          - { label: "Blender (blender)", value: "blender" }
+          - { label: "Blind (blind)", value: "blind" }
+          - { label: "Blinds (blinds)", value: "blinds" }
+          - { label: "Blinds Closed (blinds_closed)", value: "blinds_closed" }
+          - { label: "Block (block)", value: "block" }
+          - { label: "Bloodtype (bloodtype)", value: "bloodtype" }
+          - { label: "Bluetooth (bluetooth)", value: "bluetooth" }
+          - { label: "Bluetooth Audio (bluetooth_audio)", value: "bluetooth_audio" }
+          - { label: "Bluetooth Connected (bluetooth_connected)", value: "bluetooth_connected" }
+          - { label: "Bluetooth Disabled (bluetooth_disabled)", value: "bluetooth_disabled" }
+          - { label: "Bluetooth Drive (bluetooth_drive)", value: "bluetooth_drive" }
+          - { label: "Bluetooth Searching (bluetooth_searching)", value: "bluetooth_searching" }
+          - { label: "Blur Circular (blur_circular)", value: "blur_circular" }
+          - { label: "Blur Linear (blur_linear)", value: "blur_linear" }
+          - { label: "Blur Off (blur_off)", value: "blur_off" }
+          - { label: "Blur On (blur_on)", value: "blur_on" }
+          - { label: "Bolt (bolt)", value: "bolt" }
+          - { label: "Book (book)", value: "book" }
+          - { label: "Book Online (book_online)", value: "book_online" }
+          - { label: "Bookmark (bookmark)", value: "bookmark" }
+          - { label: "Bookmark Add (bookmark_add)", value: "bookmark_add" }
+          - { label: "Bookmark Added (bookmark_added)", value: "bookmark_added" }
+          - { label: "Bookmark Border (bookmark_border)", value: "bookmark_border" }
+          - { label: "Bookmark Outline (bookmark_outline)", value: "bookmark_outline" }
+          - { label: "Bookmark Remove (bookmark_remove)", value: "bookmark_remove" }
+          - { label: "Bookmarks (bookmarks)", value: "bookmarks" }
+          - { label: "Border All (border_all)", value: "border_all" }
+          - { label: "Border Bottom (border_bottom)", value: "border_bottom" }
+          - { label: "Border Clear (border_clear)", value: "border_clear" }
+          - { label: "Border Color (border_color)", value: "border_color" }
+          - { label: "Border Horizontal (border_horizontal)", value: "border_horizontal" }
+          - { label: "Border Inner (border_inner)", value: "border_inner" }
+          - { label: "Border Left (border_left)", value: "border_left" }
+          - { label: "Border Outer (border_outer)", value: "border_outer" }
+          - { label: "Border Right (border_right)", value: "border_right" }
+          - { label: "Border Style (border_style)", value: "border_style" }
+          - { label: "Border Top (border_top)", value: "border_top" }
+          - { label: "Border Vertical (border_vertical)", value: "border_vertical" }
+          - { label: "Boy (boy)", value: "boy" }
+          - { label: "Branding Watermark (branding_watermark)", value: "branding_watermark" }
+          - { label: "Breakfast Dining (breakfast_dining)", value: "breakfast_dining" }
+          - { label: "Brightness 1 (brightness_1)", value: "brightness_1" }
+          - { label: "Brightness 2 (brightness_2)", value: "brightness_2" }
+          - { label: "Brightness 3 (brightness_3)", value: "brightness_3" }
+          - { label: "Brightness 4 (brightness_4)", value: "brightness_4" }
+          - { label: "Brightness 5 (brightness_5)", value: "brightness_5" }
+          - { label: "Brightness 6 (brightness_6)", value: "brightness_6" }
+          - { label: "Brightness 7 (brightness_7)", value: "brightness_7" }
+          - { label: "Brightness Auto (brightness_auto)", value: "brightness_auto" }
+          - { label: "Brightness High (brightness_high)", value: "brightness_high" }
+          - { label: "Brightness Low (brightness_low)", value: "brightness_low" }
+          - { label: "Brightness Medium (brightness_medium)", value: "brightness_medium" }
+          - { label: "Broadcast On Home (broadcast_on_home)", value: "broadcast_on_home" }
+          - { label: "Broadcast On Personal (broadcast_on_personal)", value: "broadcast_on_personal" }
+          - { label: "Broken Image (broken_image)", value: "broken_image" }
+          - { label: "Browse Gallery (browse_gallery)", value: "browse_gallery" }
+          - { label: "Browser Not Supported (browser_not_supported)", value: "browser_not_supported" }
+          - { label: "Browser Updated (browser_updated)", value: "browser_updated" }
+          - { label: "Brunch Dining (brunch_dining)", value: "brunch_dining" }
+          - { label: "Brush (brush)", value: "brush" }
+          - { label: "Bubble Chart (bubble_chart)", value: "bubble_chart" }
+          - { label: "Bug Report (bug_report)", value: "bug_report" }
+          - { label: "Build (build)", value: "build" }
+          - { label: "Build Circle (build_circle)", value: "build_circle" }
+          - { label: "Bungalow (bungalow)", value: "bungalow" }
+          - { label: "Burst Mode (burst_mode)", value: "burst_mode" }
+          - { label: "Bus Alert (bus_alert)", value: "bus_alert" }
+          - { label: "Business (business)", value: "business" }
+          - { label: "Business Center (business_center)", value: "business_center" }
+          - { label: "Cabin (cabin)", value: "cabin" }
+          - { label: "Cable (cable)", value: "cable" }
+          - { label: "Cached (cached)", value: "cached" }
+          - { label: "Cake (cake)", value: "cake" }
+          - { label: "Calculate (calculate)", value: "calculate" }
+          - { label: "Calendar Month (calendar_month)", value: "calendar_month" }
+          - { label: "Calendar Today (calendar_today)", value: "calendar_today" }
+          - { label: "Calendar View Day (calendar_view_day)", value: "calendar_view_day" }
+          - { label: "Calendar View Month (calendar_view_month)", value: "calendar_view_month" }
+          - { label: "Calendar View Week (calendar_view_week)", value: "calendar_view_week" }
+          - { label: "Call (call)", value: "call" }
+          - { label: "Call End (call_end)", value: "call_end" }
+          - { label: "Call Made (call_made)", value: "call_made" }
+          - { label: "Call Merge (call_merge)", value: "call_merge" }
+          - { label: "Call Missed (call_missed)", value: "call_missed" }
+          - { label: "Call Missed Outgoing (call_missed_outgoing)", value: "call_missed_outgoing" }
+          - { label: "Call Received (call_received)", value: "call_received" }
+          - { label: "Call Split (call_split)", value: "call_split" }
+          - { label: "Call To Action (call_to_action)", value: "call_to_action" }
+          - { label: "Camera (camera)", value: "camera" }
+          - { label: "Camera Alt (camera_alt)", value: "camera_alt" }
+          - { label: "Camera Enhance (camera_enhance)", value: "camera_enhance" }
+          - { label: "Camera Front (camera_front)", value: "camera_front" }
+          - { label: "Camera Indoor (camera_indoor)", value: "camera_indoor" }
+          - { label: "Camera Outdoor (camera_outdoor)", value: "camera_outdoor" }
+          - { label: "Camera Rear (camera_rear)", value: "camera_rear" }
+          - { label: "Camera Roll (camera_roll)", value: "camera_roll" }
+          - { label: "Cameraswitch (cameraswitch)", value: "cameraswitch" }
           - { label: "Campaign (campaign)", value: "campaign" }
+          - { label: "Cancel (cancel)", value: "cancel" }
+          - { label: "Cancel Presentation (cancel_presentation)", value: "cancel_presentation" }
+          - { label: "Cancel Schedule Send (cancel_schedule_send)", value: "cancel_schedule_send" }
+          - { label: "Candlestick Chart (candlestick_chart)", value: "candlestick_chart" }
+          - { label: "Car Crash (car_crash)", value: "car_crash" }
+          - { label: "Car Rental (car_rental)", value: "car_rental" }
+          - { label: "Car Repair (car_repair)", value: "car_repair" }
+          - { label: "Card Giftcard (card_giftcard)", value: "card_giftcard" }
+          - { label: "Card Membership (card_membership)", value: "card_membership" }
+          - { label: "Card Travel (card_travel)", value: "card_travel" }
+          - { label: "Carpenter (carpenter)", value: "carpenter" }
+          - { label: "Cases (cases)", value: "cases" }
+          - { label: "Casino (casino)", value: "casino" }
+          - { label: "Cast (cast)", value: "cast" }
+          - { label: "Cast Connected (cast_connected)", value: "cast_connected" }
+          - { label: "Cast For Education (cast_for_education)", value: "cast_for_education" }
+          - { label: "Castle (castle)", value: "castle" }
+          - { label: "Catching Pokemon (catching_pokemon)", value: "catching_pokemon" }
+          - { label: "Category (category)", value: "category" }
+          - { label: "Celebration (celebration)", value: "celebration" }
+          - { label: "Cell Tower (cell_tower)", value: "cell_tower" }
+          - { label: "Cell Wifi (cell_wifi)", value: "cell_wifi" }
+          - { label: "Center Focus Strong (center_focus_strong)", value: "center_focus_strong" }
+          - { label: "Center Focus Weak (center_focus_weak)", value: "center_focus_weak" }
+          - { label: "Chair (chair)", value: "chair" }
+          - { label: "Chair Alt (chair_alt)", value: "chair_alt" }
+          - { label: "Chalet (chalet)", value: "chalet" }
+          - { label: "Change Circle (change_circle)", value: "change_circle" }
+          - { label: "Change History (change_history)", value: "change_history" }
+          - { label: "Charging Station (charging_station)", value: "charging_station" }
+          - { label: "Chat (chat)", value: "chat" }
+          - { label: "Chat Bubble (chat_bubble)", value: "chat_bubble" }
+          - { label: "Chat Bubble Outline (chat_bubble_outline)", value: "chat_bubble_outline" }
+          - { label: "Check (check)", value: "check" }
+          - { label: "Check Box (check_box)", value: "check_box" }
+          - { label: "Check Box Outline Blank (check_box_outline_blank)", value: "check_box_outline_blank" }
+          - { label: "Check Circle (check_circle)", value: "check_circle" }
+          - { label: "Check Circle Outline (check_circle_outline)", value: "check_circle_outline" }
           - { label: "Checklist (checklist)", value: "checklist" }
-          - { label: "Documents (description)", value: "description" }
-          - { label: "Ideas (lightbulb)", value: "lightbulb" }
-          - { label: "Awards (workspace_premium)", value: "workspace_premium" }
-          - { label: "Training (school)", value: "school" }
+          - { label: "Checklist Rtl (checklist_rtl)", value: "checklist_rtl" }
+          - { label: "Checkroom (checkroom)", value: "checkroom" }
+          - { label: "Chevron Left (chevron_left)", value: "chevron_left" }
+          - { label: "Chevron Right (chevron_right)", value: "chevron_right" }
+          - { label: "Child Care (child_care)", value: "child_care" }
+          - { label: "Child Friendly (child_friendly)", value: "child_friendly" }
+          - { label: "Chrome Reader Mode (chrome_reader_mode)", value: "chrome_reader_mode" }
+          - { label: "Church (church)", value: "church" }
+          - { label: "Circle (circle)", value: "circle" }
+          - { label: "Circle Notifications (circle_notifications)", value: "circle_notifications" }
+          - { label: "Class (class)", value: "class" }
+          - { label: "Clean Hands (clean_hands)", value: "clean_hands" }
+          - { label: "Cleaning Services (cleaning_services)", value: "cleaning_services" }
+          - { label: "Clear (clear)", value: "clear" }
+          - { label: "Clear All (clear_all)", value: "clear_all" }
+          - { label: "Close (close)", value: "close" }
+          - { label: "Close Fullscreen (close_fullscreen)", value: "close_fullscreen" }
+          - { label: "Closed Caption (closed_caption)", value: "closed_caption" }
+          - { label: "Closed Caption Disabled (closed_caption_disabled)", value: "closed_caption_disabled" }
+          - { label: "Closed Caption Off (closed_caption_off)", value: "closed_caption_off" }
+          - { label: "Cloud (cloud)", value: "cloud" }
+          - { label: "Cloud Circle (cloud_circle)", value: "cloud_circle" }
+          - { label: "Cloud Done (cloud_done)", value: "cloud_done" }
+          - { label: "Cloud Download (cloud_download)", value: "cloud_download" }
+          - { label: "Cloud Off (cloud_off)", value: "cloud_off" }
+          - { label: "Cloud Queue (cloud_queue)", value: "cloud_queue" }
+          - { label: "Cloud Sync (cloud_sync)", value: "cloud_sync" }
+          - { label: "Cloud Upload (cloud_upload)", value: "cloud_upload" }
+          - { label: "Co2 (co2)", value: "co2" }
+          - { label: "Co Present (co_present)", value: "co_present" }
+          - { label: "Code (code)", value: "code" }
+          - { label: "Code Off (code_off)", value: "code_off" }
+          - { label: "Coffee (coffee)", value: "coffee" }
+          - { label: "Coffee Maker (coffee_maker)", value: "coffee_maker" }
+          - { label: "Collections (collections)", value: "collections" }
+          - { label: "Collections Bookmark (collections_bookmark)", value: "collections_bookmark" }
+          - { label: "Color Lens (color_lens)", value: "color_lens" }
+          - { label: "Colorize (colorize)", value: "colorize" }
+          - { label: "Comment (comment)", value: "comment" }
+          - { label: "Comment Bank (comment_bank)", value: "comment_bank" }
+          - { label: "Comments Disabled (comments_disabled)", value: "comments_disabled" }
+          - { label: "Commit (commit)", value: "commit" }
+          - { label: "Commute (commute)", value: "commute" }
+          - { label: "Compare (compare)", value: "compare" }
+          - { label: "Compare Arrows (compare_arrows)", value: "compare_arrows" }
+          - { label: "Compass Calibration (compass_calibration)", value: "compass_calibration" }
+          - { label: "Compost (compost)", value: "compost" }
+          - { label: "Compress (compress)", value: "compress" }
+          - { label: "Computer (computer)", value: "computer" }
+          - { label: "Confirmation Num (confirmation_num)", value: "confirmation_num" }
+          - { label: "Confirmation Number (confirmation_number)", value: "confirmation_number" }
+          - { label: "Connect Without Contact (connect_without_contact)", value: "connect_without_contact" }
+          - { label: "Connected Tv (connected_tv)", value: "connected_tv" }
+          - { label: "Connecting Airports (connecting_airports)", value: "connecting_airports" }
+          - { label: "Construction (construction)", value: "construction" }
+          - { label: "Contact Emergency (contact_emergency)", value: "contact_emergency" }
+          - { label: "Contact Mail (contact_mail)", value: "contact_mail" }
+          - { label: "Contact Page (contact_page)", value: "contact_page" }
+          - { label: "Contact Phone (contact_phone)", value: "contact_phone" }
+          - { label: "Contact Support (contact_support)", value: "contact_support" }
+          - { label: "Contactless (contactless)", value: "contactless" }
+          - { label: "Contacts (contacts)", value: "contacts" }
+          - { label: "Content Copy (content_copy)", value: "content_copy" }
+          - { label: "Content Cut (content_cut)", value: "content_cut" }
+          - { label: "Content Paste (content_paste)", value: "content_paste" }
+          - { label: "Content Paste Go (content_paste_go)", value: "content_paste_go" }
+          - { label: "Content Paste Off (content_paste_off)", value: "content_paste_off" }
+          - { label: "Content Paste Search (content_paste_search)", value: "content_paste_search" }
+          - { label: "Contrast (contrast)", value: "contrast" }
+          - { label: "Control Camera (control_camera)", value: "control_camera" }
+          - { label: "Control Point (control_point)", value: "control_point" }
+          - { label: "Control Point Duplicate (control_point_duplicate)", value: "control_point_duplicate" }
+          - { label: "Cookie (cookie)", value: "cookie" }
+          - { label: "Copy (copy)", value: "copy" }
+          - { label: "Copy All (copy_all)", value: "copy_all" }
+          - { label: "Copyright (copyright)", value: "copyright" }
+          - { label: "Coronavirus (coronavirus)", value: "coronavirus" }
+          - { label: "Corporate Fare (corporate_fare)", value: "corporate_fare" }
+          - { label: "Cottage (cottage)", value: "cottage" }
+          - { label: "Countertops (countertops)", value: "countertops" }
+          - { label: "Create (create)", value: "create" }
+          - { label: "Create New Folder (create_new_folder)", value: "create_new_folder" }
+          - { label: "Credit Card (credit_card)", value: "credit_card" }
+          - { label: "Credit Card Off (credit_card_off)", value: "credit_card_off" }
+          - { label: "Credit Score (credit_score)", value: "credit_score" }
+          - { label: "Crib (crib)", value: "crib" }
+          - { label: "Crisis Alert (crisis_alert)", value: "crisis_alert" }
+          - { label: "Crop (crop)", value: "crop" }
+          - { label: "Crop 16 9 (crop_16_9)", value: "crop_16_9" }
+          - { label: "Crop 3 2 (crop_3_2)", value: "crop_3_2" }
+          - { label: "Crop 5 4 (crop_5_4)", value: "crop_5_4" }
+          - { label: "Crop 7 5 (crop_7_5)", value: "crop_7_5" }
+          - { label: "Crop Din (crop_din)", value: "crop_din" }
+          - { label: "Crop Free (crop_free)", value: "crop_free" }
+          - { label: "Crop Landscape (crop_landscape)", value: "crop_landscape" }
+          - { label: "Crop Original (crop_original)", value: "crop_original" }
+          - { label: "Crop Portrait (crop_portrait)", value: "crop_portrait" }
+          - { label: "Crop Rotate (crop_rotate)", value: "crop_rotate" }
+          - { label: "Crop Square (crop_square)", value: "crop_square" }
+          - { label: "Cruelty Free (cruelty_free)", value: "cruelty_free" }
+          - { label: "Css (css)", value: "css" }
+          - { label: "Currency Bitcoin (currency_bitcoin)", value: "currency_bitcoin" }
+          - { label: "Currency Exchange (currency_exchange)", value: "currency_exchange" }
+          - { label: "Currency Franc (currency_franc)", value: "currency_franc" }
+          - { label: "Currency Lira (currency_lira)", value: "currency_lira" }
+          - { label: "Currency Pound (currency_pound)", value: "currency_pound" }
+          - { label: "Currency Ruble (currency_ruble)", value: "currency_ruble" }
+          - { label: "Currency Rupee (currency_rupee)", value: "currency_rupee" }
+          - { label: "Currency Yen (currency_yen)", value: "currency_yen" }
+          - { label: "Currency Yuan (currency_yuan)", value: "currency_yuan" }
+          - { label: "Curtains (curtains)", value: "curtains" }
+          - { label: "Curtains Closed (curtains_closed)", value: "curtains_closed" }
+          - { label: "Cut (cut)", value: "cut" }
+          - { label: "Cyclone (cyclone)", value: "cyclone" }
+          - { label: "Dangerous (dangerous)", value: "dangerous" }
+          - { label: "Dark Mode (dark_mode)", value: "dark_mode" }
+          - { label: "Dashboard (dashboard)", value: "dashboard" }
+          - { label: "Dashboard Customize (dashboard_customize)", value: "dashboard_customize" }
+          - { label: "Data Array (data_array)", value: "data_array" }
+          - { label: "Data Exploration (data_exploration)", value: "data_exploration" }
+          - { label: "Data Object (data_object)", value: "data_object" }
+          - { label: "Data Saver Off (data_saver_off)", value: "data_saver_off" }
+          - { label: "Data Saver On (data_saver_on)", value: "data_saver_on" }
+          - { label: "Data Thresholding (data_thresholding)", value: "data_thresholding" }
+          - { label: "Data Usage (data_usage)", value: "data_usage" }
+          - { label: "Dataset (dataset)", value: "dataset" }
+          - { label: "Dataset Linked (dataset_linked)", value: "dataset_linked" }
+          - { label: "Date Range (date_range)", value: "date_range" }
+          - { label: "Deblur (deblur)", value: "deblur" }
+          - { label: "Deck (deck)", value: "deck" }
+          - { label: "Dehaze (dehaze)", value: "dehaze" }
+          - { label: "Delete (delete)", value: "delete" }
+          - { label: "Delete Forever (delete_forever)", value: "delete_forever" }
+          - { label: "Delete Outline (delete_outline)", value: "delete_outline" }
+          - { label: "Delete Sweep (delete_sweep)", value: "delete_sweep" }
+          - { label: "Delivery Dining (delivery_dining)", value: "delivery_dining" }
+          - { label: "Density Large (density_large)", value: "density_large" }
+          - { label: "Density Medium (density_medium)", value: "density_medium" }
+          - { label: "Density Small (density_small)", value: "density_small" }
+          - { label: "Departure Board (departure_board)", value: "departure_board" }
+          - { label: "Description (description)", value: "description" }
+          - { label: "Deselect (deselect)", value: "deselect" }
+          - { label: "Design Services (design_services)", value: "design_services" }
+          - { label: "Desk (desk)", value: "desk" }
+          - { label: "Desktop Access Disabled (desktop_access_disabled)", value: "desktop_access_disabled" }
+          - { label: "Desktop Mac (desktop_mac)", value: "desktop_mac" }
+          - { label: "Desktop Windows (desktop_windows)", value: "desktop_windows" }
+          - { label: "Details (details)", value: "details" }
+          - { label: "Developer Board (developer_board)", value: "developer_board" }
+          - { label: "Developer Board Off (developer_board_off)", value: "developer_board_off" }
+          - { label: "Developer Mode (developer_mode)", value: "developer_mode" }
+          - { label: "Device Hub (device_hub)", value: "device_hub" }
+          - { label: "Device Thermostat (device_thermostat)", value: "device_thermostat" }
+          - { label: "Device Unknown (device_unknown)", value: "device_unknown" }
+          - { label: "Devices (devices)", value: "devices" }
+          - { label: "Devices Fold (devices_fold)", value: "devices_fold" }
+          - { label: "Devices Other (devices_other)", value: "devices_other" }
+          - { label: "Dialer Sip (dialer_sip)", value: "dialer_sip" }
+          - { label: "Dialpad (dialpad)", value: "dialpad" }
+          - { label: "Diamond (diamond)", value: "diamond" }
+          - { label: "Difference (difference)", value: "difference" }
+          - { label: "Dining (dining)", value: "dining" }
+          - { label: "Dinner Dining (dinner_dining)", value: "dinner_dining" }
+          - { label: "Directions (directions)", value: "directions" }
+          - { label: "Directions Bike (directions_bike)", value: "directions_bike" }
+          - { label: "Directions Boat (directions_boat)", value: "directions_boat" }
+          - { label: "Directions Boat Filled (directions_boat_filled)", value: "directions_boat_filled" }
+          - { label: "Directions Bus (directions_bus)", value: "directions_bus" }
+          - { label: "Directions Bus Filled (directions_bus_filled)", value: "directions_bus_filled" }
+          - { label: "Directions Car (directions_car)", value: "directions_car" }
+          - { label: "Directions Car Filled (directions_car_filled)", value: "directions_car_filled" }
+          - { label: "Directions Ferry (directions_ferry)", value: "directions_ferry" }
+          - { label: "Directions Off (directions_off)", value: "directions_off" }
+          - { label: "Directions Railway (directions_railway)", value: "directions_railway" }
+          - { label: "Directions Railway Filled (directions_railway_filled)", value: "directions_railway_filled" }
+          - { label: "Directions Run (directions_run)", value: "directions_run" }
+          - { label: "Directions Subway (directions_subway)", value: "directions_subway" }
+          - { label: "Directions Subway Filled (directions_subway_filled)", value: "directions_subway_filled" }
+          - { label: "Directions Train (directions_train)", value: "directions_train" }
+          - { label: "Directions Transit (directions_transit)", value: "directions_transit" }
+          - { label: "Directions Transit Filled (directions_transit_filled)", value: "directions_transit_filled" }
+          - { label: "Directions Walk (directions_walk)", value: "directions_walk" }
+          - { label: "Dirty Lens (dirty_lens)", value: "dirty_lens" }
+          - { label: "Disabled By Default (disabled_by_default)", value: "disabled_by_default" }
+          - { label: "Disabled Visible (disabled_visible)", value: "disabled_visible" }
+          - { label: "Disc Full (disc_full)", value: "disc_full" }
+          - { label: "Discord (discord)", value: "discord" }
+          - { label: "Discount (discount)", value: "discount" }
+          - { label: "Display Settings (display_settings)", value: "display_settings" }
+          - { label: "Diversity 1 (diversity_1)", value: "diversity_1" }
+          - { label: "Diversity 2 (diversity_2)", value: "diversity_2" }
+          - { label: "Diversity 3 (diversity_3)", value: "diversity_3" }
+          - { label: "Dnd Forwardslash (dnd_forwardslash)", value: "dnd_forwardslash" }
+          - { label: "Dns (dns)", value: "dns" }
+          - { label: "Do Disturb (do_disturb)", value: "do_disturb" }
+          - { label: "Do Disturb Alt (do_disturb_alt)", value: "do_disturb_alt" }
+          - { label: "Do Disturb Off (do_disturb_off)", value: "do_disturb_off" }
+          - { label: "Do Disturb On (do_disturb_on)", value: "do_disturb_on" }
+          - { label: "Do Not Disturb (do_not_disturb)", value: "do_not_disturb" }
+          - { label: "Do Not Disturb Alt (do_not_disturb_alt)", value: "do_not_disturb_alt" }
+          - { label: "Do Not Disturb Off (do_not_disturb_off)", value: "do_not_disturb_off" }
+          - { label: "Do Not Disturb On (do_not_disturb_on)", value: "do_not_disturb_on" }
+          - { label: "Do Not Disturb On Total Silence (do_not_disturb_on_total_silence)", value: "do_not_disturb_on_total_silence" }
+          - { label: "Do Not Step (do_not_step)", value: "do_not_step" }
+          - { label: "Do Not Touch (do_not_touch)", value: "do_not_touch" }
+          - { label: "Dock (dock)", value: "dock" }
+          - { label: "Document Scanner (document_scanner)", value: "document_scanner" }
+          - { label: "Domain (domain)", value: "domain" }
+          - { label: "Domain Add (domain_add)", value: "domain_add" }
+          - { label: "Domain Disabled (domain_disabled)", value: "domain_disabled" }
+          - { label: "Domain Verification (domain_verification)", value: "domain_verification" }
+          - { label: "Done (done)", value: "done" }
+          - { label: "Done All (done_all)", value: "done_all" }
+          - { label: "Done Outline (done_outline)", value: "done_outline" }
+          - { label: "Donut Large (donut_large)", value: "donut_large" }
+          - { label: "Donut Small (donut_small)", value: "donut_small" }
+          - { label: "Door Back (door_back)", value: "door_back" }
+          - { label: "Door Front (door_front)", value: "door_front" }
+          - { label: "Door Sliding (door_sliding)", value: "door_sliding" }
+          - { label: "Doorbell (doorbell)", value: "doorbell" }
+          - { label: "Double Arrow (double_arrow)", value: "double_arrow" }
+          - { label: "Downhill Skiing (downhill_skiing)", value: "downhill_skiing" }
+          - { label: "Download (download)", value: "download" }
+          - { label: "Download Done (download_done)", value: "download_done" }
+          - { label: "Download For Offline (download_for_offline)", value: "download_for_offline" }
+          - { label: "Downloading (downloading)", value: "downloading" }
+          - { label: "Drafts (drafts)", value: "drafts" }
+          - { label: "Drag Handle (drag_handle)", value: "drag_handle" }
+          - { label: "Drag Indicator (drag_indicator)", value: "drag_indicator" }
+          - { label: "Draw (draw)", value: "draw" }
+          - { label: "Drive Eta (drive_eta)", value: "drive_eta" }
+          - { label: "Drive File Move (drive_file_move)", value: "drive_file_move" }
+          - { label: "Drive File Move Rtl (drive_file_move_rtl)", value: "drive_file_move_rtl" }
+          - { label: "Drive File Rename Outline (drive_file_rename_outline)", value: "drive_file_rename_outline" }
+          - { label: "Drive Folder Upload (drive_folder_upload)", value: "drive_folder_upload" }
+          - { label: "Dry (dry)", value: "dry" }
+          - { label: "Dry Cleaning (dry_cleaning)", value: "dry_cleaning" }
+          - { label: "Duo (duo)", value: "duo" }
+          - { label: "Dvr (dvr)", value: "dvr" }
+          - { label: "Dynamic Feed (dynamic_feed)", value: "dynamic_feed" }
+          - { label: "Dynamic Form (dynamic_form)", value: "dynamic_form" }
+          - { label: "E Mobiledata (e_mobiledata)", value: "e_mobiledata" }
+          - { label: "Earbuds (earbuds)", value: "earbuds" }
+          - { label: "Earbuds Battery (earbuds_battery)", value: "earbuds_battery" }
+          - { label: "East (east)", value: "east" }
+          - { label: "Eco (eco)", value: "eco" }
+          - { label: "Edgesensor High (edgesensor_high)", value: "edgesensor_high" }
+          - { label: "Edgesensor Low (edgesensor_low)", value: "edgesensor_low" }
+          - { label: "Edit (edit)", value: "edit" }
+          - { label: "Edit Attributes (edit_attributes)", value: "edit_attributes" }
+          - { label: "Edit Calendar (edit_calendar)", value: "edit_calendar" }
+          - { label: "Edit Location (edit_location)", value: "edit_location" }
+          - { label: "Edit Location Alt (edit_location_alt)", value: "edit_location_alt" }
+          - { label: "Edit Note (edit_note)", value: "edit_note" }
+          - { label: "Edit Notifications (edit_notifications)", value: "edit_notifications" }
+          - { label: "Edit Off (edit_off)", value: "edit_off" }
+          - { label: "Edit Road (edit_road)", value: "edit_road" }
+          - { label: "Egg (egg)", value: "egg" }
+          - { label: "Egg Alt (egg_alt)", value: "egg_alt" }
+          - { label: "Eject (eject)", value: "eject" }
+          - { label: "Elderly (elderly)", value: "elderly" }
+          - { label: "Elderly Woman (elderly_woman)", value: "elderly_woman" }
+          - { label: "Electric Bike (electric_bike)", value: "electric_bike" }
+          - { label: "Electric Bolt (electric_bolt)", value: "electric_bolt" }
+          - { label: "Electric Car (electric_car)", value: "electric_car" }
+          - { label: "Electric Meter (electric_meter)", value: "electric_meter" }
+          - { label: "Electric Moped (electric_moped)", value: "electric_moped" }
+          - { label: "Electric Rickshaw (electric_rickshaw)", value: "electric_rickshaw" }
+          - { label: "Electric Scooter (electric_scooter)", value: "electric_scooter" }
+          - { label: "Electrical Services (electrical_services)", value: "electrical_services" }
+          - { label: "Elevator (elevator)", value: "elevator" }
+          - { label: "Email (email)", value: "email" }
+          - { label: "Emergency (emergency)", value: "emergency" }
+          - { label: "Emergency Recording (emergency_recording)", value: "emergency_recording" }
+          - { label: "Emergency Share (emergency_share)", value: "emergency_share" }
+          - { label: "Emoji Emotions (emoji_emotions)", value: "emoji_emotions" }
+          - { label: "Emoji Events (emoji_events)", value: "emoji_events" }
+          - { label: "Emoji Flags (emoji_flags)", value: "emoji_flags" }
+          - { label: "Emoji Food Beverage (emoji_food_beverage)", value: "emoji_food_beverage" }
+          - { label: "Emoji Nature (emoji_nature)", value: "emoji_nature" }
+          - { label: "Emoji Objects (emoji_objects)", value: "emoji_objects" }
+          - { label: "Emoji People (emoji_people)", value: "emoji_people" }
+          - { label: "Emoji Symbols (emoji_symbols)", value: "emoji_symbols" }
+          - { label: "Emoji Transportation (emoji_transportation)", value: "emoji_transportation" }
+          - { label: "Energy Savings Leaf (energy_savings_leaf)", value: "energy_savings_leaf" }
+          - { label: "Engineering (engineering)", value: "engineering" }
+          - { label: "Enhance Photo Translate (enhance_photo_translate)", value: "enhance_photo_translate" }
+          - { label: "Enhanced Encryption (enhanced_encryption)", value: "enhanced_encryption" }
+          - { label: "Equalizer (equalizer)", value: "equalizer" }
+          - { label: "Error (error)", value: "error" }
+          - { label: "Error Outline (error_outline)", value: "error_outline" }
+          - { label: "Escalator (escalator)", value: "escalator" }
+          - { label: "Escalator Warning (escalator_warning)", value: "escalator_warning" }
+          - { label: "Euro (euro)", value: "euro" }
+          - { label: "Euro Symbol (euro_symbol)", value: "euro_symbol" }
+          - { label: "Ev Station (ev_station)", value: "ev_station" }
+          - { label: "Event (event)", value: "event" }
+          - { label: "Event Available (event_available)", value: "event_available" }
+          - { label: "Event Busy (event_busy)", value: "event_busy" }
+          - { label: "Event Note (event_note)", value: "event_note" }
+          - { label: "Event Repeat (event_repeat)", value: "event_repeat" }
+          - { label: "Event Seat (event_seat)", value: "event_seat" }
+          - { label: "Exit To App (exit_to_app)", value: "exit_to_app" }
+          - { label: "Expand (expand)", value: "expand" }
+          - { label: "Expand Circle Down (expand_circle_down)", value: "expand_circle_down" }
+          - { label: "Expand Less (expand_less)", value: "expand_less" }
+          - { label: "Expand More (expand_more)", value: "expand_more" }
+          - { label: "Explicit (explicit)", value: "explicit" }
+          - { label: "Explore (explore)", value: "explore" }
+          - { label: "Explore Off (explore_off)", value: "explore_off" }
+          - { label: "Exposure (exposure)", value: "exposure" }
+          - { label: "Exposure Minus 1 (exposure_minus_1)", value: "exposure_minus_1" }
+          - { label: "Exposure Minus 2 (exposure_minus_2)", value: "exposure_minus_2" }
+          - { label: "Exposure Neg 1 (exposure_neg_1)", value: "exposure_neg_1" }
+          - { label: "Exposure Neg 2 (exposure_neg_2)", value: "exposure_neg_2" }
+          - { label: "Exposure Plus 1 (exposure_plus_1)", value: "exposure_plus_1" }
+          - { label: "Exposure Plus 2 (exposure_plus_2)", value: "exposure_plus_2" }
+          - { label: "Exposure Zero (exposure_zero)", value: "exposure_zero" }
+          - { label: "Extension (extension)", value: "extension" }
+          - { label: "Extension Off (extension_off)", value: "extension_off" }
+          - { label: "Face (face)", value: "face" }
+          - { label: "Face 2 (face_2)", value: "face_2" }
+          - { label: "Face 3 (face_3)", value: "face_3" }
+          - { label: "Face 4 (face_4)", value: "face_4" }
+          - { label: "Face 5 (face_5)", value: "face_5" }
+          - { label: "Face 6 (face_6)", value: "face_6" }
+          - { label: "Face Retouching Natural (face_retouching_natural)", value: "face_retouching_natural" }
+          - { label: "Face Retouching Off (face_retouching_off)", value: "face_retouching_off" }
+          - { label: "Face Unlock (face_unlock)", value: "face_unlock" }
+          - { label: "Facebook (facebook)", value: "facebook" }
+          - { label: "Fact Check (fact_check)", value: "fact_check" }
+          - { label: "Factory (factory)", value: "factory" }
+          - { label: "Family Restroom (family_restroom)", value: "family_restroom" }
+          - { label: "Fast Forward (fast_forward)", value: "fast_forward" }
+          - { label: "Fast Rewind (fast_rewind)", value: "fast_rewind" }
+          - { label: "Fastfood (fastfood)", value: "fastfood" }
+          - { label: "Favorite (favorite)", value: "favorite" }
+          - { label: "Favorite Border (favorite_border)", value: "favorite_border" }
+          - { label: "Favorite Outline (favorite_outline)", value: "favorite_outline" }
+          - { label: "Fax (fax)", value: "fax" }
+          - { label: "Featured Play List (featured_play_list)", value: "featured_play_list" }
+          - { label: "Featured Video (featured_video)", value: "featured_video" }
+          - { label: "Feed (feed)", value: "feed" }
+          - { label: "Feedback (feedback)", value: "feedback" }
+          - { label: "Female (female)", value: "female" }
+          - { label: "Fence (fence)", value: "fence" }
+          - { label: "Festival (festival)", value: "festival" }
+          - { label: "Fiber Dvr (fiber_dvr)", value: "fiber_dvr" }
+          - { label: "Fiber Manual Record (fiber_manual_record)", value: "fiber_manual_record" }
+          - { label: "Fiber New (fiber_new)", value: "fiber_new" }
+          - { label: "Fiber Pin (fiber_pin)", value: "fiber_pin" }
+          - { label: "Fiber Smart Record (fiber_smart_record)", value: "fiber_smart_record" }
+          - { label: "File Copy (file_copy)", value: "file_copy" }
+          - { label: "File Download (file_download)", value: "file_download" }
+          - { label: "File Download Done (file_download_done)", value: "file_download_done" }
+          - { label: "File Download Off (file_download_off)", value: "file_download_off" }
+          - { label: "File Open (file_open)", value: "file_open" }
+          - { label: "File Present (file_present)", value: "file_present" }
+          - { label: "File Upload (file_upload)", value: "file_upload" }
+          - { label: "Filter (filter)", value: "filter" }
+          - { label: "Filter 1 (filter_1)", value: "filter_1" }
+          - { label: "Filter 2 (filter_2)", value: "filter_2" }
+          - { label: "Filter 3 (filter_3)", value: "filter_3" }
+          - { label: "Filter 4 (filter_4)", value: "filter_4" }
+          - { label: "Filter 5 (filter_5)", value: "filter_5" }
+          - { label: "Filter 6 (filter_6)", value: "filter_6" }
+          - { label: "Filter 7 (filter_7)", value: "filter_7" }
+          - { label: "Filter 8 (filter_8)", value: "filter_8" }
+          - { label: "Filter 9 (filter_9)", value: "filter_9" }
+          - { label: "Filter 9 Plus (filter_9_plus)", value: "filter_9_plus" }
+          - { label: "Filter Alt (filter_alt)", value: "filter_alt" }
+          - { label: "Filter Alt Off (filter_alt_off)", value: "filter_alt_off" }
+          - { label: "Filter B And W (filter_b_and_w)", value: "filter_b_and_w" }
+          - { label: "Filter Center Focus (filter_center_focus)", value: "filter_center_focus" }
+          - { label: "Filter Drama (filter_drama)", value: "filter_drama" }
+          - { label: "Filter Frames (filter_frames)", value: "filter_frames" }
+          - { label: "Filter Hdr (filter_hdr)", value: "filter_hdr" }
+          - { label: "Filter List (filter_list)", value: "filter_list" }
+          - { label: "Filter List Off (filter_list_off)", value: "filter_list_off" }
+          - { label: "Filter None (filter_none)", value: "filter_none" }
+          - { label: "Filter Tilt Shift (filter_tilt_shift)", value: "filter_tilt_shift" }
+          - { label: "Filter Vintage (filter_vintage)", value: "filter_vintage" }
+          - { label: "Find In Page (find_in_page)", value: "find_in_page" }
+          - { label: "Find Replace (find_replace)", value: "find_replace" }
+          - { label: "Fingerprint (fingerprint)", value: "fingerprint" }
+          - { label: "Fire Extinguisher (fire_extinguisher)", value: "fire_extinguisher" }
+          - { label: "Fire Hydrant Alt (fire_hydrant_alt)", value: "fire_hydrant_alt" }
+          - { label: "Fire Truck (fire_truck)", value: "fire_truck" }
+          - { label: "Fireplace (fireplace)", value: "fireplace" }
+          - { label: "First Page (first_page)", value: "first_page" }
+          - { label: "Fit Screen (fit_screen)", value: "fit_screen" }
+          - { label: "Fitbit (fitbit)", value: "fitbit" }
+          - { label: "Fitness Center (fitness_center)", value: "fitness_center" }
+          - { label: "Flag (flag)", value: "flag" }
+          - { label: "Flag Circle (flag_circle)", value: "flag_circle" }
+          - { label: "Flaky (flaky)", value: "flaky" }
+          - { label: "Flare (flare)", value: "flare" }
+          - { label: "Flash Auto (flash_auto)", value: "flash_auto" }
+          - { label: "Flash Off (flash_off)", value: "flash_off" }
+          - { label: "Flash On (flash_on)", value: "flash_on" }
+          - { label: "Flashlight Off (flashlight_off)", value: "flashlight_off" }
+          - { label: "Flashlight On (flashlight_on)", value: "flashlight_on" }
+          - { label: "Flatware (flatware)", value: "flatware" }
+          - { label: "Flight (flight)", value: "flight" }
+          - { label: "Flight Class (flight_class)", value: "flight_class" }
+          - { label: "Flight Land (flight_land)", value: "flight_land" }
+          - { label: "Flight Takeoff (flight_takeoff)", value: "flight_takeoff" }
+          - { label: "Flip (flip)", value: "flip" }
+          - { label: "Flip Camera Android (flip_camera_android)", value: "flip_camera_android" }
+          - { label: "Flip Camera Ios (flip_camera_ios)", value: "flip_camera_ios" }
+          - { label: "Flip To Back (flip_to_back)", value: "flip_to_back" }
+          - { label: "Flip To Front (flip_to_front)", value: "flip_to_front" }
+          - { label: "Flood (flood)", value: "flood" }
+          - { label: "Flourescent (flourescent)", value: "flourescent" }
+          - { label: "Fluorescent (fluorescent)", value: "fluorescent" }
+          - { label: "Flutter Dash (flutter_dash)", value: "flutter_dash" }
+          - { label: "Fmd Bad (fmd_bad)", value: "fmd_bad" }
+          - { label: "Fmd Good (fmd_good)", value: "fmd_good" }
+          - { label: "Folder (folder)", value: "folder" }
+          - { label: "Folder Copy (folder_copy)", value: "folder_copy" }
+          - { label: "Folder Delete (folder_delete)", value: "folder_delete" }
+          - { label: "Folder Off (folder_off)", value: "folder_off" }
+          - { label: "Folder Open (folder_open)", value: "folder_open" }
+          - { label: "Folder Shared (folder_shared)", value: "folder_shared" }
+          - { label: "Folder Special (folder_special)", value: "folder_special" }
+          - { label: "Folder Zip (folder_zip)", value: "folder_zip" }
+          - { label: "Follow The Signs (follow_the_signs)", value: "follow_the_signs" }
+          - { label: "Font Download (font_download)", value: "font_download" }
+          - { label: "Font Download Off (font_download_off)", value: "font_download_off" }
+          - { label: "Food Bank (food_bank)", value: "food_bank" }
+          - { label: "Forest (forest)", value: "forest" }
+          - { label: "Fork Left (fork_left)", value: "fork_left" }
+          - { label: "Fork Right (fork_right)", value: "fork_right" }
+          - { label: "Format Align Center (format_align_center)", value: "format_align_center" }
+          - { label: "Format Align Justify (format_align_justify)", value: "format_align_justify" }
+          - { label: "Format Align Left (format_align_left)", value: "format_align_left" }
+          - { label: "Format Align Right (format_align_right)", value: "format_align_right" }
+          - { label: "Format Bold (format_bold)", value: "format_bold" }
+          - { label: "Format Clear (format_clear)", value: "format_clear" }
+          - { label: "Format Color Fill (format_color_fill)", value: "format_color_fill" }
+          - { label: "Format Color Reset (format_color_reset)", value: "format_color_reset" }
+          - { label: "Format Color Text (format_color_text)", value: "format_color_text" }
+          - { label: "Format Indent Decrease (format_indent_decrease)", value: "format_indent_decrease" }
+          - { label: "Format Indent Increase (format_indent_increase)", value: "format_indent_increase" }
+          - { label: "Format Italic (format_italic)", value: "format_italic" }
+          - { label: "Format Line Spacing (format_line_spacing)", value: "format_line_spacing" }
+          - { label: "Format List Bulleted (format_list_bulleted)", value: "format_list_bulleted" }
+          - { label: "Format List Numbered (format_list_numbered)", value: "format_list_numbered" }
+          - { label: "Format List Numbered Rtl (format_list_numbered_rtl)", value: "format_list_numbered_rtl" }
+          - { label: "Format Overline (format_overline)", value: "format_overline" }
+          - { label: "Format Paint (format_paint)", value: "format_paint" }
+          - { label: "Format Quote (format_quote)", value: "format_quote" }
+          - { label: "Format Shapes (format_shapes)", value: "format_shapes" }
+          - { label: "Format Size (format_size)", value: "format_size" }
+          - { label: "Format Strikethrough (format_strikethrough)", value: "format_strikethrough" }
+          - { label: "Format Textdirection L To R (format_textdirection_l_to_r)", value: "format_textdirection_l_to_r" }
+          - { label: "Format Textdirection R To L (format_textdirection_r_to_l)", value: "format_textdirection_r_to_l" }
+          - { label: "Format Underline (format_underline)", value: "format_underline" }
+          - { label: "Format Underlined (format_underlined)", value: "format_underlined" }
+          - { label: "Fort (fort)", value: "fort" }
+          - { label: "Forum (forum)", value: "forum" }
+          - { label: "Forward (forward)", value: "forward" }
+          - { label: "Forward 10 (forward_10)", value: "forward_10" }
+          - { label: "Forward 30 (forward_30)", value: "forward_30" }
+          - { label: "Forward 5 (forward_5)", value: "forward_5" }
+          - { label: "Forward To Inbox (forward_to_inbox)", value: "forward_to_inbox" }
+          - { label: "Foundation (foundation)", value: "foundation" }
+          - { label: "Free Breakfast (free_breakfast)", value: "free_breakfast" }
+          - { label: "Free Cancellation (free_cancellation)", value: "free_cancellation" }
+          - { label: "Front Hand (front_hand)", value: "front_hand" }
+          - { label: "Fullscreen (fullscreen)", value: "fullscreen" }
+          - { label: "Fullscreen Exit (fullscreen_exit)", value: "fullscreen_exit" }
+          - { label: "Functions (functions)", value: "functions" }
+          - { label: "G Mobiledata (g_mobiledata)", value: "g_mobiledata" }
+          - { label: "G Translate (g_translate)", value: "g_translate" }
+          - { label: "Gamepad (gamepad)", value: "gamepad" }
+          - { label: "Games (games)", value: "games" }
+          - { label: "Garage (garage)", value: "garage" }
+          - { label: "Gas Meter (gas_meter)", value: "gas_meter" }
+          - { label: "Gavel (gavel)", value: "gavel" }
+          - { label: "Generating Tokens (generating_tokens)", value: "generating_tokens" }
+          - { label: "Gesture (gesture)", value: "gesture" }
+          - { label: "Get App (get_app)", value: "get_app" }
+          - { label: "Gif (gif)", value: "gif" }
+          - { label: "Gif Box (gif_box)", value: "gif_box" }
+          - { label: "Girl (girl)", value: "girl" }
+          - { label: "Gite (gite)", value: "gite" }
+          - { label: "Golf Course (golf_course)", value: "golf_course" }
+          - { label: "Gpp Bad (gpp_bad)", value: "gpp_bad" }
+          - { label: "Gpp Good (gpp_good)", value: "gpp_good" }
+          - { label: "Gpp Maybe (gpp_maybe)", value: "gpp_maybe" }
+          - { label: "Gps Fixed (gps_fixed)", value: "gps_fixed" }
+          - { label: "Gps Not Fixed (gps_not_fixed)", value: "gps_not_fixed" }
+          - { label: "Gps Off (gps_off)", value: "gps_off" }
+          - { label: "Grade (grade)", value: "grade" }
+          - { label: "Gradient (gradient)", value: "gradient" }
+          - { label: "Grading (grading)", value: "grading" }
+          - { label: "Grain (grain)", value: "grain" }
+          - { label: "Graphic Eq (graphic_eq)", value: "graphic_eq" }
+          - { label: "Grass (grass)", value: "grass" }
+          - { label: "Grid 3x3 (grid_3x3)", value: "grid_3x3" }
+          - { label: "Grid 4x4 (grid_4x4)", value: "grid_4x4" }
+          - { label: "Grid Goldenratio (grid_goldenratio)", value: "grid_goldenratio" }
+          - { label: "Grid Off (grid_off)", value: "grid_off" }
+          - { label: "Grid On (grid_on)", value: "grid_on" }
+          - { label: "Grid View (grid_view)", value: "grid_view" }
+          - { label: "Group (group)", value: "group" }
+          - { label: "Group Add (group_add)", value: "group_add" }
+          - { label: "Group Off (group_off)", value: "group_off" }
+          - { label: "Group Remove (group_remove)", value: "group_remove" }
+          - { label: "Group Work (group_work)", value: "group_work" }
+          - { label: "Groups (groups)", value: "groups" }
+          - { label: "Groups 2 (groups_2)", value: "groups_2" }
+          - { label: "Groups 3 (groups_3)", value: "groups_3" }
+          - { label: "H Mobiledata (h_mobiledata)", value: "h_mobiledata" }
+          - { label: "H Plus Mobiledata (h_plus_mobiledata)", value: "h_plus_mobiledata" }
+          - { label: "Hail (hail)", value: "hail" }
+          - { label: "Handshake (handshake)", value: "handshake" }
+          - { label: "Handyman (handyman)", value: "handyman" }
+          - { label: "Hardware (hardware)", value: "hardware" }
+          - { label: "Hd (hd)", value: "hd" }
+          - { label: "Hdr Auto (hdr_auto)", value: "hdr_auto" }
+          - { label: "Hdr Auto Select (hdr_auto_select)", value: "hdr_auto_select" }
+          - { label: "Hdr Enhanced Select (hdr_enhanced_select)", value: "hdr_enhanced_select" }
+          - { label: "Hdr Off (hdr_off)", value: "hdr_off" }
+          - { label: "Hdr Off Select (hdr_off_select)", value: "hdr_off_select" }
+          - { label: "Hdr On (hdr_on)", value: "hdr_on" }
+          - { label: "Hdr On Select (hdr_on_select)", value: "hdr_on_select" }
+          - { label: "Hdr Plus (hdr_plus)", value: "hdr_plus" }
+          - { label: "Hdr Strong (hdr_strong)", value: "hdr_strong" }
+          - { label: "Hdr Weak (hdr_weak)", value: "hdr_weak" }
+          - { label: "Headphones (headphones)", value: "headphones" }
+          - { label: "Headphones Battery (headphones_battery)", value: "headphones_battery" }
+          - { label: "Headset (headset)", value: "headset" }
+          - { label: "Headset Mic (headset_mic)", value: "headset_mic" }
+          - { label: "Headset Off (headset_off)", value: "headset_off" }
+          - { label: "Healing (healing)", value: "healing" }
+          - { label: "Health And Safety (health_and_safety)", value: "health_and_safety" }
+          - { label: "Hearing (hearing)", value: "hearing" }
+          - { label: "Hearing Disabled (hearing_disabled)", value: "hearing_disabled" }
+          - { label: "Heart Broken (heart_broken)", value: "heart_broken" }
+          - { label: "Heat Pump (heat_pump)", value: "heat_pump" }
+          - { label: "Height (height)", value: "height" }
+          - { label: "Help (help)", value: "help" }
+          - { label: "Help Center (help_center)", value: "help_center" }
+          - { label: "Help Outline (help_outline)", value: "help_outline" }
+          - { label: "Hevc (hevc)", value: "hevc" }
+          - { label: "Hexagon (hexagon)", value: "hexagon" }
+          - { label: "Hide Image (hide_image)", value: "hide_image" }
+          - { label: "Hide Source (hide_source)", value: "hide_source" }
+          - { label: "High Quality (high_quality)", value: "high_quality" }
+          - { label: "Highlight (highlight)", value: "highlight" }
+          - { label: "Highlight Alt (highlight_alt)", value: "highlight_alt" }
+          - { label: "Highlight Off (highlight_off)", value: "highlight_off" }
+          - { label: "Highlight Remove (highlight_remove)", value: "highlight_remove" }
+          - { label: "Hiking (hiking)", value: "hiking" }
+          - { label: "History (history)", value: "history" }
+          - { label: "History Edu (history_edu)", value: "history_edu" }
+          - { label: "History Toggle Off (history_toggle_off)", value: "history_toggle_off" }
+          - { label: "Hive (hive)", value: "hive" }
+          - { label: "Hls (hls)", value: "hls" }
+          - { label: "Hls Off (hls_off)", value: "hls_off" }
+          - { label: "Holiday Village (holiday_village)", value: "holiday_village" }
+          - { label: "Home (home)", value: "home" }
+          - { label: "Home Max (home_max)", value: "home_max" }
+          - { label: "Home Mini (home_mini)", value: "home_mini" }
+          - { label: "Home Repair Service (home_repair_service)", value: "home_repair_service" }
+          - { label: "Home Work (home_work)", value: "home_work" }
+          - { label: "Horizontal Distribute (horizontal_distribute)", value: "horizontal_distribute" }
+          - { label: "Horizontal Rule (horizontal_rule)", value: "horizontal_rule" }
+          - { label: "Horizontal Split (horizontal_split)", value: "horizontal_split" }
+          - { label: "Hot Tub (hot_tub)", value: "hot_tub" }
+          - { label: "Hotel (hotel)", value: "hotel" }
+          - { label: "Hotel Class (hotel_class)", value: "hotel_class" }
+          - { label: "Hourglass Bottom (hourglass_bottom)", value: "hourglass_bottom" }
+          - { label: "Hourglass Disabled (hourglass_disabled)", value: "hourglass_disabled" }
+          - { label: "Hourglass Empty (hourglass_empty)", value: "hourglass_empty" }
+          - { label: "Hourglass Full (hourglass_full)", value: "hourglass_full" }
+          - { label: "Hourglass Top (hourglass_top)", value: "hourglass_top" }
+          - { label: "House (house)", value: "house" }
+          - { label: "House Siding (house_siding)", value: "house_siding" }
+          - { label: "Houseboat (houseboat)", value: "houseboat" }
+          - { label: "How To Reg (how_to_reg)", value: "how_to_reg" }
+          - { label: "How To Vote (how_to_vote)", value: "how_to_vote" }
+          - { label: "Html (html)", value: "html" }
+          - { label: "Http (http)", value: "http" }
+          - { label: "Https (https)", value: "https" }
+          - { label: "Hub (hub)", value: "hub" }
+          - { label: "Hvac (hvac)", value: "hvac" }
+          - { label: "Ice Skating (ice_skating)", value: "ice_skating" }
+          - { label: "Icecream (icecream)", value: "icecream" }
+          - { label: "Image (image)", value: "image" }
+          - { label: "Image Aspect Ratio (image_aspect_ratio)", value: "image_aspect_ratio" }
+          - { label: "Image Not Supported (image_not_supported)", value: "image_not_supported" }
+          - { label: "Image Search (image_search)", value: "image_search" }
+          - { label: "Imagesearch Roller (imagesearch_roller)", value: "imagesearch_roller" }
+          - { label: "Import Contacts (import_contacts)", value: "import_contacts" }
+          - { label: "Import Export (import_export)", value: "import_export" }
+          - { label: "Important Devices (important_devices)", value: "important_devices" }
+          - { label: "Inbox (inbox)", value: "inbox" }
+          - { label: "Incomplete Circle (incomplete_circle)", value: "incomplete_circle" }
+          - { label: "Indeterminate Check Box (indeterminate_check_box)", value: "indeterminate_check_box" }
+          - { label: "Info (info)", value: "info" }
+          - { label: "Input (input)", value: "input" }
+          - { label: "Insert Chart (insert_chart)", value: "insert_chart" }
+          - { label: "Insert Chart Outlined (insert_chart_outlined)", value: "insert_chart_outlined" }
+          - { label: "Insert Comment (insert_comment)", value: "insert_comment" }
+          - { label: "Insert Drive File (insert_drive_file)", value: "insert_drive_file" }
+          - { label: "Insert Emoticon (insert_emoticon)", value: "insert_emoticon" }
+          - { label: "Insert Invitation (insert_invitation)", value: "insert_invitation" }
+          - { label: "Insert Link (insert_link)", value: "insert_link" }
+          - { label: "Insert Page Break (insert_page_break)", value: "insert_page_break" }
+          - { label: "Insert Photo (insert_photo)", value: "insert_photo" }
           - { label: "Insights (insights)", value: "insights" }
-          - { label: "Community (diversity_3)", value: "diversity_3" }
+          - { label: "Install Desktop (install_desktop)", value: "install_desktop" }
+          - { label: "Install Mobile (install_mobile)", value: "install_mobile" }
+          - { label: "Integration Instructions (integration_instructions)", value: "integration_instructions" }
+          - { label: "Interests (interests)", value: "interests" }
+          - { label: "Interpreter Mode (interpreter_mode)", value: "interpreter_mode" }
+          - { label: "Inventory (inventory)", value: "inventory" }
+          - { label: "Inventory 2 (inventory_2)", value: "inventory_2" }
+          - { label: "Invert Colors (invert_colors)", value: "invert_colors" }
+          - { label: "Invert Colors Off (invert_colors_off)", value: "invert_colors_off" }
+          - { label: "Invert Colors On (invert_colors_on)", value: "invert_colors_on" }
+          - { label: "Ios Share (ios_share)", value: "ios_share" }
+          - { label: "Iron (iron)", value: "iron" }
+          - { label: "Iso (iso)", value: "iso" }
+          - { label: "Javascript (javascript)", value: "javascript" }
+          - { label: "Join Full (join_full)", value: "join_full" }
+          - { label: "Join Inner (join_inner)", value: "join_inner" }
+          - { label: "Join Left (join_left)", value: "join_left" }
+          - { label: "Join Right (join_right)", value: "join_right" }
+          - { label: "Kayaking (kayaking)", value: "kayaking" }
+          - { label: "Kebab Dining (kebab_dining)", value: "kebab_dining" }
+          - { label: "Key (key)", value: "key" }
+          - { label: "Key Off (key_off)", value: "key_off" }
+          - { label: "Keyboard (keyboard)", value: "keyboard" }
+          - { label: "Keyboard Alt (keyboard_alt)", value: "keyboard_alt" }
+          - { label: "Keyboard Arrow Down (keyboard_arrow_down)", value: "keyboard_arrow_down" }
+          - { label: "Keyboard Arrow Left (keyboard_arrow_left)", value: "keyboard_arrow_left" }
+          - { label: "Keyboard Arrow Right (keyboard_arrow_right)", value: "keyboard_arrow_right" }
+          - { label: "Keyboard Arrow Up (keyboard_arrow_up)", value: "keyboard_arrow_up" }
+          - { label: "Keyboard Backspace (keyboard_backspace)", value: "keyboard_backspace" }
+          - { label: "Keyboard Capslock (keyboard_capslock)", value: "keyboard_capslock" }
+          - { label: "Keyboard Command Key (keyboard_command_key)", value: "keyboard_command_key" }
+          - { label: "Keyboard Control (keyboard_control)", value: "keyboard_control" }
+          - { label: "Keyboard Control Key (keyboard_control_key)", value: "keyboard_control_key" }
+          - { label: "Keyboard Double Arrow Down (keyboard_double_arrow_down)", value: "keyboard_double_arrow_down" }
+          - { label: "Keyboard Double Arrow Left (keyboard_double_arrow_left)", value: "keyboard_double_arrow_left" }
+          - { label: "Keyboard Double Arrow Right (keyboard_double_arrow_right)", value: "keyboard_double_arrow_right" }
+          - { label: "Keyboard Double Arrow Up (keyboard_double_arrow_up)", value: "keyboard_double_arrow_up" }
+          - { label: "Keyboard Hide (keyboard_hide)", value: "keyboard_hide" }
+          - { label: "Keyboard Option Key (keyboard_option_key)", value: "keyboard_option_key" }
+          - { label: "Keyboard Return (keyboard_return)", value: "keyboard_return" }
+          - { label: "Keyboard Tab (keyboard_tab)", value: "keyboard_tab" }
+          - { label: "Keyboard Voice (keyboard_voice)", value: "keyboard_voice" }
+          - { label: "King Bed (king_bed)", value: "king_bed" }
+          - { label: "Kitchen (kitchen)", value: "kitchen" }
+          - { label: "Kitesurfing (kitesurfing)", value: "kitesurfing" }
+          - { label: "Label (label)", value: "label" }
+          - { label: "Label Important (label_important)", value: "label_important" }
+          - { label: "Label Off (label_off)", value: "label_off" }
+          - { label: "Lan (lan)", value: "lan" }
+          - { label: "Landscape (landscape)", value: "landscape" }
+          - { label: "Landslide (landslide)", value: "landslide" }
+          - { label: "Language (language)", value: "language" }
+          - { label: "Laptop (laptop)", value: "laptop" }
+          - { label: "Laptop Chromebook (laptop_chromebook)", value: "laptop_chromebook" }
+          - { label: "Laptop Mac (laptop_mac)", value: "laptop_mac" }
+          - { label: "Laptop Windows (laptop_windows)", value: "laptop_windows" }
+          - { label: "Last Page (last_page)", value: "last_page" }
+          - { label: "Launch (launch)", value: "launch" }
+          - { label: "Layers (layers)", value: "layers" }
+          - { label: "Layers Clear (layers_clear)", value: "layers_clear" }
+          - { label: "Leaderboard (leaderboard)", value: "leaderboard" }
+          - { label: "Leak Add (leak_add)", value: "leak_add" }
+          - { label: "Leak Remove (leak_remove)", value: "leak_remove" }
+          - { label: "Leave Bags At Home (leave_bags_at_home)", value: "leave_bags_at_home" }
+          - { label: "Legend Toggle (legend_toggle)", value: "legend_toggle" }
+          - { label: "Lens (lens)", value: "lens" }
+          - { label: "Lens Blur (lens_blur)", value: "lens_blur" }
+          - { label: "Library Add (library_add)", value: "library_add" }
+          - { label: "Library Add Check (library_add_check)", value: "library_add_check" }
+          - { label: "Library Books (library_books)", value: "library_books" }
+          - { label: "Library Music (library_music)", value: "library_music" }
+          - { label: "Light (light)", value: "light" }
+          - { label: "Light Mode (light_mode)", value: "light_mode" }
+          - { label: "Lightbulb (lightbulb)", value: "lightbulb" }
+          - { label: "Lightbulb Circle (lightbulb_circle)", value: "lightbulb_circle" }
+          - { label: "Line Axis (line_axis)", value: "line_axis" }
+          - { label: "Line Style (line_style)", value: "line_style" }
+          - { label: "Line Weight (line_weight)", value: "line_weight" }
+          - { label: "Linear Scale (linear_scale)", value: "linear_scale" }
+          - { label: "Link (link)", value: "link" }
+          - { label: "Link Off (link_off)", value: "link_off" }
+          - { label: "Linked Camera (linked_camera)", value: "linked_camera" }
+          - { label: "Liquor (liquor)", value: "liquor" }
+          - { label: "List (list)", value: "list" }
+          - { label: "List Alt (list_alt)", value: "list_alt" }
+          - { label: "Live Help (live_help)", value: "live_help" }
+          - { label: "Live Tv (live_tv)", value: "live_tv" }
+          - { label: "Living (living)", value: "living" }
+          - { label: "Local Activity (local_activity)", value: "local_activity" }
+          - { label: "Local Airport (local_airport)", value: "local_airport" }
+          - { label: "Local Atm (local_atm)", value: "local_atm" }
+          - { label: "Local Attraction (local_attraction)", value: "local_attraction" }
+          - { label: "Local Bar (local_bar)", value: "local_bar" }
+          - { label: "Local Cafe (local_cafe)", value: "local_cafe" }
+          - { label: "Local Car Wash (local_car_wash)", value: "local_car_wash" }
+          - { label: "Local Convenience Store (local_convenience_store)", value: "local_convenience_store" }
+          - { label: "Local Dining (local_dining)", value: "local_dining" }
+          - { label: "Local Drink (local_drink)", value: "local_drink" }
+          - { label: "Local Fire Department (local_fire_department)", value: "local_fire_department" }
+          - { label: "Local Florist (local_florist)", value: "local_florist" }
+          - { label: "Local Gas Station (local_gas_station)", value: "local_gas_station" }
+          - { label: "Local Grocery Store (local_grocery_store)", value: "local_grocery_store" }
+          - { label: "Local Hospital (local_hospital)", value: "local_hospital" }
+          - { label: "Local Hotel (local_hotel)", value: "local_hotel" }
+          - { label: "Local Laundry Service (local_laundry_service)", value: "local_laundry_service" }
+          - { label: "Local Library (local_library)", value: "local_library" }
+          - { label: "Local Mall (local_mall)", value: "local_mall" }
+          - { label: "Local Movies (local_movies)", value: "local_movies" }
+          - { label: "Local Offer (local_offer)", value: "local_offer" }
+          - { label: "Local Parking (local_parking)", value: "local_parking" }
+          - { label: "Local Pharmacy (local_pharmacy)", value: "local_pharmacy" }
+          - { label: "Local Phone (local_phone)", value: "local_phone" }
+          - { label: "Local Pizza (local_pizza)", value: "local_pizza" }
+          - { label: "Local Play (local_play)", value: "local_play" }
+          - { label: "Local Police (local_police)", value: "local_police" }
+          - { label: "Local Post Office (local_post_office)", value: "local_post_office" }
+          - { label: "Local Print Shop (local_print_shop)", value: "local_print_shop" }
+          - { label: "Local Printshop (local_printshop)", value: "local_printshop" }
+          - { label: "Local Restaurant (local_restaurant)", value: "local_restaurant" }
+          - { label: "Local See (local_see)", value: "local_see" }
+          - { label: "Local Shipping (local_shipping)", value: "local_shipping" }
+          - { label: "Local Taxi (local_taxi)", value: "local_taxi" }
+          - { label: "Location City (location_city)", value: "location_city" }
+          - { label: "Location Disabled (location_disabled)", value: "location_disabled" }
+          - { label: "Location History (location_history)", value: "location_history" }
+          - { label: "Location Off (location_off)", value: "location_off" }
+          - { label: "Location On (location_on)", value: "location_on" }
+          - { label: "Location Searching (location_searching)", value: "location_searching" }
+          - { label: "Lock (lock)", value: "lock" }
+          - { label: "Lock Clock (lock_clock)", value: "lock_clock" }
+          - { label: "Lock Open (lock_open)", value: "lock_open" }
+          - { label: "Lock Person (lock_person)", value: "lock_person" }
+          - { label: "Lock Reset (lock_reset)", value: "lock_reset" }
+          - { label: "Login (login)", value: "login" }
+          - { label: "Logo Dev (logo_dev)", value: "logo_dev" }
+          - { label: "Logout (logout)", value: "logout" }
+          - { label: "Looks (looks)", value: "looks" }
+          - { label: "Looks 3 (looks_3)", value: "looks_3" }
+          - { label: "Looks 4 (looks_4)", value: "looks_4" }
+          - { label: "Looks 5 (looks_5)", value: "looks_5" }
+          - { label: "Looks 6 (looks_6)", value: "looks_6" }
+          - { label: "Looks One (looks_one)", value: "looks_one" }
+          - { label: "Looks Two (looks_two)", value: "looks_two" }
+          - { label: "Loop (loop)", value: "loop" }
+          - { label: "Loupe (loupe)", value: "loupe" }
+          - { label: "Low Priority (low_priority)", value: "low_priority" }
+          - { label: "Loyalty (loyalty)", value: "loyalty" }
+          - { label: "Lte Mobiledata (lte_mobiledata)", value: "lte_mobiledata" }
+          - { label: "Lte Plus Mobiledata (lte_plus_mobiledata)", value: "lte_plus_mobiledata" }
+          - { label: "Luggage (luggage)", value: "luggage" }
+          - { label: "Lunch Dining (lunch_dining)", value: "lunch_dining" }
+          - { label: "Lyrics (lyrics)", value: "lyrics" }
+          - { label: "Macro Off (macro_off)", value: "macro_off" }
+          - { label: "Mail (mail)", value: "mail" }
+          - { label: "Mail Lock (mail_lock)", value: "mail_lock" }
+          - { label: "Mail Outline (mail_outline)", value: "mail_outline" }
+          - { label: "Male (male)", value: "male" }
+          - { label: "Man (man)", value: "man" }
+          - { label: "Man 2 (man_2)", value: "man_2" }
+          - { label: "Man 3 (man_3)", value: "man_3" }
+          - { label: "Man 4 (man_4)", value: "man_4" }
+          - { label: "Manage Accounts (manage_accounts)", value: "manage_accounts" }
+          - { label: "Manage History (manage_history)", value: "manage_history" }
+          - { label: "Manage Search (manage_search)", value: "manage_search" }
+          - { label: "Map (map)", value: "map" }
+          - { label: "Maps Home Work (maps_home_work)", value: "maps_home_work" }
+          - { label: "Maps Ugc (maps_ugc)", value: "maps_ugc" }
+          - { label: "Margin (margin)", value: "margin" }
+          - { label: "Mark As Unread (mark_as_unread)", value: "mark_as_unread" }
+          - { label: "Mark Chat Read (mark_chat_read)", value: "mark_chat_read" }
+          - { label: "Mark Chat Unread (mark_chat_unread)", value: "mark_chat_unread" }
+          - { label: "Mark Email Read (mark_email_read)", value: "mark_email_read" }
+          - { label: "Mark Email Unread (mark_email_unread)", value: "mark_email_unread" }
+          - { label: "Mark Unread Chat Alt (mark_unread_chat_alt)", value: "mark_unread_chat_alt" }
+          - { label: "Markunread (markunread)", value: "markunread" }
+          - { label: "Markunread Mailbox (markunread_mailbox)", value: "markunread_mailbox" }
+          - { label: "Masks (masks)", value: "masks" }
+          - { label: "Maximize (maximize)", value: "maximize" }
+          - { label: "Media Bluetooth Off (media_bluetooth_off)", value: "media_bluetooth_off" }
+          - { label: "Media Bluetooth On (media_bluetooth_on)", value: "media_bluetooth_on" }
+          - { label: "Mediation (mediation)", value: "mediation" }
+          - { label: "Medical Information (medical_information)", value: "medical_information" }
+          - { label: "Medical Services (medical_services)", value: "medical_services" }
+          - { label: "Medication (medication)", value: "medication" }
+          - { label: "Medication Liquid (medication_liquid)", value: "medication_liquid" }
+          - { label: "Meeting Room (meeting_room)", value: "meeting_room" }
+          - { label: "Memory (memory)", value: "memory" }
+          - { label: "Menu (menu)", value: "menu" }
+          - { label: "Menu Book (menu_book)", value: "menu_book" }
+          - { label: "Menu Open (menu_open)", value: "menu_open" }
+          - { label: "Merge (merge)", value: "merge" }
+          - { label: "Merge Type (merge_type)", value: "merge_type" }
+          - { label: "Message (message)", value: "message" }
+          - { label: "Messenger (messenger)", value: "messenger" }
+          - { label: "Messenger Outline (messenger_outline)", value: "messenger_outline" }
+          - { label: "Mic (mic)", value: "mic" }
+          - { label: "Mic External Off (mic_external_off)", value: "mic_external_off" }
+          - { label: "Mic External On (mic_external_on)", value: "mic_external_on" }
+          - { label: "Mic None (mic_none)", value: "mic_none" }
+          - { label: "Mic Off (mic_off)", value: "mic_off" }
+          - { label: "Microwave (microwave)", value: "microwave" }
+          - { label: "Military Tech (military_tech)", value: "military_tech" }
+          - { label: "Minimize (minimize)", value: "minimize" }
+          - { label: "Minor Crash (minor_crash)", value: "minor_crash" }
+          - { label: "Miscellaneous Services (miscellaneous_services)", value: "miscellaneous_services" }
+          - { label: "Missed Video Call (missed_video_call)", value: "missed_video_call" }
+          - { label: "Mms (mms)", value: "mms" }
+          - { label: "Mobile Friendly (mobile_friendly)", value: "mobile_friendly" }
+          - { label: "Mobile Off (mobile_off)", value: "mobile_off" }
+          - { label: "Mobile Screen Share (mobile_screen_share)", value: "mobile_screen_share" }
+          - { label: "Mobiledata Off (mobiledata_off)", value: "mobiledata_off" }
+          - { label: "Mode (mode)", value: "mode" }
+          - { label: "Mode Comment (mode_comment)", value: "mode_comment" }
+          - { label: "Mode Edit (mode_edit)", value: "mode_edit" }
+          - { label: "Mode Edit Outline (mode_edit_outline)", value: "mode_edit_outline" }
+          - { label: "Mode Fan Off (mode_fan_off)", value: "mode_fan_off" }
+          - { label: "Mode Night (mode_night)", value: "mode_night" }
+          - { label: "Mode Of Travel (mode_of_travel)", value: "mode_of_travel" }
+          - { label: "Mode Standby (mode_standby)", value: "mode_standby" }
+          - { label: "Model Training (model_training)", value: "model_training" }
+          - { label: "Monetization On (monetization_on)", value: "monetization_on" }
+          - { label: "Money (money)", value: "money" }
+          - { label: "Money Off (money_off)", value: "money_off" }
+          - { label: "Money Off Csred (money_off_csred)", value: "money_off_csred" }
+          - { label: "Monitor (monitor)", value: "monitor" }
+          - { label: "Monitor Heart (monitor_heart)", value: "monitor_heart" }
+          - { label: "Monitor Weight (monitor_weight)", value: "monitor_weight" }
+          - { label: "Monochrome Photos (monochrome_photos)", value: "monochrome_photos" }
+          - { label: "Mood (mood)", value: "mood" }
+          - { label: "Mood Bad (mood_bad)", value: "mood_bad" }
+          - { label: "Moped (moped)", value: "moped" }
+          - { label: "More (more)", value: "more" }
+          - { label: "More Horiz (more_horiz)", value: "more_horiz" }
+          - { label: "More Time (more_time)", value: "more_time" }
+          - { label: "More Vert (more_vert)", value: "more_vert" }
+          - { label: "Mosque (mosque)", value: "mosque" }
+          - { label: "Motion Photos Auto (motion_photos_auto)", value: "motion_photos_auto" }
+          - { label: "Motion Photos Off (motion_photos_off)", value: "motion_photos_off" }
+          - { label: "Motion Photos On (motion_photos_on)", value: "motion_photos_on" }
+          - { label: "Motion Photos Pause (motion_photos_pause)", value: "motion_photos_pause" }
+          - { label: "Motion Photos Paused (motion_photos_paused)", value: "motion_photos_paused" }
+          - { label: "Motorcycle (motorcycle)", value: "motorcycle" }
+          - { label: "Mouse (mouse)", value: "mouse" }
+          - { label: "Move Down (move_down)", value: "move_down" }
+          - { label: "Move To Inbox (move_to_inbox)", value: "move_to_inbox" }
+          - { label: "Move Up (move_up)", value: "move_up" }
+          - { label: "Movie (movie)", value: "movie" }
+          - { label: "Movie Creation (movie_creation)", value: "movie_creation" }
+          - { label: "Movie Filter (movie_filter)", value: "movie_filter" }
+          - { label: "Moving (moving)", value: "moving" }
+          - { label: "Mp (mp)", value: "mp" }
+          - { label: "Multiline Chart (multiline_chart)", value: "multiline_chart" }
+          - { label: "Multiple Stop (multiple_stop)", value: "multiple_stop" }
+          - { label: "Multitrack Audio (multitrack_audio)", value: "multitrack_audio" }
+          - { label: "Museum (museum)", value: "museum" }
+          - { label: "Music Note (music_note)", value: "music_note" }
+          - { label: "Music Off (music_off)", value: "music_off" }
+          - { label: "Music Video (music_video)", value: "music_video" }
+          - { label: "My Library Add (my_library_add)", value: "my_library_add" }
+          - { label: "My Library Books (my_library_books)", value: "my_library_books" }
+          - { label: "My Library Music (my_library_music)", value: "my_library_music" }
+          - { label: "My Location (my_location)", value: "my_location" }
+          - { label: "Nat (nat)", value: "nat" }
+          - { label: "Nature (nature)", value: "nature" }
+          - { label: "Nature People (nature_people)", value: "nature_people" }
+          - { label: "Navigate Before (navigate_before)", value: "navigate_before" }
+          - { label: "Navigate Next (navigate_next)", value: "navigate_next" }
+          - { label: "Navigation (navigation)", value: "navigation" }
+          - { label: "Near Me (near_me)", value: "near_me" }
+          - { label: "Near Me Disabled (near_me_disabled)", value: "near_me_disabled" }
+          - { label: "Nearby Error (nearby_error)", value: "nearby_error" }
+          - { label: "Nearby Off (nearby_off)", value: "nearby_off" }
+          - { label: "Nest Cam Wired Stand (nest_cam_wired_stand)", value: "nest_cam_wired_stand" }
+          - { label: "Network Cell (network_cell)", value: "network_cell" }
+          - { label: "Network Check (network_check)", value: "network_check" }
+          - { label: "Network Locked (network_locked)", value: "network_locked" }
+          - { label: "Network Ping (network_ping)", value: "network_ping" }
+          - { label: "Network Wifi (network_wifi)", value: "network_wifi" }
+          - { label: "Network Wifi 1 Bar (network_wifi_1_bar)", value: "network_wifi_1_bar" }
+          - { label: "Network Wifi 2 Bar (network_wifi_2_bar)", value: "network_wifi_2_bar" }
+          - { label: "Network Wifi 3 Bar (network_wifi_3_bar)", value: "network_wifi_3_bar" }
+          - { label: "New Label (new_label)", value: "new_label" }
+          - { label: "New Releases (new_releases)", value: "new_releases" }
+          - { label: "Newspaper (newspaper)", value: "newspaper" }
+          - { label: "Next Plan (next_plan)", value: "next_plan" }
+          - { label: "Next Week (next_week)", value: "next_week" }
+          - { label: "Nfc (nfc)", value: "nfc" }
+          - { label: "Night Shelter (night_shelter)", value: "night_shelter" }
+          - { label: "Nightlife (nightlife)", value: "nightlife" }
+          - { label: "Nightlight (nightlight)", value: "nightlight" }
+          - { label: "Nightlight Round (nightlight_round)", value: "nightlight_round" }
+          - { label: "Nights Stay (nights_stay)", value: "nights_stay" }
+          - { label: "No Accounts (no_accounts)", value: "no_accounts" }
+          - { label: "No Adult Content (no_adult_content)", value: "no_adult_content" }
+          - { label: "No Backpack (no_backpack)", value: "no_backpack" }
+          - { label: "No Cell (no_cell)", value: "no_cell" }
+          - { label: "No Crash (no_crash)", value: "no_crash" }
+          - { label: "No Drinks (no_drinks)", value: "no_drinks" }
+          - { label: "No Encryption (no_encryption)", value: "no_encryption" }
+          - { label: "No Encryption Gmailerrorred (no_encryption_gmailerrorred)", value: "no_encryption_gmailerrorred" }
+          - { label: "No Flash (no_flash)", value: "no_flash" }
+          - { label: "No Food (no_food)", value: "no_food" }
+          - { label: "No Luggage (no_luggage)", value: "no_luggage" }
+          - { label: "No Meals (no_meals)", value: "no_meals" }
+          - { label: "No Meeting Room (no_meeting_room)", value: "no_meeting_room" }
+          - { label: "No Photography (no_photography)", value: "no_photography" }
+          - { label: "No Sim (no_sim)", value: "no_sim" }
+          - { label: "No Stroller (no_stroller)", value: "no_stroller" }
+          - { label: "No Transfer (no_transfer)", value: "no_transfer" }
+          - { label: "Noise Aware (noise_aware)", value: "noise_aware" }
+          - { label: "Noise Control Off (noise_control_off)", value: "noise_control_off" }
+          - { label: "Nordic Walking (nordic_walking)", value: "nordic_walking" }
+          - { label: "North (north)", value: "north" }
+          - { label: "North East (north_east)", value: "north_east" }
+          - { label: "North West (north_west)", value: "north_west" }
+          - { label: "Not Accessible (not_accessible)", value: "not_accessible" }
+          - { label: "Not Interested (not_interested)", value: "not_interested" }
+          - { label: "Not Listed Location (not_listed_location)", value: "not_listed_location" }
+          - { label: "Not Started (not_started)", value: "not_started" }
+          - { label: "Note (note)", value: "note" }
+          - { label: "Note Add (note_add)", value: "note_add" }
+          - { label: "Note Alt (note_alt)", value: "note_alt" }
+          - { label: "Notes (notes)", value: "notes" }
+          - { label: "Notification Add (notification_add)", value: "notification_add" }
+          - { label: "Notification Important (notification_important)", value: "notification_important" }
+          - { label: "Notifications (notifications)", value: "notifications" }
+          - { label: "Notifications Active (notifications_active)", value: "notifications_active" }
+          - { label: "Notifications None (notifications_none)", value: "notifications_none" }
+          - { label: "Notifications Off (notifications_off)", value: "notifications_off" }
+          - { label: "Notifications On (notifications_on)", value: "notifications_on" }
+          - { label: "Notifications Paused (notifications_paused)", value: "notifications_paused" }
+          - { label: "Now Wallpaper (now_wallpaper)", value: "now_wallpaper" }
+          - { label: "Now Widgets (now_widgets)", value: "now_widgets" }
+          - { label: "Numbers (numbers)", value: "numbers" }
+          - { label: "Offline Bolt (offline_bolt)", value: "offline_bolt" }
+          - { label: "Offline Pin (offline_pin)", value: "offline_pin" }
+          - { label: "Offline Share (offline_share)", value: "offline_share" }
+          - { label: "Oil Barrel (oil_barrel)", value: "oil_barrel" }
+          - { label: "On Device Training (on_device_training)", value: "on_device_training" }
+          - { label: "Ondemand Video (ondemand_video)", value: "ondemand_video" }
+          - { label: "Online Prediction (online_prediction)", value: "online_prediction" }
+          - { label: "Opacity (opacity)", value: "opacity" }
+          - { label: "Open In Browser (open_in_browser)", value: "open_in_browser" }
+          - { label: "Open In Full (open_in_full)", value: "open_in_full" }
+          - { label: "Open In New (open_in_new)", value: "open_in_new" }
+          - { label: "Open In New Off (open_in_new_off)", value: "open_in_new_off" }
+          - { label: "Open With (open_with)", value: "open_with" }
+          - { label: "Other Houses (other_houses)", value: "other_houses" }
+          - { label: "Outbond (outbond)", value: "outbond" }
+          - { label: "Outbound (outbound)", value: "outbound" }
+          - { label: "Outbox (outbox)", value: "outbox" }
+          - { label: "Outdoor Grill (outdoor_grill)", value: "outdoor_grill" }
+          - { label: "Outlet (outlet)", value: "outlet" }
+          - { label: "Outlined Flag (outlined_flag)", value: "outlined_flag" }
+          - { label: "Output (output)", value: "output" }
+          - { label: "Padding (padding)", value: "padding" }
+          - { label: "Pages (pages)", value: "pages" }
+          - { label: "Pageview (pageview)", value: "pageview" }
+          - { label: "Paid (paid)", value: "paid" }
+          - { label: "Palette (palette)", value: "palette" }
+          - { label: "Pan Tool (pan_tool)", value: "pan_tool" }
+          - { label: "Pan Tool Alt (pan_tool_alt)", value: "pan_tool_alt" }
+          - { label: "Panorama (panorama)", value: "panorama" }
+          - { label: "Panorama Fish Eye (panorama_fish_eye)", value: "panorama_fish_eye" }
+          - { label: "Panorama Fisheye (panorama_fisheye)", value: "panorama_fisheye" }
+          - { label: "Panorama Horizontal (panorama_horizontal)", value: "panorama_horizontal" }
+          - { label: "Panorama Horizontal Select (panorama_horizontal_select)", value: "panorama_horizontal_select" }
+          - { label: "Panorama Photosphere (panorama_photosphere)", value: "panorama_photosphere" }
+          - { label: "Panorama Photosphere Select (panorama_photosphere_select)", value: "panorama_photosphere_select" }
+          - { label: "Panorama Vertical (panorama_vertical)", value: "panorama_vertical" }
+          - { label: "Panorama Vertical Select (panorama_vertical_select)", value: "panorama_vertical_select" }
+          - { label: "Panorama Wide Angle (panorama_wide_angle)", value: "panorama_wide_angle" }
+          - { label: "Panorama Wide Angle Select (panorama_wide_angle_select)", value: "panorama_wide_angle_select" }
+          - { label: "Paragliding (paragliding)", value: "paragliding" }
+          - { label: "Park (park)", value: "park" }
+          - { label: "Party Mode (party_mode)", value: "party_mode" }
+          - { label: "Password (password)", value: "password" }
+          - { label: "Paste (paste)", value: "paste" }
+          - { label: "Pattern (pattern)", value: "pattern" }
+          - { label: "Pause (pause)", value: "pause" }
+          - { label: "Pause Circle (pause_circle)", value: "pause_circle" }
+          - { label: "Pause Circle Filled (pause_circle_filled)", value: "pause_circle_filled" }
+          - { label: "Pause Circle Outline (pause_circle_outline)", value: "pause_circle_outline" }
+          - { label: "Pause Presentation (pause_presentation)", value: "pause_presentation" }
+          - { label: "Payment (payment)", value: "payment" }
+          - { label: "Payments (payments)", value: "payments" }
+          - { label: "Paypal (paypal)", value: "paypal" }
+          - { label: "Pedal Bike (pedal_bike)", value: "pedal_bike" }
+          - { label: "Pending (pending)", value: "pending" }
+          - { label: "Pending Actions (pending_actions)", value: "pending_actions" }
+          - { label: "Pentagon (pentagon)", value: "pentagon" }
+          - { label: "People (people)", value: "people" }
+          - { label: "People Alt (people_alt)", value: "people_alt" }
+          - { label: "People Outline (people_outline)", value: "people_outline" }
+          - { label: "Percent (percent)", value: "percent" }
+          - { label: "Perm Camera Mic (perm_camera_mic)", value: "perm_camera_mic" }
+          - { label: "Perm Contact Cal (perm_contact_cal)", value: "perm_contact_cal" }
+          - { label: "Perm Contact Calendar (perm_contact_calendar)", value: "perm_contact_calendar" }
+          - { label: "Perm Data Setting (perm_data_setting)", value: "perm_data_setting" }
+          - { label: "Perm Device Info (perm_device_info)", value: "perm_device_info" }
+          - { label: "Perm Device Information (perm_device_information)", value: "perm_device_information" }
+          - { label: "Perm Identity (perm_identity)", value: "perm_identity" }
+          - { label: "Perm Media (perm_media)", value: "perm_media" }
+          - { label: "Perm Phone Msg (perm_phone_msg)", value: "perm_phone_msg" }
+          - { label: "Perm Scan Wifi (perm_scan_wifi)", value: "perm_scan_wifi" }
+          - { label: "Person (person)", value: "person" }
+          - { label: "Person 2 (person_2)", value: "person_2" }
+          - { label: "Person 3 (person_3)", value: "person_3" }
+          - { label: "Person 4 (person_4)", value: "person_4" }
+          - { label: "Person Add (person_add)", value: "person_add" }
+          - { label: "Person Add Alt (person_add_alt)", value: "person_add_alt" }
+          - { label: "Person Add Alt 1 (person_add_alt_1)", value: "person_add_alt_1" }
+          - { label: "Person Add Disabled (person_add_disabled)", value: "person_add_disabled" }
+          - { label: "Person Off (person_off)", value: "person_off" }
+          - { label: "Person Outline (person_outline)", value: "person_outline" }
+          - { label: "Person Pin (person_pin)", value: "person_pin" }
+          - { label: "Person Pin Circle (person_pin_circle)", value: "person_pin_circle" }
+          - { label: "Person Remove (person_remove)", value: "person_remove" }
+          - { label: "Person Remove Alt 1 (person_remove_alt_1)", value: "person_remove_alt_1" }
+          - { label: "Person Search (person_search)", value: "person_search" }
+          - { label: "Personal Injury (personal_injury)", value: "personal_injury" }
+          - { label: "Personal Video (personal_video)", value: "personal_video" }
+          - { label: "Pest Control (pest_control)", value: "pest_control" }
+          - { label: "Pest Control Rodent (pest_control_rodent)", value: "pest_control_rodent" }
+          - { label: "Pets (pets)", value: "pets" }
+          - { label: "Phishing (phishing)", value: "phishing" }
+          - { label: "Phone (phone)", value: "phone" }
+          - { label: "Phone Android (phone_android)", value: "phone_android" }
+          - { label: "Phone Bluetooth Speaker (phone_bluetooth_speaker)", value: "phone_bluetooth_speaker" }
+          - { label: "Phone Callback (phone_callback)", value: "phone_callback" }
+          - { label: "Phone Disabled (phone_disabled)", value: "phone_disabled" }
+          - { label: "Phone Enabled (phone_enabled)", value: "phone_enabled" }
+          - { label: "Phone Forwarded (phone_forwarded)", value: "phone_forwarded" }
+          - { label: "Phone In Talk (phone_in_talk)", value: "phone_in_talk" }
+          - { label: "Phone Iphone (phone_iphone)", value: "phone_iphone" }
+          - { label: "Phone Locked (phone_locked)", value: "phone_locked" }
+          - { label: "Phone Missed (phone_missed)", value: "phone_missed" }
+          - { label: "Phone Paused (phone_paused)", value: "phone_paused" }
+          - { label: "Phonelink (phonelink)", value: "phonelink" }
+          - { label: "Phonelink Erase (phonelink_erase)", value: "phonelink_erase" }
+          - { label: "Phonelink Lock (phonelink_lock)", value: "phonelink_lock" }
+          - { label: "Phonelink Off (phonelink_off)", value: "phonelink_off" }
+          - { label: "Phonelink Ring (phonelink_ring)", value: "phonelink_ring" }
+          - { label: "Phonelink Setup (phonelink_setup)", value: "phonelink_setup" }
+          - { label: "Photo (photo)", value: "photo" }
+          - { label: "Photo Album (photo_album)", value: "photo_album" }
+          - { label: "Photo Camera (photo_camera)", value: "photo_camera" }
+          - { label: "Photo Camera Back (photo_camera_back)", value: "photo_camera_back" }
+          - { label: "Photo Camera Front (photo_camera_front)", value: "photo_camera_front" }
+          - { label: "Photo Filter (photo_filter)", value: "photo_filter" }
+          - { label: "Photo Library (photo_library)", value: "photo_library" }
+          - { label: "Photo Size Select Actual (photo_size_select_actual)", value: "photo_size_select_actual" }
+          - { label: "Photo Size Select Large (photo_size_select_large)", value: "photo_size_select_large" }
+          - { label: "Photo Size Select Small (photo_size_select_small)", value: "photo_size_select_small" }
+          - { label: "Php (php)", value: "php" }
+          - { label: "Piano (piano)", value: "piano" }
+          - { label: "Piano Off (piano_off)", value: "piano_off" }
+          - { label: "Picture As Pdf (picture_as_pdf)", value: "picture_as_pdf" }
+          - { label: "Picture In Picture (picture_in_picture)", value: "picture_in_picture" }
+          - { label: "Picture In Picture Alt (picture_in_picture_alt)", value: "picture_in_picture_alt" }
+          - { label: "Pie Chart (pie_chart)", value: "pie_chart" }
+          - { label: "Pie Chart Outline (pie_chart_outline)", value: "pie_chart_outline" }
+          - { label: "Pin (pin)", value: "pin" }
+          - { label: "Pin Drop (pin_drop)", value: "pin_drop" }
+          - { label: "Pin End (pin_end)", value: "pin_end" }
+          - { label: "Pin Invoke (pin_invoke)", value: "pin_invoke" }
+          - { label: "Pinch (pinch)", value: "pinch" }
+          - { label: "Pivot Table Chart (pivot_table_chart)", value: "pivot_table_chart" }
+          - { label: "Pix (pix)", value: "pix" }
+          - { label: "Place (place)", value: "place" }
+          - { label: "Plagiarism (plagiarism)", value: "plagiarism" }
+          - { label: "Play Arrow (play_arrow)", value: "play_arrow" }
+          - { label: "Play Circle (play_circle)", value: "play_circle" }
+          - { label: "Play Circle Fill (play_circle_fill)", value: "play_circle_fill" }
+          - { label: "Play Circle Filled (play_circle_filled)", value: "play_circle_filled" }
+          - { label: "Play Circle Outline (play_circle_outline)", value: "play_circle_outline" }
+          - { label: "Play Disabled (play_disabled)", value: "play_disabled" }
+          - { label: "Play For Work (play_for_work)", value: "play_for_work" }
+          - { label: "Play Lesson (play_lesson)", value: "play_lesson" }
+          - { label: "Playlist Add (playlist_add)", value: "playlist_add" }
+          - { label: "Playlist Add Check (playlist_add_check)", value: "playlist_add_check" }
+          - { label: "Playlist Add Check Circle (playlist_add_check_circle)", value: "playlist_add_check_circle" }
+          - { label: "Playlist Add Circle (playlist_add_circle)", value: "playlist_add_circle" }
+          - { label: "Playlist Play (playlist_play)", value: "playlist_play" }
+          - { label: "Playlist Remove (playlist_remove)", value: "playlist_remove" }
+          - { label: "Plumbing (plumbing)", value: "plumbing" }
+          - { label: "Plus One (plus_one)", value: "plus_one" }
+          - { label: "Podcasts (podcasts)", value: "podcasts" }
+          - { label: "Point Of Sale (point_of_sale)", value: "point_of_sale" }
+          - { label: "Policy (policy)", value: "policy" }
+          - { label: "Poll (poll)", value: "poll" }
+          - { label: "Polyline (polyline)", value: "polyline" }
+          - { label: "Polymer (polymer)", value: "polymer" }
+          - { label: "Pool (pool)", value: "pool" }
+          - { label: "Portable Wifi Off (portable_wifi_off)", value: "portable_wifi_off" }
+          - { label: "Portrait (portrait)", value: "portrait" }
+          - { label: "Post Add (post_add)", value: "post_add" }
+          - { label: "Power (power)", value: "power" }
+          - { label: "Power Input (power_input)", value: "power_input" }
+          - { label: "Power Off (power_off)", value: "power_off" }
+          - { label: "Power Settings New (power_settings_new)", value: "power_settings_new" }
+          - { label: "Precision Manufacturing (precision_manufacturing)", value: "precision_manufacturing" }
+          - { label: "Pregnant Woman (pregnant_woman)", value: "pregnant_woman" }
+          - { label: "Present To All (present_to_all)", value: "present_to_all" }
+          - { label: "Preview (preview)", value: "preview" }
+          - { label: "Price Change (price_change)", value: "price_change" }
+          - { label: "Price Check (price_check)", value: "price_check" }
+          - { label: "Print (print)", value: "print" }
+          - { label: "Print Disabled (print_disabled)", value: "print_disabled" }
+          - { label: "Priority High (priority_high)", value: "priority_high" }
+          - { label: "Privacy Tip (privacy_tip)", value: "privacy_tip" }
+          - { label: "Private Connectivity (private_connectivity)", value: "private_connectivity" }
+          - { label: "Production Quantity Limits (production_quantity_limits)", value: "production_quantity_limits" }
+          - { label: "Propane (propane)", value: "propane" }
+          - { label: "Propane Tank (propane_tank)", value: "propane_tank" }
+          - { label: "Psychology (psychology)", value: "psychology" }
+          - { label: "Psychology Alt (psychology_alt)", value: "psychology_alt" }
+          - { label: "Public (public)", value: "public" }
+          - { label: "Public Off (public_off)", value: "public_off" }
+          - { label: "Publish (publish)", value: "publish" }
+          - { label: "Published With Changes (published_with_changes)", value: "published_with_changes" }
+          - { label: "Punch Clock (punch_clock)", value: "punch_clock" }
+          - { label: "Push Pin (push_pin)", value: "push_pin" }
+          - { label: "Qr Code (qr_code)", value: "qr_code" }
+          - { label: "Qr Code 2 (qr_code_2)", value: "qr_code_2" }
+          - { label: "Qr Code Scanner (qr_code_scanner)", value: "qr_code_scanner" }
+          - { label: "Query Builder (query_builder)", value: "query_builder" }
+          - { label: "Query Stats (query_stats)", value: "query_stats" }
+          - { label: "Question Answer (question_answer)", value: "question_answer" }
+          - { label: "Question Mark (question_mark)", value: "question_mark" }
+          - { label: "Queue (queue)", value: "queue" }
+          - { label: "Queue Music (queue_music)", value: "queue_music" }
+          - { label: "Queue Play Next (queue_play_next)", value: "queue_play_next" }
+          - { label: "Quick Contacts Dialer (quick_contacts_dialer)", value: "quick_contacts_dialer" }
+          - { label: "Quick Contacts Mail (quick_contacts_mail)", value: "quick_contacts_mail" }
+          - { label: "Quickreply (quickreply)", value: "quickreply" }
+          - { label: "Quiz (quiz)", value: "quiz" }
+          - { label: "Quora (quora)", value: "quora" }
+          - { label: "R Mobiledata (r_mobiledata)", value: "r_mobiledata" }
+          - { label: "Radar (radar)", value: "radar" }
+          - { label: "Radio (radio)", value: "radio" }
+          - { label: "Radio Button Checked (radio_button_checked)", value: "radio_button_checked" }
+          - { label: "Radio Button Off (radio_button_off)", value: "radio_button_off" }
+          - { label: "Radio Button On (radio_button_on)", value: "radio_button_on" }
+          - { label: "Radio Button Unchecked (radio_button_unchecked)", value: "radio_button_unchecked" }
+          - { label: "Railway Alert (railway_alert)", value: "railway_alert" }
+          - { label: "Ramen Dining (ramen_dining)", value: "ramen_dining" }
+          - { label: "Ramp Left (ramp_left)", value: "ramp_left" }
+          - { label: "Ramp Right (ramp_right)", value: "ramp_right" }
+          - { label: "Rate Review (rate_review)", value: "rate_review" }
+          - { label: "Raw Off (raw_off)", value: "raw_off" }
+          - { label: "Raw On (raw_on)", value: "raw_on" }
+          - { label: "Read More (read_more)", value: "read_more" }
+          - { label: "Real Estate Agent (real_estate_agent)", value: "real_estate_agent" }
+          - { label: "Receipt (receipt)", value: "receipt" }
+          - { label: "Receipt Long (receipt_long)", value: "receipt_long" }
+          - { label: "Recent Actors (recent_actors)", value: "recent_actors" }
+          - { label: "Recommend (recommend)", value: "recommend" }
+          - { label: "Record Voice Over (record_voice_over)", value: "record_voice_over" }
+          - { label: "Rectangle (rectangle)", value: "rectangle" }
+          - { label: "Recycling (recycling)", value: "recycling" }
+          - { label: "Reddit (reddit)", value: "reddit" }
+          - { label: "Redeem (redeem)", value: "redeem" }
+          - { label: "Redo (redo)", value: "redo" }
+          - { label: "Reduce Capacity (reduce_capacity)", value: "reduce_capacity" }
+          - { label: "Refresh (refresh)", value: "refresh" }
+          - { label: "Remember Me (remember_me)", value: "remember_me" }
+          - { label: "Remove (remove)", value: "remove" }
+          - { label: "Remove Circle (remove_circle)", value: "remove_circle" }
+          - { label: "Remove Circle Outline (remove_circle_outline)", value: "remove_circle_outline" }
+          - { label: "Remove Done (remove_done)", value: "remove_done" }
+          - { label: "Remove From Queue (remove_from_queue)", value: "remove_from_queue" }
+          - { label: "Remove Moderator (remove_moderator)", value: "remove_moderator" }
+          - { label: "Remove Red Eye (remove_red_eye)", value: "remove_red_eye" }
+          - { label: "Remove Road (remove_road)", value: "remove_road" }
+          - { label: "Remove Shopping Cart (remove_shopping_cart)", value: "remove_shopping_cart" }
+          - { label: "Reorder (reorder)", value: "reorder" }
+          - { label: "Repartition (repartition)", value: "repartition" }
+          - { label: "Repeat (repeat)", value: "repeat" }
+          - { label: "Repeat On (repeat_on)", value: "repeat_on" }
+          - { label: "Repeat One (repeat_one)", value: "repeat_one" }
+          - { label: "Repeat One On (repeat_one_on)", value: "repeat_one_on" }
+          - { label: "Replay (replay)", value: "replay" }
+          - { label: "Replay 10 (replay_10)", value: "replay_10" }
+          - { label: "Replay 30 (replay_30)", value: "replay_30" }
+          - { label: "Replay 5 (replay_5)", value: "replay_5" }
+          - { label: "Replay Circle Filled (replay_circle_filled)", value: "replay_circle_filled" }
+          - { label: "Reply (reply)", value: "reply" }
+          - { label: "Reply All (reply_all)", value: "reply_all" }
+          - { label: "Report (report)", value: "report" }
+          - { label: "Report Gmailerrorred (report_gmailerrorred)", value: "report_gmailerrorred" }
+          - { label: "Report Off (report_off)", value: "report_off" }
+          - { label: "Report Problem (report_problem)", value: "report_problem" }
+          - { label: "Request Page (request_page)", value: "request_page" }
+          - { label: "Request Quote (request_quote)", value: "request_quote" }
+          - { label: "Reset Tv (reset_tv)", value: "reset_tv" }
+          - { label: "Restart Alt (restart_alt)", value: "restart_alt" }
+          - { label: "Restaurant (restaurant)", value: "restaurant" }
+          - { label: "Restaurant Menu (restaurant_menu)", value: "restaurant_menu" }
+          - { label: "Restore (restore)", value: "restore" }
+          - { label: "Restore From Trash (restore_from_trash)", value: "restore_from_trash" }
+          - { label: "Restore Page (restore_page)", value: "restore_page" }
+          - { label: "Reviews (reviews)", value: "reviews" }
+          - { label: "Rice Bowl (rice_bowl)", value: "rice_bowl" }
+          - { label: "Ring Volume (ring_volume)", value: "ring_volume" }
+          - { label: "Rocket (rocket)", value: "rocket" }
+          - { label: "Rocket Launch (rocket_launch)", value: "rocket_launch" }
+          - { label: "Roller Shades (roller_shades)", value: "roller_shades" }
+          - { label: "Roller Shades Closed (roller_shades_closed)", value: "roller_shades_closed" }
+          - { label: "Roller Skating (roller_skating)", value: "roller_skating" }
+          - { label: "Roofing (roofing)", value: "roofing" }
+          - { label: "Room (room)", value: "room" }
+          - { label: "Room Preferences (room_preferences)", value: "room_preferences" }
+          - { label: "Room Service (room_service)", value: "room_service" }
+          - { label: "Rotate 90 Degrees Ccw (rotate_90_degrees_ccw)", value: "rotate_90_degrees_ccw" }
+          - { label: "Rotate 90 Degrees Cw (rotate_90_degrees_cw)", value: "rotate_90_degrees_cw" }
+          - { label: "Rotate Left (rotate_left)", value: "rotate_left" }
+          - { label: "Rotate Right (rotate_right)", value: "rotate_right" }
+          - { label: "Roundabout Left (roundabout_left)", value: "roundabout_left" }
+          - { label: "Roundabout Right (roundabout_right)", value: "roundabout_right" }
+          - { label: "Rounded Corner (rounded_corner)", value: "rounded_corner" }
+          - { label: "Route (route)", value: "route" }
+          - { label: "Router (router)", value: "router" }
+          - { label: "Rowing (rowing)", value: "rowing" }
+          - { label: "Rss Feed (rss_feed)", value: "rss_feed" }
+          - { label: "Rsvp (rsvp)", value: "rsvp" }
+          - { label: "Rtt (rtt)", value: "rtt" }
+          - { label: "Rule (rule)", value: "rule" }
+          - { label: "Rule Folder (rule_folder)", value: "rule_folder" }
+          - { label: "Run Circle (run_circle)", value: "run_circle" }
+          - { label: "Running With Errors (running_with_errors)", value: "running_with_errors" }
+          - { label: "Rv Hookup (rv_hookup)", value: "rv_hookup" }
+          - { label: "Safety Check (safety_check)", value: "safety_check" }
+          - { label: "Safety Divider (safety_divider)", value: "safety_divider" }
+          - { label: "Sailing (sailing)", value: "sailing" }
+          - { label: "Sanitizer (sanitizer)", value: "sanitizer" }
+          - { label: "Satellite (satellite)", value: "satellite" }
+          - { label: "Satellite Alt (satellite_alt)", value: "satellite_alt" }
+          - { label: "Save (save)", value: "save" }
+          - { label: "Save Alt (save_alt)", value: "save_alt" }
+          - { label: "Save As (save_as)", value: "save_as" }
+          - { label: "Saved Search (saved_search)", value: "saved_search" }
+          - { label: "Savings (savings)", value: "savings" }
+          - { label: "Scale (scale)", value: "scale" }
+          - { label: "Scanner (scanner)", value: "scanner" }
+          - { label: "Scatter Plot (scatter_plot)", value: "scatter_plot" }
+          - { label: "Schedule (schedule)", value: "schedule" }
+          - { label: "Schedule Send (schedule_send)", value: "schedule_send" }
+          - { label: "Schema (schema)", value: "schema" }
+          - { label: "School (school)", value: "school" }
+          - { label: "Science (science)", value: "science" }
+          - { label: "Score (score)", value: "score" }
+          - { label: "Scoreboard (scoreboard)", value: "scoreboard" }
+          - { label: "Screen Lock Landscape (screen_lock_landscape)", value: "screen_lock_landscape" }
+          - { label: "Screen Lock Portrait (screen_lock_portrait)", value: "screen_lock_portrait" }
+          - { label: "Screen Lock Rotation (screen_lock_rotation)", value: "screen_lock_rotation" }
+          - { label: "Screen Rotation (screen_rotation)", value: "screen_rotation" }
+          - { label: "Screen Rotation Alt (screen_rotation_alt)", value: "screen_rotation_alt" }
+          - { label: "Screen Search Desktop (screen_search_desktop)", value: "screen_search_desktop" }
+          - { label: "Screen Share (screen_share)", value: "screen_share" }
+          - { label: "Screenshot (screenshot)", value: "screenshot" }
+          - { label: "Screenshot Monitor (screenshot_monitor)", value: "screenshot_monitor" }
+          - { label: "Scuba Diving (scuba_diving)", value: "scuba_diving" }
+          - { label: "Sd (sd)", value: "sd" }
+          - { label: "Sd Card (sd_card)", value: "sd_card" }
+          - { label: "Sd Card Alert (sd_card_alert)", value: "sd_card_alert" }
+          - { label: "Sd Storage (sd_storage)", value: "sd_storage" }
+          - { label: "Search (search)", value: "search" }
+          - { label: "Search Off (search_off)", value: "search_off" }
+          - { label: "Security (security)", value: "security" }
+          - { label: "Security Update (security_update)", value: "security_update" }
+          - { label: "Security Update Good (security_update_good)", value: "security_update_good" }
+          - { label: "Security Update Warning (security_update_warning)", value: "security_update_warning" }
+          - { label: "Segment (segment)", value: "segment" }
+          - { label: "Select All (select_all)", value: "select_all" }
+          - { label: "Self Improvement (self_improvement)", value: "self_improvement" }
+          - { label: "Sell (sell)", value: "sell" }
+          - { label: "Send (send)", value: "send" }
+          - { label: "Send And Archive (send_and_archive)", value: "send_and_archive" }
+          - { label: "Send Time Extension (send_time_extension)", value: "send_time_extension" }
+          - { label: "Send To Mobile (send_to_mobile)", value: "send_to_mobile" }
+          - { label: "Sensor Door (sensor_door)", value: "sensor_door" }
+          - { label: "Sensor Occupied (sensor_occupied)", value: "sensor_occupied" }
+          - { label: "Sensor Window (sensor_window)", value: "sensor_window" }
+          - { label: "Sensors (sensors)", value: "sensors" }
+          - { label: "Sensors Off (sensors_off)", value: "sensors_off" }
+          - { label: "Sentiment Dissatisfied (sentiment_dissatisfied)", value: "sentiment_dissatisfied" }
+          - { label: "Sentiment Neutral (sentiment_neutral)", value: "sentiment_neutral" }
+          - { label: "Sentiment Satisfied (sentiment_satisfied)", value: "sentiment_satisfied" }
+          - { label: "Sentiment Satisfied Alt (sentiment_satisfied_alt)", value: "sentiment_satisfied_alt" }
+          - { label: "Sentiment Very Dissatisfied (sentiment_very_dissatisfied)", value: "sentiment_very_dissatisfied" }
+          - { label: "Sentiment Very Satisfied (sentiment_very_satisfied)", value: "sentiment_very_satisfied" }
+          - { label: "Set Meal (set_meal)", value: "set_meal" }
+          - { label: "Settings (settings)", value: "settings" }
+          - { label: "Settings Accessibility (settings_accessibility)", value: "settings_accessibility" }
+          - { label: "Settings Applications (settings_applications)", value: "settings_applications" }
+          - { label: "Settings Backup Restore (settings_backup_restore)", value: "settings_backup_restore" }
+          - { label: "Settings Bluetooth (settings_bluetooth)", value: "settings_bluetooth" }
+          - { label: "Settings Brightness (settings_brightness)", value: "settings_brightness" }
+          - { label: "Settings Cell (settings_cell)", value: "settings_cell" }
+          - { label: "Settings Display (settings_display)", value: "settings_display" }
+          - { label: "Settings Ethernet (settings_ethernet)", value: "settings_ethernet" }
+          - { label: "Settings Input Antenna (settings_input_antenna)", value: "settings_input_antenna" }
+          - { label: "Settings Input Component (settings_input_component)", value: "settings_input_component" }
+          - { label: "Settings Input Composite (settings_input_composite)", value: "settings_input_composite" }
+          - { label: "Settings Input Hdmi (settings_input_hdmi)", value: "settings_input_hdmi" }
+          - { label: "Settings Input Svideo (settings_input_svideo)", value: "settings_input_svideo" }
+          - { label: "Settings Overscan (settings_overscan)", value: "settings_overscan" }
+          - { label: "Settings Phone (settings_phone)", value: "settings_phone" }
+          - { label: "Settings Power (settings_power)", value: "settings_power" }
+          - { label: "Settings Remote (settings_remote)", value: "settings_remote" }
+          - { label: "Settings Suggest (settings_suggest)", value: "settings_suggest" }
+          - { label: "Settings System Daydream (settings_system_daydream)", value: "settings_system_daydream" }
+          - { label: "Settings Voice (settings_voice)", value: "settings_voice" }
+          - { label: "Severe Cold (severe_cold)", value: "severe_cold" }
+          - { label: "Shape Line (shape_line)", value: "shape_line" }
+          - { label: "Share (share)", value: "share" }
+          - { label: "Share Arrival Time (share_arrival_time)", value: "share_arrival_time" }
+          - { label: "Share Location (share_location)", value: "share_location" }
+          - { label: "Shield (shield)", value: "shield" }
+          - { label: "Shield Moon (shield_moon)", value: "shield_moon" }
+          - { label: "Shop (shop)", value: "shop" }
+          - { label: "Shop 2 (shop_2)", value: "shop_2" }
+          - { label: "Shop Two (shop_two)", value: "shop_two" }
+          - { label: "Shopify (shopify)", value: "shopify" }
+          - { label: "Shopping Bag (shopping_bag)", value: "shopping_bag" }
+          - { label: "Shopping Basket (shopping_basket)", value: "shopping_basket" }
+          - { label: "Shopping Cart (shopping_cart)", value: "shopping_cart" }
+          - { label: "Shopping Cart Checkout (shopping_cart_checkout)", value: "shopping_cart_checkout" }
+          - { label: "Short Text (short_text)", value: "short_text" }
+          - { label: "Shortcut (shortcut)", value: "shortcut" }
+          - { label: "Show Chart (show_chart)", value: "show_chart" }
+          - { label: "Shower (shower)", value: "shower" }
+          - { label: "Shuffle (shuffle)", value: "shuffle" }
+          - { label: "Shuffle On (shuffle_on)", value: "shuffle_on" }
+          - { label: "Shutter Speed (shutter_speed)", value: "shutter_speed" }
+          - { label: "Sick (sick)", value: "sick" }
+          - { label: "Sign Language (sign_language)", value: "sign_language" }
+          - { label: "Signal Cellular 0 Bar (signal_cellular_0_bar)", value: "signal_cellular_0_bar" }
+          - { label: "Signal Cellular 4 Bar (signal_cellular_4_bar)", value: "signal_cellular_4_bar" }
+          - { label: "Signal Cellular Alt (signal_cellular_alt)", value: "signal_cellular_alt" }
+          - { label: "Signal Cellular Alt 1 Bar (signal_cellular_alt_1_bar)", value: "signal_cellular_alt_1_bar" }
+          - { label: "Signal Cellular Alt 2 Bar (signal_cellular_alt_2_bar)", value: "signal_cellular_alt_2_bar" }
+          - { label: "Signal Cellular Connected No Internet 0 Bar (signal_cellular_connected_no_internet_0_bar)", value: "signal_cellular_connected_no_internet_0_bar" }
+          - { label: "Signal Cellular Connected No Internet 4 Bar (signal_cellular_connected_no_internet_4_bar)", value: "signal_cellular_connected_no_internet_4_bar" }
+          - { label: "Signal Cellular No Sim (signal_cellular_no_sim)", value: "signal_cellular_no_sim" }
+          - { label: "Signal Cellular Nodata (signal_cellular_nodata)", value: "signal_cellular_nodata" }
+          - { label: "Signal Cellular Null (signal_cellular_null)", value: "signal_cellular_null" }
+          - { label: "Signal Cellular Off (signal_cellular_off)", value: "signal_cellular_off" }
+          - { label: "Signal Wifi 0 Bar (signal_wifi_0_bar)", value: "signal_wifi_0_bar" }
+          - { label: "Signal Wifi 4 Bar (signal_wifi_4_bar)", value: "signal_wifi_4_bar" }
+          - { label: "Signal Wifi 4 Bar Lock (signal_wifi_4_bar_lock)", value: "signal_wifi_4_bar_lock" }
+          - { label: "Signal Wifi Bad (signal_wifi_bad)", value: "signal_wifi_bad" }
+          - { label: "Signal Wifi Connected No Internet 4 (signal_wifi_connected_no_internet_4)", value: "signal_wifi_connected_no_internet_4" }
+          - { label: "Signal Wifi Off (signal_wifi_off)", value: "signal_wifi_off" }
+          - { label: "Signal Wifi Statusbar 4 Bar (signal_wifi_statusbar_4_bar)", value: "signal_wifi_statusbar_4_bar" }
+          - { label: "Signal Wifi Statusbar Connected No Internet 4 (signal_wifi_statusbar_connected_no_internet_4)", value: "signal_wifi_statusbar_connected_no_internet_4" }
+          - { label: "Signal Wifi Statusbar Null (signal_wifi_statusbar_null)", value: "signal_wifi_statusbar_null" }
+          - { label: "Signpost (signpost)", value: "signpost" }
+          - { label: "Sim Card (sim_card)", value: "sim_card" }
+          - { label: "Sim Card Alert (sim_card_alert)", value: "sim_card_alert" }
+          - { label: "Sim Card Download (sim_card_download)", value: "sim_card_download" }
+          - { label: "Single Bed (single_bed)", value: "single_bed" }
+          - { label: "Sip (sip)", value: "sip" }
+          - { label: "Skateboarding (skateboarding)", value: "skateboarding" }
+          - { label: "Skip Next (skip_next)", value: "skip_next" }
+          - { label: "Skip Previous (skip_previous)", value: "skip_previous" }
+          - { label: "Sledding (sledding)", value: "sledding" }
+          - { label: "Slideshow (slideshow)", value: "slideshow" }
+          - { label: "Slow Motion Video (slow_motion_video)", value: "slow_motion_video" }
+          - { label: "Smart Button (smart_button)", value: "smart_button" }
+          - { label: "Smart Display (smart_display)", value: "smart_display" }
+          - { label: "Smart Screen (smart_screen)", value: "smart_screen" }
+          - { label: "Smart Toy (smart_toy)", value: "smart_toy" }
+          - { label: "Smartphone (smartphone)", value: "smartphone" }
+          - { label: "Smoke Free (smoke_free)", value: "smoke_free" }
+          - { label: "Smoking Rooms (smoking_rooms)", value: "smoking_rooms" }
+          - { label: "Sms (sms)", value: "sms" }
+          - { label: "Sms Failed (sms_failed)", value: "sms_failed" }
+          - { label: "Snapchat (snapchat)", value: "snapchat" }
+          - { label: "Snippet Folder (snippet_folder)", value: "snippet_folder" }
+          - { label: "Snooze (snooze)", value: "snooze" }
+          - { label: "Snowboarding (snowboarding)", value: "snowboarding" }
+          - { label: "Snowmobile (snowmobile)", value: "snowmobile" }
+          - { label: "Snowshoeing (snowshoeing)", value: "snowshoeing" }
+          - { label: "Soap (soap)", value: "soap" }
+          - { label: "Social Distance (social_distance)", value: "social_distance" }
+          - { label: "Solar Power (solar_power)", value: "solar_power" }
+          - { label: "Sort (sort)", value: "sort" }
+          - { label: "Sort By Alpha (sort_by_alpha)", value: "sort_by_alpha" }
+          - { label: "Sos (sos)", value: "sos" }
+          - { label: "Soup Kitchen (soup_kitchen)", value: "soup_kitchen" }
+          - { label: "Source (source)", value: "source" }
+          - { label: "South (south)", value: "south" }
+          - { label: "South America (south_america)", value: "south_america" }
+          - { label: "South East (south_east)", value: "south_east" }
+          - { label: "South West (south_west)", value: "south_west" }
+          - { label: "Spa (spa)", value: "spa" }
+          - { label: "Space Bar (space_bar)", value: "space_bar" }
+          - { label: "Space Dashboard (space_dashboard)", value: "space_dashboard" }
+          - { label: "Spatial Audio (spatial_audio)", value: "spatial_audio" }
+          - { label: "Spatial Audio Off (spatial_audio_off)", value: "spatial_audio_off" }
+          - { label: "Spatial Tracking (spatial_tracking)", value: "spatial_tracking" }
+          - { label: "Speaker (speaker)", value: "speaker" }
+          - { label: "Speaker Group (speaker_group)", value: "speaker_group" }
+          - { label: "Speaker Notes (speaker_notes)", value: "speaker_notes" }
+          - { label: "Speaker Notes Off (speaker_notes_off)", value: "speaker_notes_off" }
+          - { label: "Speaker Phone (speaker_phone)", value: "speaker_phone" }
+          - { label: "Speed (speed)", value: "speed" }
+          - { label: "Spellcheck (spellcheck)", value: "spellcheck" }
+          - { label: "Splitscreen (splitscreen)", value: "splitscreen" }
+          - { label: "Spoke (spoke)", value: "spoke" }
+          - { label: "Sports (sports)", value: "sports" }
+          - { label: "Sports Bar (sports_bar)", value: "sports_bar" }
+          - { label: "Sports Baseball (sports_baseball)", value: "sports_baseball" }
+          - { label: "Sports Basketball (sports_basketball)", value: "sports_basketball" }
+          - { label: "Sports Cricket (sports_cricket)", value: "sports_cricket" }
+          - { label: "Sports Esports (sports_esports)", value: "sports_esports" }
+          - { label: "Sports Football (sports_football)", value: "sports_football" }
+          - { label: "Sports Golf (sports_golf)", value: "sports_golf" }
+          - { label: "Sports Gymnastics (sports_gymnastics)", value: "sports_gymnastics" }
+          - { label: "Sports Handball (sports_handball)", value: "sports_handball" }
+          - { label: "Sports Hockey (sports_hockey)", value: "sports_hockey" }
+          - { label: "Sports Kabaddi (sports_kabaddi)", value: "sports_kabaddi" }
+          - { label: "Sports Martial Arts (sports_martial_arts)", value: "sports_martial_arts" }
+          - { label: "Sports Mma (sports_mma)", value: "sports_mma" }
+          - { label: "Sports Motorsports (sports_motorsports)", value: "sports_motorsports" }
+          - { label: "Sports Rugby (sports_rugby)", value: "sports_rugby" }
+          - { label: "Sports Score (sports_score)", value: "sports_score" }
+          - { label: "Sports Soccer (sports_soccer)", value: "sports_soccer" }
+          - { label: "Sports Tennis (sports_tennis)", value: "sports_tennis" }
+          - { label: "Sports Volleyball (sports_volleyball)", value: "sports_volleyball" }
+          - { label: "Square (square)", value: "square" }
+          - { label: "Square Foot (square_foot)", value: "square_foot" }
+          - { label: "Ssid Chart (ssid_chart)", value: "ssid_chart" }
+          - { label: "Stacked Bar Chart (stacked_bar_chart)", value: "stacked_bar_chart" }
+          - { label: "Stacked Line Chart (stacked_line_chart)", value: "stacked_line_chart" }
+          - { label: "Stadium (stadium)", value: "stadium" }
+          - { label: "Stairs (stairs)", value: "stairs" }
+          - { label: "Star (star)", value: "star" }
+          - { label: "Star Border (star_border)", value: "star_border" }
+          - { label: "Star Border Purple500 (star_border_purple500)", value: "star_border_purple500" }
+          - { label: "Star Half (star_half)", value: "star_half" }
+          - { label: "Star Outline (star_outline)", value: "star_outline" }
+          - { label: "Star Purple500 (star_purple500)", value: "star_purple500" }
+          - { label: "Star Rate (star_rate)", value: "star_rate" }
+          - { label: "Stars (stars)", value: "stars" }
+          - { label: "Start (start)", value: "start" }
+          - { label: "Stay Current Landscape (stay_current_landscape)", value: "stay_current_landscape" }
+          - { label: "Stay Current Portrait (stay_current_portrait)", value: "stay_current_portrait" }
+          - { label: "Stay Primary Landscape (stay_primary_landscape)", value: "stay_primary_landscape" }
+          - { label: "Stay Primary Portrait (stay_primary_portrait)", value: "stay_primary_portrait" }
+          - { label: "Sticky Note 2 (sticky_note_2)", value: "sticky_note_2" }
+          - { label: "Stop (stop)", value: "stop" }
+          - { label: "Stop Circle (stop_circle)", value: "stop_circle" }
+          - { label: "Stop Screen Share (stop_screen_share)", value: "stop_screen_share" }
+          - { label: "Storage (storage)", value: "storage" }
+          - { label: "Store (store)", value: "store" }
+          - { label: "Store Mall Directory (store_mall_directory)", value: "store_mall_directory" }
+          - { label: "Storefront (storefront)", value: "storefront" }
+          - { label: "Storm (storm)", value: "storm" }
+          - { label: "Straight (straight)", value: "straight" }
+          - { label: "Straighten (straighten)", value: "straighten" }
+          - { label: "Stream (stream)", value: "stream" }
+          - { label: "Streetview (streetview)", value: "streetview" }
+          - { label: "Strikethrough S (strikethrough_s)", value: "strikethrough_s" }
+          - { label: "Stroller (stroller)", value: "stroller" }
+          - { label: "Style (style)", value: "style" }
+          - { label: "Subdirectory Arrow Left (subdirectory_arrow_left)", value: "subdirectory_arrow_left" }
+          - { label: "Subdirectory Arrow Right (subdirectory_arrow_right)", value: "subdirectory_arrow_right" }
+          - { label: "Subject (subject)", value: "subject" }
+          - { label: "Subscript (subscript)", value: "subscript" }
+          - { label: "Subscriptions (subscriptions)", value: "subscriptions" }
+          - { label: "Subtitles (subtitles)", value: "subtitles" }
+          - { label: "Subtitles Off (subtitles_off)", value: "subtitles_off" }
+          - { label: "Subway (subway)", value: "subway" }
+          - { label: "Summarize (summarize)", value: "summarize" }
+          - { label: "Superscript (superscript)", value: "superscript" }
+          - { label: "Supervised User Circle (supervised_user_circle)", value: "supervised_user_circle" }
+          - { label: "Supervisor Account (supervisor_account)", value: "supervisor_account" }
+          - { label: "Support (support)", value: "support" }
+          - { label: "Support Agent (support_agent)", value: "support_agent" }
+          - { label: "Surfing (surfing)", value: "surfing" }
+          - { label: "Surround Sound (surround_sound)", value: "surround_sound" }
+          - { label: "Swap Calls (swap_calls)", value: "swap_calls" }
+          - { label: "Swap Horiz (swap_horiz)", value: "swap_horiz" }
+          - { label: "Swap Horizontal Circle (swap_horizontal_circle)", value: "swap_horizontal_circle" }
+          - { label: "Swap Vert (swap_vert)", value: "swap_vert" }
+          - { label: "Swap Vert Circle (swap_vert_circle)", value: "swap_vert_circle" }
+          - { label: "Swap Vertical Circle (swap_vertical_circle)", value: "swap_vertical_circle" }
+          - { label: "Swipe (swipe)", value: "swipe" }
+          - { label: "Swipe Down (swipe_down)", value: "swipe_down" }
+          - { label: "Swipe Down Alt (swipe_down_alt)", value: "swipe_down_alt" }
+          - { label: "Swipe Left (swipe_left)", value: "swipe_left" }
+          - { label: "Swipe Left Alt (swipe_left_alt)", value: "swipe_left_alt" }
+          - { label: "Swipe Right (swipe_right)", value: "swipe_right" }
+          - { label: "Swipe Right Alt (swipe_right_alt)", value: "swipe_right_alt" }
+          - { label: "Swipe Up (swipe_up)", value: "swipe_up" }
+          - { label: "Swipe Up Alt (swipe_up_alt)", value: "swipe_up_alt" }
+          - { label: "Swipe Vertical (swipe_vertical)", value: "swipe_vertical" }
+          - { label: "Switch Access Shortcut (switch_access_shortcut)", value: "switch_access_shortcut" }
+          - { label: "Switch Access Shortcut Add (switch_access_shortcut_add)", value: "switch_access_shortcut_add" }
+          - { label: "Switch Account (switch_account)", value: "switch_account" }
+          - { label: "Switch Camera (switch_camera)", value: "switch_camera" }
+          - { label: "Switch Left (switch_left)", value: "switch_left" }
+          - { label: "Switch Right (switch_right)", value: "switch_right" }
+          - { label: "Switch Video (switch_video)", value: "switch_video" }
+          - { label: "Synagogue (synagogue)", value: "synagogue" }
+          - { label: "Sync (sync)", value: "sync" }
+          - { label: "Sync Alt (sync_alt)", value: "sync_alt" }
+          - { label: "Sync Disabled (sync_disabled)", value: "sync_disabled" }
+          - { label: "Sync Lock (sync_lock)", value: "sync_lock" }
+          - { label: "Sync Problem (sync_problem)", value: "sync_problem" }
+          - { label: "System Security Update (system_security_update)", value: "system_security_update" }
+          - { label: "System Security Update Good (system_security_update_good)", value: "system_security_update_good" }
+          - { label: "System Security Update Warning (system_security_update_warning)", value: "system_security_update_warning" }
+          - { label: "System Update (system_update)", value: "system_update" }
+          - { label: "System Update Alt (system_update_alt)", value: "system_update_alt" }
+          - { label: "System Update Tv (system_update_tv)", value: "system_update_tv" }
+          - { label: "Tab (tab)", value: "tab" }
+          - { label: "Tab Unselected (tab_unselected)", value: "tab_unselected" }
+          - { label: "Table Bar (table_bar)", value: "table_bar" }
+          - { label: "Table Chart (table_chart)", value: "table_chart" }
+          - { label: "Table Restaurant (table_restaurant)", value: "table_restaurant" }
+          - { label: "Table Rows (table_rows)", value: "table_rows" }
+          - { label: "Table View (table_view)", value: "table_view" }
+          - { label: "Tablet (tablet)", value: "tablet" }
+          - { label: "Tablet Android (tablet_android)", value: "tablet_android" }
+          - { label: "Tablet Mac (tablet_mac)", value: "tablet_mac" }
+          - { label: "Tag (tag)", value: "tag" }
+          - { label: "Tag Faces (tag_faces)", value: "tag_faces" }
+          - { label: "Takeout Dining (takeout_dining)", value: "takeout_dining" }
+          - { label: "Tap And Play (tap_and_play)", value: "tap_and_play" }
+          - { label: "Tapas (tapas)", value: "tapas" }
+          - { label: "Task (task)", value: "task" }
+          - { label: "Task Alt (task_alt)", value: "task_alt" }
+          - { label: "Taxi Alert (taxi_alert)", value: "taxi_alert" }
+          - { label: "Telegram (telegram)", value: "telegram" }
+          - { label: "Temple Buddhist (temple_buddhist)", value: "temple_buddhist" }
+          - { label: "Temple Hindu (temple_hindu)", value: "temple_hindu" }
+          - { label: "Terminal (terminal)", value: "terminal" }
+          - { label: "Terrain (terrain)", value: "terrain" }
+          - { label: "Text Decrease (text_decrease)", value: "text_decrease" }
+          - { label: "Text Fields (text_fields)", value: "text_fields" }
+          - { label: "Text Format (text_format)", value: "text_format" }
+          - { label: "Text Increase (text_increase)", value: "text_increase" }
+          - { label: "Text Rotate Up (text_rotate_up)", value: "text_rotate_up" }
+          - { label: "Text Rotate Vertical (text_rotate_vertical)", value: "text_rotate_vertical" }
+          - { label: "Text Rotation Angledown (text_rotation_angledown)", value: "text_rotation_angledown" }
+          - { label: "Text Rotation Angleup (text_rotation_angleup)", value: "text_rotation_angleup" }
+          - { label: "Text Rotation Down (text_rotation_down)", value: "text_rotation_down" }
+          - { label: "Text Rotation None (text_rotation_none)", value: "text_rotation_none" }
+          - { label: "Text Snippet (text_snippet)", value: "text_snippet" }
+          - { label: "Textsms (textsms)", value: "textsms" }
+          - { label: "Texture (texture)", value: "texture" }
+          - { label: "Theater Comedy (theater_comedy)", value: "theater_comedy" }
+          - { label: "Theaters (theaters)", value: "theaters" }
+          - { label: "Thermostat (thermostat)", value: "thermostat" }
+          - { label: "Thermostat Auto (thermostat_auto)", value: "thermostat_auto" }
+          - { label: "Thumb Down (thumb_down)", value: "thumb_down" }
+          - { label: "Thumb Down Alt (thumb_down_alt)", value: "thumb_down_alt" }
+          - { label: "Thumb Down Off Alt (thumb_down_off_alt)", value: "thumb_down_off_alt" }
+          - { label: "Thumb Up (thumb_up)", value: "thumb_up" }
+          - { label: "Thumb Up Alt (thumb_up_alt)", value: "thumb_up_alt" }
+          - { label: "Thumb Up Off Alt (thumb_up_off_alt)", value: "thumb_up_off_alt" }
+          - { label: "Thumbs Up Down (thumbs_up_down)", value: "thumbs_up_down" }
+          - { label: "Thunderstorm (thunderstorm)", value: "thunderstorm" }
+          - { label: "Tiktok (tiktok)", value: "tiktok" }
+          - { label: "Time To Leave (time_to_leave)", value: "time_to_leave" }
+          - { label: "Timelapse (timelapse)", value: "timelapse" }
+          - { label: "Timeline (timeline)", value: "timeline" }
+          - { label: "Timer (timer)", value: "timer" }
+          - { label: "Timer 10 (timer_10)", value: "timer_10" }
+          - { label: "Timer 10 Select (timer_10_select)", value: "timer_10_select" }
+          - { label: "Timer 3 (timer_3)", value: "timer_3" }
+          - { label: "Timer 3 Select (timer_3_select)", value: "timer_3_select" }
+          - { label: "Timer Off (timer_off)", value: "timer_off" }
+          - { label: "Tips And Updates (tips_and_updates)", value: "tips_and_updates" }
+          - { label: "Tire Repair (tire_repair)", value: "tire_repair" }
+          - { label: "Title (title)", value: "title" }
+          - { label: "Toc (toc)", value: "toc" }
+          - { label: "Today (today)", value: "today" }
+          - { label: "Toggle Off (toggle_off)", value: "toggle_off" }
+          - { label: "Toggle On (toggle_on)", value: "toggle_on" }
+          - { label: "Token (token)", value: "token" }
+          - { label: "Toll (toll)", value: "toll" }
+          - { label: "Tonality (tonality)", value: "tonality" }
+          - { label: "Topic (topic)", value: "topic" }
+          - { label: "Tornado (tornado)", value: "tornado" }
+          - { label: "Touch App (touch_app)", value: "touch_app" }
+          - { label: "Tour (tour)", value: "tour" }
+          - { label: "Toys (toys)", value: "toys" }
+          - { label: "Track Changes (track_changes)", value: "track_changes" }
+          - { label: "Traffic (traffic)", value: "traffic" }
+          - { label: "Train (train)", value: "train" }
+          - { label: "Tram (tram)", value: "tram" }
+          - { label: "Transcribe (transcribe)", value: "transcribe" }
+          - { label: "Transfer Within A Station (transfer_within_a_station)", value: "transfer_within_a_station" }
+          - { label: "Transform (transform)", value: "transform" }
+          - { label: "Transgender (transgender)", value: "transgender" }
+          - { label: "Transit Enterexit (transit_enterexit)", value: "transit_enterexit" }
+          - { label: "Translate (translate)", value: "translate" }
+          - { label: "Travel Explore (travel_explore)", value: "travel_explore" }
+          - { label: "Trending Down (trending_down)", value: "trending_down" }
+          - { label: "Trending Flat (trending_flat)", value: "trending_flat" }
+          - { label: "Trending Neutral (trending_neutral)", value: "trending_neutral" }
+          - { label: "Trending Up (trending_up)", value: "trending_up" }
+          - { label: "Trip Origin (trip_origin)", value: "trip_origin" }
+          - { label: "Troubleshoot (troubleshoot)", value: "troubleshoot" }
+          - { label: "Try (try)", value: "try" }
+          - { label: "Tsunami (tsunami)", value: "tsunami" }
+          - { label: "Tty (tty)", value: "tty" }
+          - { label: "Tune (tune)", value: "tune" }
+          - { label: "Tungsten (tungsten)", value: "tungsten" }
+          - { label: "Turn Left (turn_left)", value: "turn_left" }
+          - { label: "Turn Right (turn_right)", value: "turn_right" }
+          - { label: "Turn Sharp Left (turn_sharp_left)", value: "turn_sharp_left" }
+          - { label: "Turn Sharp Right (turn_sharp_right)", value: "turn_sharp_right" }
+          - { label: "Turn Slight Left (turn_slight_left)", value: "turn_slight_left" }
+          - { label: "Turn Slight Right (turn_slight_right)", value: "turn_slight_right" }
+          - { label: "Turned In (turned_in)", value: "turned_in" }
+          - { label: "Turned In Not (turned_in_not)", value: "turned_in_not" }
+          - { label: "Tv (tv)", value: "tv" }
+          - { label: "Tv Off (tv_off)", value: "tv_off" }
+          - { label: "Two Wheeler (two_wheeler)", value: "two_wheeler" }
+          - { label: "Type Specimen (type_specimen)", value: "type_specimen" }
+          - { label: "U Turn Left (u_turn_left)", value: "u_turn_left" }
+          - { label: "U Turn Right (u_turn_right)", value: "u_turn_right" }
+          - { label: "Umbrella (umbrella)", value: "umbrella" }
+          - { label: "Unarchive (unarchive)", value: "unarchive" }
+          - { label: "Undo (undo)", value: "undo" }
+          - { label: "Unfold Less (unfold_less)", value: "unfold_less" }
+          - { label: "Unfold Less Double (unfold_less_double)", value: "unfold_less_double" }
+          - { label: "Unfold More (unfold_more)", value: "unfold_more" }
+          - { label: "Unfold More Double (unfold_more_double)", value: "unfold_more_double" }
+          - { label: "Unpublished (unpublished)", value: "unpublished" }
+          - { label: "Unsubscribe (unsubscribe)", value: "unsubscribe" }
+          - { label: "Upcoming (upcoming)", value: "upcoming" }
+          - { label: "Update (update)", value: "update" }
+          - { label: "Update Disabled (update_disabled)", value: "update_disabled" }
+          - { label: "Upgrade (upgrade)", value: "upgrade" }
+          - { label: "Upload (upload)", value: "upload" }
+          - { label: "Upload File (upload_file)", value: "upload_file" }
+          - { label: "Usb (usb)", value: "usb" }
+          - { label: "Usb Off (usb_off)", value: "usb_off" }
+          - { label: "Vaccines (vaccines)", value: "vaccines" }
+          - { label: "Vape Free (vape_free)", value: "vape_free" }
+          - { label: "Vaping Rooms (vaping_rooms)", value: "vaping_rooms" }
+          - { label: "Verified (verified)", value: "verified" }
+          - { label: "Verified User (verified_user)", value: "verified_user" }
+          - { label: "Vertical Align Bottom (vertical_align_bottom)", value: "vertical_align_bottom" }
+          - { label: "Vertical Align Center (vertical_align_center)", value: "vertical_align_center" }
+          - { label: "Vertical Align Top (vertical_align_top)", value: "vertical_align_top" }
+          - { label: "Vertical Distribute (vertical_distribute)", value: "vertical_distribute" }
+          - { label: "Vertical Shades (vertical_shades)", value: "vertical_shades" }
+          - { label: "Vertical Shades Closed (vertical_shades_closed)", value: "vertical_shades_closed" }
+          - { label: "Vertical Split (vertical_split)", value: "vertical_split" }
+          - { label: "Vibration (vibration)", value: "vibration" }
+          - { label: "Video Call (video_call)", value: "video_call" }
+          - { label: "Video Camera Back (video_camera_back)", value: "video_camera_back" }
+          - { label: "Video Camera Front (video_camera_front)", value: "video_camera_front" }
+          - { label: "Video Chat (video_chat)", value: "video_chat" }
+          - { label: "Video Collection (video_collection)", value: "video_collection" }
+          - { label: "Video File (video_file)", value: "video_file" }
+          - { label: "Video Label (video_label)", value: "video_label" }
+          - { label: "Video Library (video_library)", value: "video_library" }
+          - { label: "Video Settings (video_settings)", value: "video_settings" }
+          - { label: "Video Stable (video_stable)", value: "video_stable" }
+          - { label: "Videocam (videocam)", value: "videocam" }
+          - { label: "Videocam Off (videocam_off)", value: "videocam_off" }
+          - { label: "Videogame Asset (videogame_asset)", value: "videogame_asset" }
+          - { label: "Videogame Asset Off (videogame_asset_off)", value: "videogame_asset_off" }
+          - { label: "View Agenda (view_agenda)", value: "view_agenda" }
+          - { label: "View Array (view_array)", value: "view_array" }
+          - { label: "View Carousel (view_carousel)", value: "view_carousel" }
+          - { label: "View Column (view_column)", value: "view_column" }
+          - { label: "View Comfortable (view_comfortable)", value: "view_comfortable" }
+          - { label: "View Comfy (view_comfy)", value: "view_comfy" }
+          - { label: "View Comfy Alt (view_comfy_alt)", value: "view_comfy_alt" }
+          - { label: "View Compact (view_compact)", value: "view_compact" }
+          - { label: "View Compact Alt (view_compact_alt)", value: "view_compact_alt" }
+          - { label: "View Cozy (view_cozy)", value: "view_cozy" }
+          - { label: "View Day (view_day)", value: "view_day" }
+          - { label: "View Headline (view_headline)", value: "view_headline" }
+          - { label: "View In Ar (view_in_ar)", value: "view_in_ar" }
+          - { label: "View Kanban (view_kanban)", value: "view_kanban" }
+          - { label: "View List (view_list)", value: "view_list" }
+          - { label: "View Module (view_module)", value: "view_module" }
+          - { label: "View Quilt (view_quilt)", value: "view_quilt" }
+          - { label: "View Sidebar (view_sidebar)", value: "view_sidebar" }
+          - { label: "View Stream (view_stream)", value: "view_stream" }
+          - { label: "View Timeline (view_timeline)", value: "view_timeline" }
+          - { label: "View Week (view_week)", value: "view_week" }
+          - { label: "Vignette (vignette)", value: "vignette" }
+          - { label: "Villa (villa)", value: "villa" }
+          - { label: "Visibility (visibility)", value: "visibility" }
+          - { label: "Visibility Off (visibility_off)", value: "visibility_off" }
+          - { label: "Voice Chat (voice_chat)", value: "voice_chat" }
+          - { label: "Voice Over Off (voice_over_off)", value: "voice_over_off" }
+          - { label: "Voicemail (voicemail)", value: "voicemail" }
+          - { label: "Volcano (volcano)", value: "volcano" }
+          - { label: "Volume Down (volume_down)", value: "volume_down" }
+          - { label: "Volume Mute (volume_mute)", value: "volume_mute" }
+          - { label: "Volume Off (volume_off)", value: "volume_off" }
+          - { label: "Volume Up (volume_up)", value: "volume_up" }
+          - { label: "Volunteer Activism (volunteer_activism)", value: "volunteer_activism" }
+          - { label: "Vpn Key (vpn_key)", value: "vpn_key" }
+          - { label: "Vpn Key Off (vpn_key_off)", value: "vpn_key_off" }
+          - { label: "Vpn Lock (vpn_lock)", value: "vpn_lock" }
+          - { label: "Vrpano (vrpano)", value: "vrpano" }
+          - { label: "Wallet (wallet)", value: "wallet" }
+          - { label: "Wallet Giftcard (wallet_giftcard)", value: "wallet_giftcard" }
+          - { label: "Wallet Membership (wallet_membership)", value: "wallet_membership" }
+          - { label: "Wallet Travel (wallet_travel)", value: "wallet_travel" }
+          - { label: "Wallpaper (wallpaper)", value: "wallpaper" }
+          - { label: "Warehouse (warehouse)", value: "warehouse" }
+          - { label: "Warning (warning)", value: "warning" }
+          - { label: "Warning Amber (warning_amber)", value: "warning_amber" }
+          - { label: "Wash (wash)", value: "wash" }
+          - { label: "Watch (watch)", value: "watch" }
+          - { label: "Watch Later (watch_later)", value: "watch_later" }
+          - { label: "Watch Off (watch_off)", value: "watch_off" }
+          - { label: "Water (water)", value: "water" }
+          - { label: "Water Damage (water_damage)", value: "water_damage" }
+          - { label: "Water Drop (water_drop)", value: "water_drop" }
+          - { label: "Waterfall Chart (waterfall_chart)", value: "waterfall_chart" }
+          - { label: "Waves (waves)", value: "waves" }
+          - { label: "Waving Hand (waving_hand)", value: "waving_hand" }
+          - { label: "Wb Auto (wb_auto)", value: "wb_auto" }
+          - { label: "Wb Cloudy (wb_cloudy)", value: "wb_cloudy" }
+          - { label: "Wb Incandescent (wb_incandescent)", value: "wb_incandescent" }
+          - { label: "Wb Iridescent (wb_iridescent)", value: "wb_iridescent" }
+          - { label: "Wb Shade (wb_shade)", value: "wb_shade" }
+          - { label: "Wb Sunny (wb_sunny)", value: "wb_sunny" }
+          - { label: "Wb Twilight (wb_twilight)", value: "wb_twilight" }
+          - { label: "Wc (wc)", value: "wc" }
+          - { label: "Web (web)", value: "web" }
+          - { label: "Web Asset (web_asset)", value: "web_asset" }
+          - { label: "Web Asset Off (web_asset_off)", value: "web_asset_off" }
+          - { label: "Web Stories (web_stories)", value: "web_stories" }
+          - { label: "Webhook (webhook)", value: "webhook" }
+          - { label: "Wechat (wechat)", value: "wechat" }
+          - { label: "Weekend (weekend)", value: "weekend" }
+          - { label: "West (west)", value: "west" }
+          - { label: "Whatshot (whatshot)", value: "whatshot" }
+          - { label: "Wheelchair Pickup (wheelchair_pickup)", value: "wheelchair_pickup" }
+          - { label: "Where To Vote (where_to_vote)", value: "where_to_vote" }
+          - { label: "Widgets (widgets)", value: "widgets" }
+          - { label: "Width Full (width_full)", value: "width_full" }
+          - { label: "Width Normal (width_normal)", value: "width_normal" }
+          - { label: "Width Wide (width_wide)", value: "width_wide" }
+          - { label: "Wifi (wifi)", value: "wifi" }
+          - { label: "Wifi 1 Bar (wifi_1_bar)", value: "wifi_1_bar" }
+          - { label: "Wifi 2 Bar (wifi_2_bar)", value: "wifi_2_bar" }
+          - { label: "Wifi Calling (wifi_calling)", value: "wifi_calling" }
+          - { label: "Wifi Calling 3 (wifi_calling_3)", value: "wifi_calling_3" }
+          - { label: "Wifi Channel (wifi_channel)", value: "wifi_channel" }
+          - { label: "Wifi Find (wifi_find)", value: "wifi_find" }
+          - { label: "Wifi Lock (wifi_lock)", value: "wifi_lock" }
+          - { label: "Wifi Off (wifi_off)", value: "wifi_off" }
+          - { label: "Wifi Password (wifi_password)", value: "wifi_password" }
+          - { label: "Wifi Protected Setup (wifi_protected_setup)", value: "wifi_protected_setup" }
+          - { label: "Wifi Tethering (wifi_tethering)", value: "wifi_tethering" }
+          - { label: "Wifi Tethering Error (wifi_tethering_error)", value: "wifi_tethering_error" }
+          - { label: "Wifi Tethering Error Rounded (wifi_tethering_error_rounded)", value: "wifi_tethering_error_rounded" }
+          - { label: "Wifi Tethering Off (wifi_tethering_off)", value: "wifi_tethering_off" }
+          - { label: "Wind Power (wind_power)", value: "wind_power" }
+          - { label: "Window (window)", value: "window" }
+          - { label: "Wine Bar (wine_bar)", value: "wine_bar" }
+          - { label: "Woman (woman)", value: "woman" }
+          - { label: "Woman 2 (woman_2)", value: "woman_2" }
+          - { label: "Woo Commerce (woo_commerce)", value: "woo_commerce" }
+          - { label: "Wordpress (wordpress)", value: "wordpress" }
+          - { label: "Work (work)", value: "work" }
+          - { label: "Work History (work_history)", value: "work_history" }
+          - { label: "Work Off (work_off)", value: "work_off" }
+          - { label: "Work Outline (work_outline)", value: "work_outline" }
+          - { label: "Workspace Premium (workspace_premium)", value: "workspace_premium" }
+          - { label: "Workspaces (workspaces)", value: "workspaces" }
+          - { label: "Wrap Text (wrap_text)", value: "wrap_text" }
+          - { label: "Wrong Location (wrong_location)", value: "wrong_location" }
+          - { label: "Wysiwyg (wysiwyg)", value: "wysiwyg" }
+          - { label: "Yard (yard)", value: "yard" }
+          - { label: "Youtube Searched For (youtube_searched_for)", value: "youtube_searched_for" }
+          - { label: "Zoom In (zoom_in)", value: "zoom_in" }
+          - { label: "Zoom In Map (zoom_in_map)", value: "zoom_in_map" }
+          - { label: "Zoom Out (zoom_out)", value: "zoom_out" }
+          - { label: "Zoom Out Map (zoom_out_map)", value: "zoom_out_map" }
       - label: "Icon Color"
         name: "icon_color"
         widget: "select"
@@ -44,13 +2226,20 @@ collections:
         options:
           - { label: "Blue", value: "blue" }
           - { label: "Sky", value: "sky" }
-          - { label: "Emerald", value: "emerald" }
+          - { label: "Cyan", value: "cyan" }
           - { label: "Teal", value: "teal" }
+          - { label: "Emerald", value: "emerald" }
+          - { label: "Green", value: "green" }
+          - { label: "Lime", value: "lime" }
           - { label: "Amber", value: "amber" }
+          - { label: "Yellow", value: "yellow" }
           - { label: "Orange", value: "orange" }
           - { label: "Rose", value: "rose" }
+          - { label: "Pink", value: "pink" }
           - { label: "Red", value: "red" }
+          - { label: "Fuchsia", value: "fuchsia" }
           - { label: "Purple", value: "purple" }
+          - { label: "Violet", value: "violet" }
           - { label: "Indigo", value: "indigo" }
           - { label: "Slate", value: "slate" }
       - { label: "Summary", name: "summary", widget: "text" }
@@ -81,6 +2270,15 @@ collections:
               - { label: "Audio (audio_file)", value: "audio_file" }
               - { label: "Link (link)", value: "link" }
               - { label: "Checklist (checklist)", value: "checklist" }
+              - { label: "Code / Script (code)", value: "code" }
+              - { label: "Guide / Handbook (menu_book)", value: "menu_book" }
+              - { label: "Form / Survey (ballot)", value: "ballot" }
+              - { label: "Event / Calendar (event)", value: "event" }
+              - { label: "Certificate / Badge (workspace_premium)", value: "workspace_premium" }
+              - { label: "Chart / Report (bar_chart)", value: "bar_chart" }
+              - { label: "Email / Mail (mail)", value: "mail" }
+              - { label: "Note / One-pager (note)", value: "note" }
+              - { label: "Download (download)", value: "download" }
           - label: "Preview Image"
             name: "preview_image_url"
             widget: "image"
