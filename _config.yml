@@ -23,6 +23,10 @@ defaults:
       type: "resources"
     values:
       layout: resource_group
+  - scope:
+      path: "_resources/template.md"
+    values:
+      published: false
 
 compress_html:
   clippings: all
