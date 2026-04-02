@@ -1,0 +1,13 @@
+{
+  "name": "resource-center",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/site.tailwind.css -o ./assets/css/site.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.15",
+    "tailwindcss": "^3.4.17"
+  }
+}

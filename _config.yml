@@ -6,6 +6,9 @@ url: "https://library.rsamdio.org"
 markdown: kramdown
 theme: null
 
+exclude:
+  - assets/css/site.tailwind.css
+
 plugins:
   - jekyll-sitemap
   - jekyll-feed

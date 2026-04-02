@@ -1,4 +1,4 @@
-<section class="py-12 px-4 sm:px-6 md:px-8 lg:px-12 bg-background-light dark:bg-background-dark">
+<section id="thematic-resource-groups" class="py-12 px-4 sm:px-6 md:px-8 lg:px-12 bg-background-light dark:bg-background-dark">
     <div class="mx-auto max-w-screen-sm md:max-w-5xl lg:max-w-6xl xl:max-w-[90rem] transition-all duration-300 px-0 sm:px-4 lg:px-8">
         <div class="flex items-center justify-between mb-8">
             <h2 class="text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
@@ -15,41 +15,41 @@
             {% assign resource_count = group.resources | size %}
             {% case group.icon_color %}
                 {% when "sky" %}
-                    {% assign icon_bg = "bg-sky-100 dark:bg-sky-900/30" %}{% assign icon_text = "text-sky-600" %}{% assign badge_bg = "bg-sky-50 dark:bg-sky-900/40" %}{% assign badge_text = "text-sky-600 dark:text-sky-300" %}
+                    {% assign icon_bg = "bg-sky-100 dark:bg-sky-900/30" %}{% assign icon_text = "text-sky-600" %}{% assign badge_bg = "bg-sky-100 dark:bg-sky-950/50" %}{% assign badge_text = "text-sky-900 dark:text-sky-100" %}
                 {% when "cyan" %}
-                    {% assign icon_bg = "bg-cyan-100 dark:bg-cyan-900/30" %}{% assign icon_text = "text-cyan-600" %}{% assign badge_bg = "bg-cyan-50 dark:bg-cyan-900/40" %}{% assign badge_text = "text-cyan-600 dark:text-cyan-300" %}
+                    {% assign icon_bg = "bg-cyan-100 dark:bg-cyan-900/30" %}{% assign icon_text = "text-cyan-600" %}{% assign badge_bg = "bg-cyan-100 dark:bg-cyan-950/50" %}{% assign badge_text = "text-cyan-900 dark:text-cyan-100" %}
                 {% when "teal" %}
-                    {% assign icon_bg = "bg-teal-100 dark:bg-teal-900/30" %}{% assign icon_text = "text-teal-600" %}{% assign badge_bg = "bg-teal-50 dark:bg-teal-900/40" %}{% assign badge_text = "text-teal-600 dark:text-teal-300" %}
+                    {% assign icon_bg = "bg-teal-100 dark:bg-teal-900/30" %}{% assign icon_text = "text-teal-600" %}{% assign badge_bg = "bg-teal-100 dark:bg-teal-950/50" %}{% assign badge_text = "text-teal-900 dark:text-teal-100" %}
                 {% when "emerald" %}
-                    {% assign icon_bg = "bg-emerald-100 dark:bg-emerald-900/30" %}{% assign icon_text = "text-emerald-600" %}{% assign badge_bg = "bg-emerald-50 dark:bg-emerald-900/40" %}{% assign badge_text = "text-emerald-600 dark:text-emerald-300" %}
+                    {% assign icon_bg = "bg-emerald-100 dark:bg-emerald-900/30" %}{% assign icon_text = "text-emerald-600" %}{% assign badge_bg = "bg-emerald-100 dark:bg-emerald-950/50" %}{% assign badge_text = "text-emerald-900 dark:text-emerald-100" %}
                 {% when "green" %}
-                    {% assign icon_bg = "bg-green-100 dark:bg-green-900/30" %}{% assign icon_text = "text-green-600" %}{% assign badge_bg = "bg-green-50 dark:bg-green-900/40" %}{% assign badge_text = "text-green-600 dark:text-green-300" %}
+                    {% assign icon_bg = "bg-green-100 dark:bg-green-900/30" %}{% assign icon_text = "text-green-600" %}{% assign badge_bg = "bg-green-100 dark:bg-green-950/50" %}{% assign badge_text = "text-green-900 dark:text-green-100" %}
                 {% when "lime" %}
-                    {% assign icon_bg = "bg-lime-100 dark:bg-lime-900/30" %}{% assign icon_text = "text-lime-600" %}{% assign badge_bg = "bg-lime-50 dark:bg-lime-900/40" %}{% assign badge_text = "text-lime-600 dark:text-lime-300" %}
+                    {% assign icon_bg = "bg-lime-100 dark:bg-lime-900/30" %}{% assign icon_text = "text-lime-600" %}{% assign badge_bg = "bg-lime-100 dark:bg-lime-950/50" %}{% assign badge_text = "text-lime-900 dark:text-lime-100" %}
                 {% when "amber" %}
-                    {% assign icon_bg = "bg-amber-100 dark:bg-amber-900/30" %}{% assign icon_text = "text-amber-600" %}{% assign badge_bg = "bg-amber-50 dark:bg-amber-900/40" %}{% assign badge_text = "text-amber-600 dark:text-amber-300" %}
+                    {% assign icon_bg = "bg-amber-100 dark:bg-amber-900/30" %}{% assign icon_text = "text-amber-600" %}{% assign badge_bg = "bg-amber-100 dark:bg-amber-950/50" %}{% assign badge_text = "text-amber-950 dark:text-amber-100" %}
                 {% when "yellow" %}
-                    {% assign icon_bg = "bg-yellow-100 dark:bg-yellow-900/30" %}{% assign icon_text = "text-yellow-600" %}{% assign badge_bg = "bg-yellow-50 dark:bg-yellow-900/40" %}{% assign badge_text = "text-yellow-600 dark:text-yellow-300" %}
+                    {% assign icon_bg = "bg-yellow-100 dark:bg-yellow-900/30" %}{% assign icon_text = "text-yellow-600" %}{% assign badge_bg = "bg-yellow-100 dark:bg-yellow-950/50" %}{% assign badge_text = "text-yellow-900 dark:text-yellow-100" %}
                 {% when "orange" %}
-                    {% assign icon_bg = "bg-orange-100 dark:bg-orange-900/30" %}{% assign icon_text = "text-orange-600" %}{% assign badge_bg = "bg-orange-50 dark:bg-orange-900/40" %}{% assign badge_text = "text-orange-600 dark:text-orange-300" %}
+                    {% assign icon_bg = "bg-orange-100 dark:bg-orange-900/30" %}{% assign icon_text = "text-orange-600" %}{% assign badge_bg = "bg-orange-100 dark:bg-orange-950/50" %}{% assign badge_text = "text-orange-900 dark:text-orange-100" %}
                 {% when "rose" %}
-                    {% assign icon_bg = "bg-rose-100 dark:bg-rose-900/30" %}{% assign icon_text = "text-rose-600" %}{% assign badge_bg = "bg-rose-50 dark:bg-rose-900/40" %}{% assign badge_text = "text-rose-600 dark:text-rose-300" %}
+                    {% assign icon_bg = "bg-rose-100 dark:bg-rose-900/30" %}{% assign icon_text = "text-rose-600" %}{% assign badge_bg = "bg-rose-100 dark:bg-rose-950/50" %}{% assign badge_text = "text-rose-900 dark:text-rose-100" %}
                 {% when "pink" %}
-                    {% assign icon_bg = "bg-pink-100 dark:bg-pink-900/30" %}{% assign icon_text = "text-pink-600" %}{% assign badge_bg = "bg-pink-50 dark:bg-pink-900/40" %}{% assign badge_text = "text-pink-600 dark:text-pink-300" %}
+                    {% assign icon_bg = "bg-pink-100 dark:bg-pink-900/30" %}{% assign icon_text = "text-pink-600" %}{% assign badge_bg = "bg-pink-100 dark:bg-pink-950/50" %}{% assign badge_text = "text-pink-900 dark:text-pink-100" %}
                 {% when "red" %}
-                    {% assign icon_bg = "bg-red-100 dark:bg-red-900/30" %}{% assign icon_text = "text-red-600" %}{% assign badge_bg = "bg-red-50 dark:bg-red-900/40" %}{% assign badge_text = "text-red-600 dark:text-red-300" %}
+                    {% assign icon_bg = "bg-red-100 dark:bg-red-900/30" %}{% assign icon_text = "text-red-600" %}{% assign badge_bg = "bg-red-100 dark:bg-red-950/50" %}{% assign badge_text = "text-red-900 dark:text-red-100" %}
                 {% when "fuchsia" %}
-                    {% assign icon_bg = "bg-fuchsia-100 dark:bg-fuchsia-900/30" %}{% assign icon_text = "text-fuchsia-600" %}{% assign badge_bg = "bg-fuchsia-50 dark:bg-fuchsia-900/40" %}{% assign badge_text = "text-fuchsia-600 dark:text-fuchsia-300" %}
+                    {% assign icon_bg = "bg-fuchsia-100 dark:bg-fuchsia-900/30" %}{% assign icon_text = "text-fuchsia-600" %}{% assign badge_bg = "bg-fuchsia-100 dark:bg-fuchsia-950/50" %}{% assign badge_text = "text-fuchsia-900 dark:text-fuchsia-100" %}
                 {% when "purple" %}
-                    {% assign icon_bg = "bg-purple-100 dark:bg-purple-900/30" %}{% assign icon_text = "text-purple-600" %}{% assign badge_bg = "bg-purple-50 dark:bg-purple-900/40" %}{% assign badge_text = "text-purple-600 dark:text-purple-300" %}
+                    {% assign icon_bg = "bg-purple-100 dark:bg-purple-900/30" %}{% assign icon_text = "text-purple-600" %}{% assign badge_bg = "bg-purple-100 dark:bg-purple-950/50" %}{% assign badge_text = "text-purple-900 dark:text-purple-100" %}
                 {% when "violet" %}
-                    {% assign icon_bg = "bg-violet-100 dark:bg-violet-900/30" %}{% assign icon_text = "text-violet-600" %}{% assign badge_bg = "bg-violet-50 dark:bg-violet-900/40" %}{% assign badge_text = "text-violet-600 dark:text-violet-300" %}
+                    {% assign icon_bg = "bg-violet-100 dark:bg-violet-900/30" %}{% assign icon_text = "text-violet-600" %}{% assign badge_bg = "bg-violet-100 dark:bg-violet-950/50" %}{% assign badge_text = "text-violet-900 dark:text-violet-100" %}
                 {% when "indigo" %}
-                    {% assign icon_bg = "bg-indigo-100 dark:bg-indigo-900/30" %}{% assign icon_text = "text-indigo-600" %}{% assign badge_bg = "bg-indigo-50 dark:bg-indigo-900/40" %}{% assign badge_text = "text-indigo-600 dark:text-indigo-300" %}
+                    {% assign icon_bg = "bg-indigo-100 dark:bg-indigo-900/30" %}{% assign icon_text = "text-indigo-600" %}{% assign badge_bg = "bg-indigo-100 dark:bg-indigo-950/50" %}{% assign badge_text = "text-indigo-900 dark:text-indigo-100" %}
                 {% when "slate" %}
-                    {% assign icon_bg = "bg-slate-100 dark:bg-slate-800" %}{% assign icon_text = "text-slate-700" %}{% assign badge_bg = "bg-slate-50 dark:bg-slate-800/70" %}{% assign badge_text = "text-slate-700 dark:text-slate-200" %}
+                    {% assign icon_bg = "bg-slate-100 dark:bg-slate-800" %}{% assign icon_text = "text-slate-700" %}{% assign badge_bg = "bg-slate-200 dark:bg-slate-800" %}{% assign badge_text = "text-slate-900 dark:text-slate-100" %}
                 {% else %}
-                    {% assign icon_bg = "bg-blue-100 dark:bg-blue-900/30" %}{% assign icon_text = "text-blue-600" %}{% assign badge_bg = "bg-blue-50 dark:bg-blue-900/40" %}{% assign badge_text = "text-blue-600 dark:text-blue-300" %}
+                    {% assign icon_bg = "bg-blue-100 dark:bg-blue-900/30" %}{% assign icon_text = "text-blue-600" %}{% assign badge_bg = "bg-blue-100 dark:bg-blue-950/50" %}{% assign badge_text = "text-blue-900 dark:text-blue-100" %}
             {% endcase %}
             <div class="border border-slate-200 dark:border-slate-800 bg-white dark:bg-surface-dark rounded-2xl overflow-hidden shadow-soft">
                 <details class="group w-full">
@@ -64,7 +64,7 @@
                             </div>
                         </div>
                         <div class="flex items-center gap-4">
-                            <span class="inline-flex items-center px-3 py-1 {{ badge_bg }} {{ badge_text }} text-[10px] sm:text-xs font-bold rounded-full uppercase tracking-wider whitespace-nowrap">
+                            <span class="inline-flex items-center px-3 py-1 {{ badge_bg }} {{ badge_text }} text-xs sm:text-sm font-bold rounded-full uppercase tracking-wider whitespace-nowrap">
                                 {{ resource_count }} RESOURCE{% if resource_count != 1 %}S{% endif %}
                             </span>
                             <span class="material-symbols-outlined text-slate-400 transition-transform group-open:rotate-180">expand_more</span>
@@ -108,9 +108,9 @@
                             <div class="flex flex-col bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all group/card">
                                 <div class="aspect-video w-full bg-slate-100 dark:bg-slate-800 relative overflow-hidden">
                                     {% if preview_src %}
-                                    <img alt="Preview" class="w-full h-full object-cover group-hover/card:scale-105 transition-transform duration-500" src="{{ preview_src }}"/>
+                                    <img alt="" width="640" height="360" class="w-full h-full object-cover group-hover/card:scale-105 transition-transform duration-500" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="{{ preview_src }}" data-lazy-alt="Preview"/>
                                     {% endif %}
-                                    <div class="absolute top-3 left-3 px-2 py-1 bg-white/90 dark:bg-surface-dark/90 backdrop-blur rounded text-[10px] font-bold text-slate-600 dark:text-slate-300 flex items-center gap-1 shadow-sm">
+                                    <div class="absolute top-3 left-3 px-2 py-1 bg-white/90 dark:bg-surface-dark/90 backdrop-blur rounded text-xs font-bold text-slate-800 dark:text-slate-200 flex items-center gap-1 shadow-sm">
                                         <span class="material-symbols-outlined text-[14px]">{{ card.type_icon }}</span> {{ card.type }}
                                     </div>
                                 </div>
@@ -143,3 +143,32 @@
         </div>
     </div>
 </section>
+<script>
+  (function () {
+    var root = document.getElementById("thematic-resource-groups");
+    if (!root) return;
+
+    function hydratePreviews(details) {
+      if (!details.open) return;
+      details.querySelectorAll("img[data-lazy-src]").forEach(function (img) {
+        var url = img.getAttribute("data-lazy-src");
+        if (!url) return;
+        img.decoding = "async";
+        img.src = url;
+        img.removeAttribute("data-lazy-src");
+        var alt = img.getAttribute("data-lazy-alt");
+        if (alt) {
+          img.alt = alt;
+          img.removeAttribute("data-lazy-alt");
+        }
+      });
+    }
+
+    root.querySelectorAll("details").forEach(function (d) {
+      d.addEventListener("toggle", function () {
+        hydratePreviews(d);
+      });
+      if (d.open) hydratePreviews(d);
+    });
+  })();
+</script>
