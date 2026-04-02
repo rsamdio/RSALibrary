@@ -1,4 +1,4 @@
-<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="{{ '/assets/js/lunr.min.js' | relative_url }}"></script>
 
 <script>
   (function () {
@@ -162,10 +162,10 @@
                 "</div>"
               : "") +
             '<div class="flex-1 min-w-0">' +
-            '<div class="text-[11px] uppercase tracking-wide text-primary mb-1">Resource</div>' +
+            '<div class="text-xs uppercase tracking-wide text-primary mb-1">Resource</div>' +
             '<div class="text-sm font-semibold text-slate-900 dark:text-white truncate">' + doc.title + "</div>" +
             (doc.group_title
-              ? '<div class="text-[11px] text-slate-500 dark:text-slate-400 mb-1">in ' +
+              ? '<div class="text-xs text-slate-500 dark:text-slate-400 mb-1">in ' +
                 '<a href="' + (doc.group_url || "#") + '" class="underline-offset-2 hover:underline">' +
                 doc.group_title +
                 "</a></div>"
@@ -192,7 +192,7 @@
             '<a href="' + doc.url + '" class="block p-4 rounded-2xl bg-white dark:bg-surface-dark border border-slate-100 dark:border-slate-700 shadow-soft hover:shadow-hover transition-shadow">' +
             '<div class="flex items-center justify-between mb-1">' +
             '<div class="text-sm font-semibold text-slate-900 dark:text-white">' + doc.title + "</div>" +
-            '<span class="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-medium bg-rose-50 text-rose-600 dark:bg-rose-900/30 dark:text-rose-200">' +
+            '<span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-rose-100 text-rose-900 dark:bg-rose-950/50 dark:text-rose-100">' +
             '<span class="material-symbols-outlined text-xs mr-1">folder</span>Resource Group' +
             "</span>" +
             "</div>" +

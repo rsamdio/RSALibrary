@@ -75,49 +75,17 @@ layout: compress
       "logo": "{{ '/images/rsamdio.webp' | relative_url | absolute_url }}"
     }
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              primary: "#da1b5b",
-              "primary-dark": "#b9154a",
-              "background-light": "#fbf8f9",
-              "background-dark": "#211116",
-              "surface-light": "#ffffff",
-              "surface-dark": "#2d1b22",
-            },
-            fontFamily: {
-              display: ["Plus Jakarta Sans", "sans-serif"],
-            },
-            borderRadius: {
-              DEFAULT: "0.5rem",
-              lg: "1rem",
-              xl: "1.5rem",
-              full: "9999px",
-            },
-            boxShadow: {
-              soft: "0 4px 20px -2px rgba(0, 0, 0, 0.05)",
-              hover:
-                "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)",
-            },
-            screens: {
-              xs: "480px",
-            },
-          },
-        },
-      };
-    </script>
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3WWXPED6S"></script>
@@ -125,8 +93,14 @@ layout: compress
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
-      gtag('config', 'G-D3WWXPED6S');
+      function runGtagConfig() {
+        gtag('config', 'G-D3WWXPED6S');
+      }
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(runGtagConfig, { timeout: 4000 });
+      } else {
+        window.addEventListener('load', runGtagConfig);
+      }
     </script>
     
   </head>

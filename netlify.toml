@@ -1,3 +1,7 @@
+[build]
+  command = "npm ci && bundle install && bundle exec jekyll build"
+  publish = "_site"
+
 [[redirects]]
   from = "https://rsalibrary.netlify.app/*"
   to = "https://library.rsamdio.org/:splat"
