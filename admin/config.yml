@@ -3,6 +3,8 @@ backend:
   branch: main
 
 site_url: "https://library.rsamdio.org"
+# Same asset as _includes/hero.html (Rotaract South Asia MDIO mark)
+logo_url: /images/rsamdio.webp
 
 media_folder: "resources"
 public_folder: "/resources"
