@@ -20,6 +20,8 @@ collections:
     format: "frontmatter"
     editor:
       preview: false
+    # List view: show homepage sort weight next to title (same as Jekyll `nav_order`)
+    summary: "{{nav_order}} · {{title}}"
     # Default list order matches homepage (`nav_order` in Jekyll / thematic-groups.html)
     sortable_fields:
       - field: nav_order
