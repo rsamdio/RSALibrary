@@ -20,6 +20,12 @@ collections:
     format: "frontmatter"
     editor:
       preview: false
+    # Default list order matches homepage (`nav_order` in Jekyll / thematic-groups.html)
+    sortable_fields:
+      - field: nav_order
+        default_sort: asc
+      - title
+      - commit_date
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - label: "Icon"
