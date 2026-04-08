@@ -2293,12 +2293,12 @@ collections:
           - label: "Preview Image"
             name: "preview_image_url"
             widget: "image"
-            required: false
+            required: true
             hint: "External URL (https://...) or upload to /resources"
           - label: "View URL"
             name: "view_url"
             widget: "file"
-            required: false
+            required: true
             hint: "External link or local path like /resources/file.pdf"
           - label: "Download URL"
             name: "download_url"

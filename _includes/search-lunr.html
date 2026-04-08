@@ -82,6 +82,12 @@
           {% endif %}
         {% endif %}
 
+        {% assign download_suggested_name = nil %}
+        {% if download_href %}
+          {% assign card = item %}
+          {% include download-suggested-filename.html %}
+        {% endif %}
+
       {
         "id": {{ counter }},
         "type": "resource",
@@ -92,7 +98,8 @@
         "body": {{ item.description | jsonify }},
         "preview_image_url": {{ preview_src | jsonify }},
         "view_url": {{ view_href | jsonify }},
-        "download_url": {{ download_href | jsonify }}
+        "download_url": {{ download_href | jsonify }},
+        "download_suggested_name": {% if download_suggested_name %}{{ download_suggested_name | jsonify }}{% else %}null{% endif %}
       },
       {% assign counter = counter | plus: 1 %}
       {% endfor %}
@@ -152,7 +159,14 @@
 
         if (doc.type === "resource") {
           var viewUrl = doc.view_url || doc.url;
-          var downloadUrl = doc.download_url || doc.url;
+          var downloadUrl = doc.download_url;
+          var downloadAttr = "";
+          if (downloadUrl && doc.download_suggested_name) {
+            downloadAttr =
+              ' download="' +
+              String(doc.download_suggested_name).replace(/"/g, "") +
+              '"';
+          }
 
           li.innerHTML =
             '<div class="flex gap-4 p-4 rounded-2xl bg-white dark:bg-surface-dark border border-slate-100 dark:border-slate-700 shadow-soft hover:shadow-hover transition-shadow">' +
@@ -180,7 +194,11 @@
                 "</a>"
               : "") +
             (downloadUrl
-              ? '<a href="' + downloadUrl + '" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">' +
+              ? '<a href="' +
+                downloadUrl +
+                '"' +
+                downloadAttr +
+                ' rel="noopener noreferrer" class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">' +
                 '<span class="material-symbols-outlined text-sm mr-1">download</span>Download' +
                 "</a>"
               : "") +

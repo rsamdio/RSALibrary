@@ -1,0 +1,23 @@
+{% comment %}
+  Inputs: card (expects .name), download_href (resolved URL string).
+  Sets: download_suggested_name — safe filename for the HTML download attribute.
+{% endcomment %}
+{% assign download_suggested_name = card.name | strip %}
+{% assign download_suggested_name = download_suggested_name
+  | replace: '<', '-'
+  | replace: '>', '-'
+  | replace: ':', '-'
+  | replace: '"', ''
+  | replace: "'", ''
+  | replace: '/', '-'
+  | replace: '|', '-'
+  | replace: '?', '-'
+  | replace: '*', '-'
+  | replace: '\\', '-'
+  | replace: '&', ' and '
+%}
+{% assign _dl_tail = download_href | split: '?' | first | split: '/' | last | downcase %}
+{% if _dl_tail contains '.' %}
+  {% assign _dl_ext = _dl_tail | split: '.' | last %}
+  {% assign download_suggested_name = download_suggested_name | append: '.' | append: _dl_ext %}
+{% endif %}
