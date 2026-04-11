@@ -51,6 +51,7 @@ module.exports = {
     "./*.html",
     "./admin/index.html",
     "./404.html",
+    "./assets/js/search-init.js",
   ],
   safelist: liquidColorSafelist(),
   theme: {

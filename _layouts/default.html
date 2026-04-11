@@ -75,15 +75,27 @@ layout: compress
       "logo": "{{ '/images/rsamdio.webp' | relative_url | absolute_url }}"
     }
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    {% if page.url == '/' or page.url == '/index.html' %}
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      as="image"
+      href="{{ '/images/rsamdio.webp' | relative_url }}"
+      fetchpriority="high"
+    />
+    {% endif %}
+    <link
+      rel="preload"
+      href="{{ '/assets/fonts/plus-jakarta-sans-latin.woff2' | relative_url }}"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="{{ '/assets/fonts/material-symbols-outlined.woff2' | relative_url }}"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
     <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" />
 
