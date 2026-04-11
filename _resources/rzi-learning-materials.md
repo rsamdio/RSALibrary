@@ -35,4 +35,13 @@ resources:
     type: PDF
     preview_image_url: /resources/public-image-cover.jpg
     view_url: /resources/public-image.pdf
+  - type_icon: picture_as_pdf
+    name: Global Grant - How Rotaractors can Apply?
+    description: The Grants session focused on enabling Rotaractors to actively
+      participate in Rotary grants and funding opportunities. It provided
+      clarity on eligibility, processes, and practical ways to plan, implement,
+      and scale impactful service projects
+    type: PDF
+    preview_image_url: /resources/866828_o6cbn71.jpg
+    view_url: /resources/grants-how-rotaractors-can-participate-frequently-asked-questions-en.pdf
 ---
