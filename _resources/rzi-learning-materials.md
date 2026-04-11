@@ -45,7 +45,7 @@ resources:
     preview_image_url: /resources/866828_o6cbn71.jpg
     view_url: /resources/grants-how-rotaractors-can-participate-frequently-asked-questions-en.pdf
   - type_icon: picture_as_pdf
-    name: Rotary Resources with Hyperlink
+    name: 2026 RZI Rotary Resources
     description: "Click on each title to know more about the topic. "
     type: PDF
     preview_image_url: /resources/866828_o6cbn71-1.jpg
