@@ -26,4 +26,13 @@ resources:
     preview_image_url: /resources/csr.jpg
     view_url: https://drive.google.com/drive/folders/1lGUOX4L50B0erX-0XjsWB59T_a7wFDIY?usp=share_link
     download_url: https://drive.google.com/drive/folders/1lGUOX4L50B0erX-0XjsWB59T_a7wFDIY?usp=share_link
+  - type_icon: picture_as_pdf
+    name: Art of Story telling - Public Image
+    description: Public Image session by PDRR Harikrishnan Pillai focused on
+      transforming activities into compelling impact stories. It empowered
+      leaders to communicate their work effectively, building stronger
+      visibility, engagement, and trust.
+    type: PDF
+    preview_image_url: /resources/public-image-cover.jpg
+    view_url: /resources/public-image.pdf
 ---
