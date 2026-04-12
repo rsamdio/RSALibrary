@@ -23,7 +23,5 @@ resources:
     view_url: /resources/club_installation_agenda.pdf
     download_url: /resources/club_installation_agenda.pdf
     description: Agenda and dais seating arrangement for the annual Club
-      Installation Ceremony, covering the handover of office from the outgoing
-      to the incoming President, oath-taking by office-bearers, and exchange of
-      club charter.
+      Installation Ceremony.
 ---
