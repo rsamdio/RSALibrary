@@ -32,4 +32,10 @@ resources:
     preview_image_url: /resources/RSAMDIO_Updated_logo-01.png
     view_url: /resources/board-meeting_general-body-meeting_agenda.pdf
     download_url: /resources/board-meeting_general-body-meeting_agenda.pdf
+  - type_icon: picture_as_pdf
+    name: Individual Development Programme (IDP) Agenda
+    description: A concise agenda for conducting an IDP session.
+    type: PDF
+    preview_image_url: /resources/RSAMDIO_Updated_logo-01.png
+    view_url: /resources/idp_agenda.pdf
 ---
