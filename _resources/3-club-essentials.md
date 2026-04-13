@@ -25,4 +25,12 @@ resources:
     preview_image_url: /resources/RSAMDIO_RotaractLogo_EN21.svg
     view_url: /resources/oath-of-induction.pdf
     download_url: /resources/oath-of-induction.pdf
+  - type_icon: picture_as_pdf
+    name: Rotaract Prayer
+    description: A ready reference of prayer that opens every meeting and ceremony
+      uniting members in purpose and spirit.
+    type: PDF
+    preview_image_url: /resources/RSAMDIO_RotaractLogo_EN21.svg
+    view_url: /resources/rotaract-prayer.pdf
+    download_url: /resources/rotaract-prayer.pdf
 ---
