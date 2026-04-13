@@ -40,7 +40,7 @@ resources:
     preview_image_url: /resources/RSAMDIO_RotaractLogo_EN21.svg
     view_url: /resources/abbreviations.pdf
   - type_icon: picture_as_pdf
-    name: Recommended Rotaract Club Bylaw
+    name: Standard Rotaract Club Constitution
     description: The standard constitution of a Rotaract Club, as prescribed by
       Rotary International. It defines the club's purpose, membership
       qualifications, officer roles, meeting procedures, financial governance,
@@ -49,4 +49,25 @@ resources:
     preview_image_url: /resources/RSAMDIO_RotaractLogo_EN21.svg
     view_url: /resources/rotaract-club-standard-constitution-en.pdf
     download_url: /resources/rotaract-club-standard-constitution-en.pdf
+  - type_icon: article
+    description: The recommended by-laws of a Rotaract Club, as prescribed by Rotary
+      International. It supplements the Standard Rotaract Club Constitution with
+      practical guidelines on elections, officer duties, committee structures,
+      meeting procedures, financial management, and membership admission serving
+      as the operational rulebook that every club customises and adopts to
+      govern its day to day functioning.
+    name: Rotaract Club Bylaws
+    type: DOCX
+    view_url: /resources/rotaract-club-recommended-bylaws-en.docx
+    download_url: /resources/rotaract-club-recommended-bylaws-en.docx
+    preview_image_url: /resources/RSAMDIO_RotaractLogo_EN21.svg
+  - type_icon: picture_as_pdf
+    name: Four Way Test
+    description: The Four-Way Test is the ethical compass of the Rotary movement.
+      This serves as a ready reference for recitation at meetings and a daily
+      reminder of the values every Rotaractor upholds.
+    type: PDF
+    preview_image_url: /resources/RSAMDIO_RotaractLogo_rsamdio.png
+    view_url: /resources/four_way_test.pdf
+    download_url: /resources/four_way_test.pdf
 ---
