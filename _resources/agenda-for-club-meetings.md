@@ -38,4 +38,12 @@ resources:
     type: PDF
     preview_image_url: /resources/RSAMDIO_Updated_logo-01.png
     view_url: /resources/idp_agenda.pdf
+  - type_icon: picture_as_pdf
+    name: Meeting Guidelines
+    description: General guidelines on club meetings, standard agenda structure, and
+      best practices.
+    type: PDF
+    preview_image_url: /resources/RSAMDIO_Updated_logo-01.png
+    view_url: /resources/board-meeting_general-body-meeting_guidelines.pdf
+    download_url: /resources/board-meeting_general-body-meeting_guidelines.pdf
 ---
