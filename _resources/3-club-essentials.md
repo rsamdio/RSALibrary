@@ -33,4 +33,10 @@ resources:
     preview_image_url: /resources/RSAMDIO_RotaractLogo_EN21.svg
     view_url: /resources/rotaract-prayer.pdf
     download_url: /resources/rotaract-prayer.pdf
+  - type_icon: picture_as_pdf
+    description: A quick reference guide to commonly used Rotaract and Rotary abbreviations.
+    name: Rotary and Rotaract Abbreviations
+    type: PDF
+    preview_image_url: /resources/RSAMDIO_RotaractLogo_EN21.svg
+    view_url: /resources/abbreviations.pdf
 ---
