@@ -1,5 +1,5 @@
 ---
-title: 3 Club Essentials
+title: Club Essentials
 icon: support
 icon_color: red
 summary: "Club Essentials. "
