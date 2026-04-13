@@ -39,4 +39,14 @@ resources:
     type: PDF
     preview_image_url: /resources/RSAMDIO_RotaractLogo_EN21.svg
     view_url: /resources/abbreviations.pdf
+  - type_icon: picture_as_pdf
+    name: Recommended Rotaract Club Bylaw
+    description: The standard constitution of a Rotaract Club, as prescribed by
+      Rotary International. It defines the club's purpose, membership
+      qualifications, officer roles, meeting procedures, financial governance,
+      and the rights and responsibilities of every member.
+    type: PDF
+    preview_image_url: /resources/RSAMDIO_RotaractLogo_EN21.svg
+    view_url: /resources/rotaract-club-standard-constitution-en.pdf
+    download_url: /resources/rotaract-club-standard-constitution-en.pdf
 ---
