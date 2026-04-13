@@ -24,4 +24,12 @@ resources:
     download_url: /resources/club_installation_agenda.pdf
     description: Agenda and dais seating arrangement for the annual Club
       Installation Ceremony.
+  - type_icon: picture_as_pdf
+    description: Agenda and visual dais layout for conducting a Board Meeting or
+      General Body Meeting
+    name: Board Meeting / General Body Meeting Agenda
+    type: PDF
+    preview_image_url: /resources/RSAMDIO_Updated_logo-01.png
+    view_url: /resources/board-meeting_general-body-meeting_agenda.pdf
+    download_url: /resources/board-meeting_general-body-meeting_agenda.pdf
 ---
