@@ -3,7 +3,7 @@ title: Rotaract Brand Assets
 icon: image
 icon_color: blue
 summary: Official brand assets for the Rotary family of organisations. This
-  folder houses logo files for Rotary International, Rotaract, and Interact —
+  folder houses logo files for Rotary International, Rotaract and Interact
   curated to ensure consistent and compliant use of visual identity across all
   club communications and activities.
 nav_order: 0
