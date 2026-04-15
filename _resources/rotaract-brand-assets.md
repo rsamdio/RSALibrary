@@ -158,5 +158,28 @@ subgroups:
         preview_image_url: /resources/markofexcellence_azure.png
         view_url: /resources/markofexcellence_azure.png
         download_url: /resources/markofexcellence_azure.png
+  - title: Interact Visual Identity Kit - Logos
+    resources:
+      - type_icon: image
+        name: Interact Standard
+        description: Interact Standard
+        type: IMG
+        preview_image_url: /resources/interact.png
+        view_url: /resources/interact.png
+        download_url: /resources/interact.png
+      - type_icon: image
+        name: Interact Black
+        description: Interact Black
+        type: IMG
+        preview_image_url: /resources/interact_black.png
+        view_url: /resources/interact_black.png
+        download_url: /resources/interact_black.png
+      - type_icon: image
+        name: Interact White
+        description: Interact White
+        type: IMG
+        preview_image_url: /resources/interact_white.png
+        view_url: /resources/interact_white.png
+        download_url: /resources/interact_white.png
 resources: []
 ---
