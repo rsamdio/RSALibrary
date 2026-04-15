@@ -10,15 +10,22 @@ nav_order: 0
 subgroups:
   - resources:
       - type_icon: image
-        description: Official Rotaract logo assets for use of clubs and members in
-          official communications, events and publications in accordance with
-          Rotary International's brand guidelines.
-        name: Rotaract Logo
+        description: Rotaract Cranberry
+        name: Rotaract Logo Cranberry
         type: IMG
         preview_image_url: /resources/rotaract.png
         view_url: /resources/Rotaract-R_CMYK-C.png
         download_url: /resources/Rotaract-R_CMYK-C.png
-    title: Visual Identity Kit
-    summary: ""
+      - type_icon: image
+        name: Rotaract Logo Black
+        description: Rotaract Black
+        type: IMG
+        preview_image_url: /resources/rotaract_black.png
+        view_url: /resources/rotaract_black.png
+        download_url: /resources/rotaract_black.png
+    title: Rotaract Visual Identity Kit
+    summary: Official Rotaract logo assets for use of clubs and members in official
+      communications, events and publications in accordance with Rotary
+      International's brand guidelines.
 resources: []
 ---
