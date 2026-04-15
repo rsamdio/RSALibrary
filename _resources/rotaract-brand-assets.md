@@ -116,5 +116,19 @@ subgroups:
         preview_image_url: /resources/rotary_simple_white.png
         view_url: /resources/rotary_simple_white.png
         download_url: /resources/rotary_simple_white.png
+      - type_icon: image
+        name: Rotary While Gold Simplified
+        description: Rotary While Gold Simplified
+        type: IMG
+        preview_image_url: /resources/rotary_simple_white_gold.png
+        view_url: /resources/rotary_simple_white_gold.png
+        download_url: /resources/rotary_simple_white_gold.png
+      - type_icon: image
+        name: Rotary Azure Simplified
+        description: Rotary Azure Simplified
+        type: IMG
+        preview_image_url: /resources/rotary_simple_azure.png
+        view_url: /resources/rotary_simple_azure.png
+        download_url: /resources/rotary_simple_azure.png
 resources: []
 ---
