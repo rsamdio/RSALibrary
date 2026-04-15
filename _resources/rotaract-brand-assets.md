@@ -11,49 +11,110 @@ subgroups:
   - resources:
       - type_icon: image
         description: Rotaract Cranberry
-        name: Rotaract Logo Cranberry
+        name: Rotaract Cranberry
         type: IMG
         preview_image_url: /resources/rotaract.png
         view_url: /resources/Rotaract-R_CMYK-C.png
         download_url: /resources/Rotaract-R_CMYK-C.png
       - type_icon: image
-        name: Rotaract Logo Black
+        name: Rotaract Black
         description: Rotaract Black
         type: IMG
         preview_image_url: /resources/rotaract_black.png
         view_url: /resources/rotaract_black.png
         download_url: /resources/rotaract_black.png
       - type_icon: image
-        name: Rotaract Logo White
+        name: Rotaract White
         description: Rotaract White
         type: IMG
         preview_image_url: /resources/Rotaract-R_REV.png
         view_url: /resources/Rotaract-R_REV.png
         download_url: /resources/Rotaract-R_REV.png
       - type_icon: image
-        name: Rotaract Logo Cranberry Simplified
+        name: Rotaract Cranberry Simplified
         description: Rotaract Cranberry Simplified
         type: IMG
         preview_image_url: /resources/rotaract_simple.png
         view_url: /resources/rotaract_simple.png
         download_url: /resources/rotaract_simple.png
       - type_icon: image
-        name: Rotaract Logo Black Simplified
+        name: Rotaract Black Simplified
         description: Rotaract Black Simplified
         type: IMG
         preview_image_url: /resources/Rotaract-Simple_Black.png
         view_url: /resources/Rotaract-Simple_Black.png
         download_url: /resources/Rotaract-Simple_Black.png
       - type_icon: image
-        name: Rotaract Logo White Simplified
+        name: Rotaract White Simplified
         description: Rotaract White Simplified
         type: IMG
         preview_image_url: /resources/rotaract_simple_white.png
         view_url: /resources/rotaract_simple_white.png
         download_url: /resources/rotaract_simple_white.png
-    title: Rotaract Visual Identity Kit
+    title: Rotaract Visual Identity Kit - Logos
     summary: Official Rotaract logo assets for use of clubs and members in official
       communications, events and publications in accordance with Rotary
       International's brand guidelines.
+  - title: Rotary Visual Identity Kit - Logos
+    summary: Official Rotary logo assets for use of clubs and members in official
+      communications, events and publications in accordance with Rotary
+      International's brand guidelines.
+    resources:
+      - type_icon: image
+        name: Rotary Standard
+        description: Rotary Standard
+        type: IMG
+        preview_image_url: /resources/rotary.png
+        view_url: /resources/rotary.png
+        download_url: /resources/rotary.png
+      - type_icon: image
+        name: Rotary Black
+        description: Rotary Black
+        type: IMG
+        preview_image_url: /resources/rotary_black.png
+        view_url: /resources/rotary_black.png
+        download_url: /resources/rotary_black.png
+      - type_icon: image
+        name: Rotary White
+        description: Rotary White
+        type: IMG
+        preview_image_url: /resources/rotary_white.png
+        view_url: /resources/rotary_white.png
+        download_url: /resources/rotary_white.png
+      - type_icon: image
+        name: Rotary White Gold
+        description: Rotary White Gold
+        type: IMG
+        preview_image_url: /resources/rotary_white_gold.png
+        view_url: /resources/rotary_white_gold.png
+        download_url: /resources/rotary_white_gold.png
+      - type_icon: image
+        name: Rotary Azure
+        description: Rotary Azure
+        type: IMG
+        preview_image_url: /resources/rotary_azure.png
+        view_url: /resources/rotary_azure.png
+        download_url: /resources/rotary_azure.png
+      - type_icon: image
+        name: Rotary Simplified
+        description: Rotary Simplified
+        type: IMG
+        preview_image_url: /resources/rotary_simple.png
+        view_url: /resources/rotary_simple.png
+        download_url: /resources/rotary_simple.png
+      - type_icon: image
+        name: Rotary Black Simplified
+        description: Rotary Black Simplified
+        type: IMG
+        preview_image_url: /resources/rotary_simple_black.png
+        view_url: /resources/rotary_simple_black.png
+        download_url: /resources/rotary_simple_black.png
+      - type_icon: image
+        name: Rotary White Simplified
+        description: Rotary White Simplified
+        type: IMG
+        preview_image_url: /resources/rotary_simple_white.png
+        view_url: /resources/rotary_simple_white.png
+        download_url: /resources/rotary_simple_white.png
 resources: []
 ---
