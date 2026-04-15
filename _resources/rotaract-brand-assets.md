@@ -130,5 +130,33 @@ subgroups:
         preview_image_url: /resources/rotary_simple_azure.png
         view_url: /resources/rotary_simple_azure.png
         download_url: /resources/rotary_simple_azure.png
+      - type_icon: image
+        name: Rotary Mark of Excellence
+        description: Rotary Mark of Excellence
+        type: IMG
+        preview_image_url: /resources/markofexcellence.png
+        view_url: /resources/markofexcellence.png
+        download_url: /resources/markofexcellence.png
+      - type_icon: image
+        name: Rotary Mark of Excellence Black
+        description: Rotary Mark of Excellence Black
+        type: IMG
+        preview_image_url: /resources/markofexcellence_black.png
+        view_url: /resources/markofexcellence_black.png
+        download_url: /resources/markofexcellence_black.png
+      - type_icon: image
+        name: Rotary Mark of Excellence White
+        description: Rotary Mark of Excellence White
+        type: IMG
+        preview_image_url: /resources/markofexcellence_white.png
+        view_url: /resources/markofexcellence_white.png
+        download_url: /resources/markofexcellence_white.png
+      - type_icon: image
+        name: Rotary Mark of Excellence Azure
+        description: Rotary Mark of Excellence Azure
+        type: IMG
+        preview_image_url: /resources/markofexcellence_azure.png
+        view_url: /resources/markofexcellence_azure.png
+        download_url: /resources/markofexcellence_azure.png
 resources: []
 ---
