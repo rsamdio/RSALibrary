@@ -202,5 +202,8 @@ subgroups:
         preview_image_url: /resources/interact_simple_white.png
         view_url: /resources/interact_simple_white.png
         download_url: /resources/interact_simple_white.png
+    summary: Official Interact logo assets for use of clubs and members in official
+      communications, events and publications in accordance with Rotary
+      International's brand guidelines.
 resources: []
 ---
