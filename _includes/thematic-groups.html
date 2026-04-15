@@ -76,8 +76,14 @@
                         </div>
                     </summary>
                     <div class="px-6 pb-8 border-t border-slate-100 dark:border-slate-800 pt-6">
-                        {% assign has_top_resources = group.resources and group.resources.size > 0 %}
-                        {% assign has_subgroups = group.subgroups and group.subgroups.size > 0 %}
+                        {% assign has_top_resources = false %}
+                        {% if group.resources and group.resources.size > 0 %}
+                          {% assign has_top_resources = true %}
+                        {% endif %}
+                        {% assign has_subgroups = false %}
+                        {% if group.subgroups and group.subgroups.size > 0 %}
+                          {% assign has_subgroups = true %}
+                        {% endif %}
                         {% if has_top_resources or has_subgroups %}
                           {% if has_subgroups %}
                           <div class="space-y-8">
