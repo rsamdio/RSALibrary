@@ -23,6 +23,34 @@ subgroups:
         preview_image_url: /resources/rotaract_black.png
         view_url: /resources/rotaract_black.png
         download_url: /resources/rotaract_black.png
+      - type_icon: image
+        name: Rotaract Logo White
+        description: Rotaract White
+        type: IMG
+        preview_image_url: /resources/Rotaract-R_REV.png
+        view_url: /resources/Rotaract-R_REV.png
+        download_url: /resources/Rotaract-R_REV.png
+      - type_icon: image
+        name: Rotaract Logo Cranberry Simplified
+        description: Rotaract Cranberry Simplified
+        type: IMG
+        preview_image_url: /resources/rotaract_simple.png
+        view_url: /resources/rotaract_simple.png
+        download_url: /resources/rotaract_simple.png
+      - type_icon: image
+        name: Rotaract Logo Black Simplified
+        description: Rotaract Black Simplified
+        type: IMG
+        preview_image_url: /resources/Rotaract-Simple_Black.png
+        view_url: /resources/Rotaract-Simple_Black.png
+        download_url: /resources/Rotaract-Simple_Black.png
+      - type_icon: image
+        name: Rotaract Logo White Simplified
+        description: Rotaract White Simplified
+        type: IMG
+        preview_image_url: /resources/rotaract_simple_white.png
+        view_url: /resources/rotaract_simple_white.png
+        download_url: /resources/rotaract_simple_white.png
     title: Rotaract Visual Identity Kit
     summary: Official Rotaract logo assets for use of clubs and members in official
       communications, events and publications in accordance with Rotary
