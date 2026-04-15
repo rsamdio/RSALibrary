@@ -253,5 +253,8 @@ layout: default
       {{ content }}
     </div>
     {% endif %}
+
+    {% assign page_share_url = page.url | absolute_url %}
+    {% include resource-group-share.html share_url=page_share_url share_title=page.title share_id="page" %}
   </div>
 </section>

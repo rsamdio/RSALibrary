@@ -1,7 +1,7 @@
 {% comment %}
   Resource group share (popover: device share + copy link).
-  Pass share_url, share_title, share_id (unique per instance, e.g. forloop.index).
-  JS is wired once from _includes/thematic-groups.html for #thematic-resource-groups.
+  Pass share_url, share_title, share_id (unique per instance, e.g. forloop.index or "page").
+  Behavior is bound by /assets/js/resource-group-share.js (loaded from default layout).
 {% endcomment %}
 {% assign sid = include.share_id | default: "main" %}
 {% assign share_url = include.share_url %}

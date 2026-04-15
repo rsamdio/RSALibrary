@@ -18,6 +18,11 @@
     Cache-Control = "public, max-age=86400, must-revalidate"
 
 [[headers]]
+  for = "/assets/js/resource-group-share.js"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, must-revalidate"
+
+[[headers]]
   for = "/assets/js/search-index.json"
   [headers.values]
     Cache-Control = "public, max-age=3600, must-revalidate"
