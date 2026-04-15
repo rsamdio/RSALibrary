@@ -161,8 +161,8 @@ subgroups:
   - title: Interact Visual Identity Kit - Logos
     resources:
       - type_icon: image
-        name: Interact Standard
-        description: Interact Standard
+        name: Interact
+        description: Interact
         type: IMG
         preview_image_url: /resources/interact.png
         view_url: /resources/interact.png
@@ -181,5 +181,26 @@ subgroups:
         preview_image_url: /resources/interact_white.png
         view_url: /resources/interact_white.png
         download_url: /resources/interact_white.png
+      - type_icon: image
+        name: Interact Simplified
+        description: Interact Simplified
+        type: IMG
+        preview_image_url: /resources/interact_simple.png
+        view_url: /resources/interact_simple.png
+        download_url: /resources/interact_simple.png
+      - type_icon: image
+        name: Interact Black Simplified
+        description: Interact Black Simplified
+        type: IMG
+        preview_image_url: /resources/Interact-Simple_Black.png
+        view_url: /resources/Interact-Simple_Black.png
+        download_url: /resources/Interact-Simple_Black.png
+      - type_icon: image
+        name: Interact White Simplified
+        description: Interact White Simplified
+        type: IMG
+        preview_image_url: /resources/interact_simple_white.png
+        view_url: /resources/interact_simple_white.png
+        download_url: /resources/interact_simple_white.png
 resources: []
 ---
