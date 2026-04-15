@@ -13,6 +13,11 @@
             {% assign ordered_resource_groups = site.resources | sort: 'nav_order' %}
             {% for group in ordered_resource_groups %}
             {% assign resource_count = group.resources | size %}
+            {% if group.subgroups and group.subgroups.size > 0 %}
+              {% for subgroup in group.subgroups %}
+                {% assign resource_count = resource_count | plus: subgroup.resources.size %}
+              {% endfor %}
+            {% endif %}
             {% case group.icon_color %}
                 {% when "sky" %}
                     {% assign icon_bg = "bg-sky-100 dark:bg-sky-900/30" %}{% assign icon_text = "text-sky-600" %}{% assign badge_bg = "bg-sky-100 dark:bg-sky-950/50" %}{% assign badge_text = "text-sky-900 dark:text-sky-100" %}
@@ -71,69 +76,50 @@
                         </div>
                     </summary>
                     <div class="px-6 pb-8 border-t border-slate-100 dark:border-slate-800 pt-6">
-                        {% if group.resources and group.resources.size > 0 %}
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            {% for card in group.resources %}
-                            {% assign raw_preview = card.preview_image_url %}
-                            {% assign raw_view = card.view_url %}
-                            {% assign raw_download = card.download_url %}
-
-                            {% assign preview_src = nil %}
-                            {% if raw_preview %}
-                              {% if raw_preview contains "://" %}
-                                {% assign preview_src = raw_preview %}
-                              {% else %}
-                                {% assign preview_src = raw_preview | relative_url %}
+                        {% assign has_top_resources = group.resources and group.resources.size > 0 %}
+                        {% assign has_subgroups = group.subgroups and group.subgroups.size > 0 %}
+                        {% if has_top_resources or has_subgroups %}
+                          {% if has_subgroups %}
+                          <div class="space-y-8">
+                            {% for subgroup in group.subgroups %}
+                            <section class="space-y-4 pt-2">
+                              <div class="flex items-center gap-4">
+                                <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white whitespace-nowrap">{{ subgroup.title }}</h4>
+                                <div class="h-px bg-slate-200 dark:bg-slate-700 w-full"></div>
+                              </div>
+                              {% if subgroup.summary %}
+                              <p class="text-sm text-slate-600 dark:text-slate-300">{{ subgroup.summary }}</p>
                               {% endif %}
-                            {% endif %}
-
-                            {% assign view_href = "#" %}
-                            {% if raw_view %}
-                              {% if raw_view contains "://" %}
-                                {% assign view_href = raw_view %}
+                              {% if subgroup.resources and subgroup.resources.size > 0 %}
+                              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                {% for card in subgroup.resources %}
+                                {% include resource-card.html card=card lazy_images=true %}
+                                {% endfor %}
+                              </div>
                               {% else %}
-                                {% assign view_href = raw_view | relative_url %}
+                              <div class="border border-dashed border-slate-300 dark:border-slate-700 rounded-xl p-6 text-center text-sm text-slate-500 dark:text-slate-400 bg-white/60 dark:bg-surface-dark/60">
+                                No resources in this subgroup yet.
+                              </div>
                               {% endif %}
-                            {% endif %}
-
-                            {% assign download_href = "" %}
-                            {% if raw_download != "" %}
-                              {% if raw_download contains "://" %}
-                                {% assign download_href = raw_download %}
-                              {% else %}
-                                {% assign download_href = raw_download | relative_url %}
-                              {% endif %}
-                            {% endif %}
-
-                            <div class="flex flex-col bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all group/card">
-                                <div class="aspect-video w-full bg-slate-100 dark:bg-slate-800 relative overflow-hidden">
-                                    {% if preview_src %}
-                                    <img alt="" width="640" height="360" class="w-full h-full object-cover group-hover/card:scale-105 transition-transform duration-500" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="{{ preview_src }}" data-lazy-alt="Preview"/>
-                                    {% endif %}
-                                    <div class="absolute top-3 left-3 px-2 py-1 bg-white/90 dark:bg-surface-dark/90 backdrop-blur rounded text-xs font-bold text-slate-800 dark:text-slate-200 flex items-center gap-1 shadow-sm">
-                                        <span class="material-symbols-outlined text-[14px]">{{ card.type_icon }}</span> {{ card.type }}
-                                    </div>
-                                </div>
-                                <div class="p-4 flex-grow">
-                                    <h4 class="text-base font-bold text-slate-900 dark:text-white mb-1">{{ card.name }}</h4>
-                                    <p class="text-sm text-slate-500 dark:text-slate-400">{{ card.description }}</p>
-                                </div>
-                                <div class="p-4 pt-0 flex items-center justify-between gap-3 mt-auto">
-                                    {% if view_href != "#" %}
-                                    <a href="{{ view_href }}" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 text-sm font-semibold hover:bg-slate-50 dark:hover:bg-white/5 transition-colors flex items-center justify-center gap-2">
-                                        <span class="material-symbols-outlined text-lg">visibility</span> View
-                                    </a>
-                                    {% endif %}
-                                    {% if download_href != "" %}
-                                    {% include download-suggested-filename.html %}
-                                    <a href="{{ download_href }}" download="{{ download_suggested_name }}" rel="noopener noreferrer" class="flex-1 py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-white text-sm font-semibold transition-all flex items-center justify-center gap-2">
-                                        <span class="material-symbols-outlined text-lg">download</span> Download
-                                    </a>
-                                    {% endif %}
-                                </div>
-                            </div>
+                            </section>
                             {% endfor %}
-                        </div>
+                          </div>
+                          {% endif %}
+                          {% if has_top_resources %}
+                          <section class="{% if has_subgroups %}mt-8{% endif %}">
+                            {% if has_subgroups %}
+                            <div class="flex items-center gap-4 mb-4">
+                              <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white whitespace-nowrap">More Resources</h4>
+                              <div class="h-px bg-slate-200 dark:bg-slate-700 w-full"></div>
+                            </div>
+                            {% endif %}
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                              {% for card in group.resources %}
+                              {% include resource-card.html card=card lazy_images=true %}
+                              {% endfor %}
+                            </div>
+                          </section>
+                          {% endif %}
                         {% else %}
                         <div class="px-6 pb-6 text-center text-slate-500 text-sm">{{ group.placeholder | default: "No resources in this group yet." }}</div>
                         {% endif %}

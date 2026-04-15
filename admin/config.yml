@@ -2255,10 +2255,70 @@ collections:
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Homepage order", name: "nav_order", widget: "number", default: 0, value_type: "int", hint: "Lower numbers appear first in the Resource Groups list on the homepage." }
       - { label: "Empty State Text", name: "placeholder", widget: "string", required: false }
+      - label: "Subgroups"
+        name: "subgroups"
+        widget: "list"
+        required: false
+        collapsed: true
+        summary: "{{fields.title}}"
+        hint: "Optional. Add sections within a resource group with title + divider + resource cards."
+        fields:
+          - { label: "Subgroup Title", name: "title", widget: "string" }
+          - { label: "Subgroup Summary", name: "summary", widget: "text", required: false }
+          - label: "Resources"
+            name: "resources"
+            widget: "list"
+            collapsed: true
+            summary: "{{fields.name}} ({{fields.type}})"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "File Type Label", name: "type", widget: "fileTypeCombo", hint: "e.g. PPTX, PDF, MP4, ZIP" }
+              - label: "Type Icon"
+                name: "type_icon"
+                widget: "materialIconSelect"
+                default: "description"
+                options:
+                  - { label: "Generic File (description)", value: "description" }
+                  - { label: "Document (article)", value: "article" }
+                  - { label: "PDF (picture_as_pdf)", value: "picture_as_pdf" }
+                  - { label: "Spreadsheet / Table (table_chart)", value: "table_chart" }
+                  - { label: "Image (image)", value: "image" }
+                  - { label: "Slide Deck (extension)", value: "extension" }
+                  - { label: "Archive (folder_zip)", value: "folder_zip" }
+                  - { label: "Folder (folder)", value: "folder" }
+                  - { label: "Video (movie)", value: "movie" }
+                  - { label: "Audio (audio_file)", value: "audio_file" }
+                  - { label: "Link (link)", value: "link" }
+                  - { label: "Checklist (checklist)", value: "checklist" }
+                  - { label: "Code / Script (code)", value: "code" }
+                  - { label: "Guide / Handbook (menu_book)", value: "menu_book" }
+                  - { label: "Form / Survey (ballot)", value: "ballot" }
+                  - { label: "Event / Calendar (event)", value: "event" }
+                  - { label: "Certificate / Badge (workspace_premium)", value: "workspace_premium" }
+                  - { label: "Chart / Report (bar_chart)", value: "bar_chart" }
+                  - { label: "Email / Mail (mail)", value: "mail" }
+                  - { label: "Note / One-pager (note)", value: "note" }
+                  - { label: "Download (download)", value: "download" }
+              - label: "Preview Image"
+                name: "preview_image_url"
+                widget: "image"
+                required: true
+                hint: "External URL (https://...) or upload to /resources"
+              - label: "View URL"
+                name: "view_url"
+                widget: "file"
+                required: true
+                hint: "External link or local path like /resources/file.pdf"
+              - label: "Download URL"
+                name: "download_url"
+                widget: "file"
+                required: false
+                hint: "Leave empty for link-only resources; otherwise external or local path"
       - label: "Resources"
         name: "resources"
         widget: "list"
-        collapsed: true
+        collapsed: false
         summary: "{{fields.name}} ({{fields.type}})"
         fields:
           - { label: "Name", name: "name", widget: "string" }

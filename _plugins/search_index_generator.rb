@@ -35,6 +35,12 @@ module Jekyll
         (d["resources"] || []).each do |item|
           resource_text += " #{item["name"]} #{item["description"]}"
         end
+        (d["subgroups"] || []).each do |subgroup|
+          resource_text += " #{subgroup["title"]} #{subgroup["summary"]}"
+          (subgroup["resources"] || []).each do |item|
+            resource_text += " #{item["name"]} #{item["description"]}"
+          end
+        end
 
         list << {
           "id" => id,
@@ -70,6 +76,36 @@ module Jekyll
             "download_suggested_name" => download_suggested_filename(item, download_href)
           }
           id += 1
+        end
+
+        (d["subgroups"] || []).each do |subgroup|
+          (subgroup["resources"] || []).each do |item|
+          raw_view = item["view_url"]
+          raw_download = item["download_url"].to_s
+          raw_preview = item["preview_image_url"]
+
+          view_href = resolve_url(site, baseurl, raw_view)
+          download_href = raw_download.empty? ? nil : resolve_url(site, baseurl, raw_download)
+          preview_src = resolve_url(site, baseurl, raw_preview)
+
+          primary_url = view_href || download_href || "#{baseurl}#{resource.url}"
+
+          list << {
+            "id" => id,
+            "type" => "resource",
+            "group_title" => d["title"].to_s,
+            "subgroup_title" => subgroup["title"].to_s,
+            "group_url" => "#{baseurl}#{resource.url}",
+            "url" => primary_url,
+            "title" => item["name"].to_s,
+            "body" => normalize_body(item["description"].to_s),
+            "preview_image_url" => preview_src,
+            "view_url" => view_href,
+            "download_url" => download_href,
+            "download_suggested_name" => download_suggested_filename(item, download_href)
+          }
+          id += 1
+        end
         end
       end
 

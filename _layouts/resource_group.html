@@ -5,6 +5,11 @@ layout: default
 {% include hero.html %}
 
 {% assign resource_count = page.resources | size %}
+{% if page.subgroups and page.subgroups.size > 0 %}
+  {% for subgroup in page.subgroups %}
+    {% assign resource_count = resource_count | plus: subgroup.resources.size %}
+  {% endfor %}
+{% endif %}
 
 {% case page.icon_color %}
   {% when "sky" %}
@@ -61,11 +66,16 @@ layout: default
         "name": {{ page.title | append: " resources" | jsonify }},
         "numberOfItems": {{ resource_count | default: 0 }},
         "itemListElement": [
-          {% if page.resources and page.resources.size > 0 %}
-          {% for card in page.resources %}
+          {% assign schema_position = 0 %}
+          {% assign schema_first = true %}
+          {% if page.subgroups and page.subgroups.size > 0 %}
+          {% for subgroup in page.subgroups %}
+          {% for card in subgroup.resources %}
+          {% assign schema_position = schema_position | plus: 1 %}
+          {% unless schema_first %},{% endunless %}
           {
             "@type": "ListItem",
-            "position": {{ forloop.index }},
+            "position": {{ schema_position }},
             "item": {
               "@type": "CreativeWork",
               "name": {{ card.name | jsonify }},
@@ -92,7 +102,46 @@ layout: default
               "url": {{ resource_url | jsonify }}
               {% endif %}
             }
-          }{% unless forloop.last %},{% endunless %}
+          }
+          {% assign schema_first = false %}
+          {% endfor %}
+          {% endfor %}
+          {% endif %}
+          {% if page.resources and page.resources.size > 0 %}
+          {% for card in page.resources %}
+          {% assign schema_position = schema_position | plus: 1 %}
+          {% unless schema_first %},{% endunless %}
+          {
+            "@type": "ListItem",
+            "position": {{ schema_position }},
+            "item": {
+              "@type": "CreativeWork",
+              "name": {{ card.name | jsonify }},
+              {% if card.description %}
+              "description": {{ card.description | jsonify }},
+              {% endif %}
+              {% assign raw_view = card.view_url %}
+              {% assign raw_download = card.download_url %}
+              {% assign resource_url = nil %}
+              {% if raw_view %}
+                {% if raw_view contains "://" %}
+                  {% assign resource_url = raw_view %}
+                {% else %}
+                  {% assign resource_url = raw_view | relative_url | absolute_url %}
+                {% endif %}
+              {% elsif raw_download != "" %}
+                {% if raw_download contains "://" %}
+                  {% assign resource_url = raw_download %}
+                {% else %}
+                  {% assign resource_url = raw_download | relative_url | absolute_url %}
+                {% endif %}
+              {% endif %}
+              {% if resource_url %}
+              "url": {{ resource_url | jsonify }}
+              {% endif %}
+            }
+          }
+          {% assign schema_first = false %}
           {% endfor %}
           {% endif %}
         ]
@@ -143,90 +192,50 @@ layout: default
 
 <section class="pb-12 sm:pb-16 md:pb-20 px-4 sm:px-6 md:px-8 lg:px-12 bg-background-light dark:bg-background-dark">
   <div class="mx-auto max-w-screen-sm md:max-w-5xl lg:max-w-6xl xl:max-w-[90rem] transition-all duration-300 px-0 sm:px-4 lg:px-8">
-    {% if page.resources and page.resources.size > 0 %}
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {% for card in page.resources %}
-      {% assign raw_preview = card.preview_image_url %}
-      {% assign raw_view = card.view_url %}
-      {% assign raw_download = card.download_url %}
-
-      {% assign preview_src = nil %}
-      {% if raw_preview %}
-        {% if raw_preview contains "://" %}
-          {% assign preview_src = raw_preview %}
-        {% else %}
-          {% assign preview_src = raw_preview | relative_url %}
-        {% endif %}
-      {% endif %}
-
-      {% assign view_href = "#" %}
-      {% if raw_view %}
-        {% if raw_view contains "://" %}
-          {% assign view_href = raw_view %}
-        {% else %}
-          {% assign view_href = raw_view | relative_url %}
-        {% endif %}
-      {% endif %}
-
-      {% assign download_href = "" %}
-      {% if raw_download != "" %}
-        {% if raw_download contains "://" %}
-          {% assign download_href = raw_download %}
-        {% else %}
-          {% assign download_href = raw_download | relative_url %}
-        {% endif %}
-      {% endif %}
-
-      <div class="flex flex-col bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all group/card">
-        <div class="aspect-video w-full bg-slate-100 dark:bg-slate-800 relative overflow-hidden">
-          {% if preview_src %}
-          <img
-            alt="Preview"
-            class="w-full h-full object-cover group-hover/card:scale-105 transition-transform duration-500"
-            src="{{ preview_src }}"
-          />
-          {% endif %}
-          <div class="absolute top-3 left-3 px-2 py-1 bg-white/90 dark:bg-surface-dark/90 backdrop-blur rounded text-xs font-bold text-slate-800 dark:text-slate-200 flex items-center gap-1 shadow-sm">
-            <span class="material-symbols-outlined text-[14px]">{{ card.type_icon }}</span>
-            {{ card.type }}
-          </div>
+    {% assign has_top_resources = page.resources and page.resources.size > 0 %}
+    {% assign has_subgroups = page.subgroups and page.subgroups.size > 0 %}
+    {% if has_top_resources or has_subgroups %}
+      {% if has_subgroups %}
+        <div class="space-y-10">
+          {% for subgroup in page.subgroups %}
+          <section class="space-y-4 pt-2">
+            <div class="flex items-center gap-4">
+              <h2 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white whitespace-nowrap">{{ subgroup.title }}</h2>
+              <div class="h-px bg-slate-200 dark:bg-slate-700 w-full"></div>
+            </div>
+            {% if subgroup.summary %}
+            <p class="text-sm text-slate-600 dark:text-slate-300">{{ subgroup.summary }}</p>
+            {% endif %}
+            {% if subgroup.resources and subgroup.resources.size > 0 %}
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {% for card in subgroup.resources %}
+              {% include resource-card.html card=card lazy_images=false %}
+              {% endfor %}
+            </div>
+            {% else %}
+            <div class="border border-dashed border-slate-300 dark:border-slate-700 rounded-xl p-6 text-center text-sm text-slate-500 dark:text-slate-400 bg-white/60 dark:bg-surface-dark/60">
+              No resources in this subgroup yet.
+            </div>
+            {% endif %}
+          </section>
+          {% endfor %}
         </div>
-        <div class="p-4 flex-grow">
-          <h2 class="text-base font-bold text-slate-900 dark:text-white mb-1">
-            {{ card.name }}
-          </h2>
-          <p class="text-sm text-slate-500 dark:text-slate-400">
-            {{ card.description }}
-          </p>
+      {% endif %}
+      {% if has_top_resources %}
+      <section class="{% if has_subgroups %}mt-10{% endif %}">
+        {% if has_subgroups %}
+        <div class="flex items-center gap-4 mb-4">
+          <h2 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white whitespace-nowrap">More Resources</h2>
+          <div class="h-px bg-slate-200 dark:bg-slate-700 w-full"></div>
         </div>
-        <div class="p-4 pt-0 flex items-center justify-between gap-3 mt-auto">
-          {% if view_href != "#" %}
-          <a
-            href="{{ view_href }}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="flex-1 py-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 text-sm font-semibold hover:bg-slate-50 dark:hover:bg-white/5 transition-colors flex items-center justify-center gap-2"
-          >
-            <span class="material-symbols-outlined text-lg">visibility</span>
-            View
-          </a>
-          {% endif %}
-          {% if download_href != "" %}
-          {% include download-suggested-filename.html %}
-          <a
-            href="{{ download_href }}"
-            download="{{ download_suggested_name }}"
-            rel="noopener noreferrer"
-            class="flex-1 py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-white text-sm font-semibold transition-all flex items-center justify-center gap-2"
-          >
-            <span class="material-symbols-outlined text-lg">download</span>
-            Download
-          </a>
-          {% endif %}
+        {% endif %}
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {% for card in page.resources %}
+          {% include resource-card.html card=card lazy_images=false %}
+          {% endfor %}
         </div>
-      </div>
-      {% endfor %}
-    </div>
+      </section>
+      {% endif %}
     {% else %}
     <div class="border border-dashed border-slate-300 dark:border-slate-700 rounded-xl p-8 text-center text-sm text-slate-500 dark:text-slate-400 bg-white/60 dark:bg-surface-dark/60">
       {{ page.placeholder | default: "No resources in this group yet. Check back soon for new templates and tools." }}

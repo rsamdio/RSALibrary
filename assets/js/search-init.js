@@ -131,7 +131,9 @@
               (doc.group_url || "#") +
               '" class="underline-offset-2 hover:underline">' +
               doc.group_title +
-              "</a></div>"
+              "</a>" +
+              (doc.subgroup_title ? " / " + doc.subgroup_title : "") +
+              "</div>"
             : "") +
           '<div class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-2 line-clamp-2">' +
           bodyPreview +
