@@ -205,5 +205,21 @@ subgroups:
     summary: Official Interact logo assets for use of clubs and members in official
       communications, events and publications in accordance with Rotary
       International's brand guidelines.
+  - title: CMYK Assets (For HD Print)
+    resources:
+      - type_icon: image
+        name: Rotaract Cranberry CMYK
+        description: Rotaract Cranberry CMYK
+        type: IMG
+        preview_image_url: /resources/Rotaract-R_CMYK-C.png
+        view_url: /resources/Rotaract-R_CMYK-C.png
+        download_url: /resources/Rotaract-R_CMYK-C.png
+      - type_icon: image
+        name: Rotary Standard CMYK
+        description: Rotary Standard CMYK
+        type: IMG
+        preview_image_url: /resources/RotaryMBS-R_CMYK-C.png
+        view_url: /resources/RotaryMBS-R_CMYK-C.png
+        download_url: /resources/RotaryMBS-R_CMYK-C.png
 resources: []
 ---
