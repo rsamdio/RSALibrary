@@ -58,18 +58,21 @@
             {% endcase %}
             <div class="border border-slate-200 dark:border-slate-800 bg-white dark:bg-surface-dark rounded-2xl overflow-hidden shadow-soft">
                 <details class="group w-full">
-                    <summary class="flex items-center justify-between p-4 sm:p-6 cursor-pointer list-none hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
-                        <div class="flex items-center gap-4">
+                    <summary class="flex items-center justify-between p-4 sm:p-6 cursor-pointer list-none hover:bg-slate-50 dark:hover:bg-white/5 transition-colors gap-3 sm:gap-4">
+                        <div class="flex items-center gap-3 sm:gap-4 min-w-0 flex-1">
                             <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl {{ icon_bg }} flex items-center justify-center {{ icon_text }} flex-shrink-0">
                                 <span class="material-symbols-outlined text-xl sm:text-2xl">{{ group.icon }}</span>
                             </div>
-                            <div>
+                            <div class="min-w-0">
                                 <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">{{ group.title }}</h3>
                                 <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">{{ group.summary }}</p>
+                                <span class="mt-2 inline-flex sm:hidden items-center px-3 py-1 {{ badge_bg }} {{ badge_text }} text-[11px] font-bold rounded-full uppercase tracking-wider whitespace-nowrap">
+                                    {{ resource_count }} RESOURCE{% if resource_count != 1 %}S{% endif %}
+                                </span>
                             </div>
                         </div>
-                        <div class="flex items-center gap-4">
-                            <span class="inline-flex items-center px-3 py-1 {{ badge_bg }} {{ badge_text }} text-xs sm:text-sm font-bold rounded-full uppercase tracking-wider whitespace-nowrap">
+                        <div class="flex items-center gap-2 sm:gap-4 flex-shrink-0">
+                            <span class="hidden sm:inline-flex items-center px-3 py-1 {{ badge_bg }} {{ badge_text }} text-xs sm:text-sm font-bold rounded-full uppercase tracking-wider whitespace-nowrap">
                                 {{ resource_count }} RESOURCE{% if resource_count != 1 %}S{% endif %}
                             </span>
                             <span class="material-symbols-outlined text-slate-400 transition-transform group-open:rotate-180">expand_more</span>
