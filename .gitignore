@@ -10,3 +10,8 @@ node_modules/
 .env.*.local
 gemfile.lock
 _resources/template.md
+
+# Local AI agent context (machine-specific memory)
+AGENTS.md
+SESSION_BOOTSTRAP.md
+.agent-memory/
