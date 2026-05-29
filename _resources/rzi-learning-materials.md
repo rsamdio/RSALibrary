@@ -4,7 +4,7 @@ icon: menu_book
 icon_color: pink
 summary: We’ve gathered all the RZI educational resources from our speakers and
   organizing team into this single library for your convenience.
-nav_order: 1
+nav_order: 0
 resources:
   - type_icon: description
     name: RZI WORKBOOK
