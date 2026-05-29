@@ -6,7 +6,7 @@ summary: A curated collection of standard agendas, seating arrangements and
   conduct guidelines for Rotaract Club meetings and ceremonies. Prepared by
   Rotaract South Asia MDIO as a recommendatory reference for Rotaract Club
   Presidents and Secretaries
-nav_order: 2
+nav_order: 3
 resources:
   - type_icon: picture_as_pdf
     name: Charter Club Installation Agenda
