@@ -6,7 +6,7 @@ summary: Official brand assets for the Rotary family of organisations. This
   folder houses logo files for Rotary International, Rotaract and Interact
   curated to ensure consistent and compliant use of visual identity across all
   club communications and activities.
-nav_order: 0
+nav_order: 1
 subgroups:
   - resources:
       - type_icon: image
