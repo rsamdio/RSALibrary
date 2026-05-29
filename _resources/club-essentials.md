@@ -3,7 +3,7 @@ title: Club Essentials
 icon: support
 icon_color: red
 summary: "Club Essentials. "
-nav_order: 0
+nav_order: 1
 subgroups:
   - title: Ceremonies and Protocols
     summary: Key references used during inductions, opening protocol, and formal
