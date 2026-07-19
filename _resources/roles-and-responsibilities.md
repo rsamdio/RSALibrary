@@ -23,6 +23,6 @@ subgroups:
         download_url: /resources/rotaract_club_board_roles_and_responsibilities.pdf
         description: A reference guide outlining the roles and responsibilities of
           council members and Rotaract club board positions.
-    title: Roles and Responsibilities of Rotaract Club Board Members-1
+    title: Roles and Responsibilities
 resources: []
 ---
