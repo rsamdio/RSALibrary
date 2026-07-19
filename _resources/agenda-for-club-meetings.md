@@ -13,13 +13,13 @@ resources:
     description: Agenda and dais seating arrangement for the Charter Installation
       Ceremony of a new Rotaract Club.
     type: PDF
-    preview_image_url: /resources/RSAMDIO_Updated_logo-01.png
+    preview_image_url: /resources/4.-charter-club-installation-agenda.jpg
     view_url: /resources/charter_installation_agenda.pdf
     download_url: /resources/charter_installation_agenda.pdf
   - type_icon: picture_as_pdf
     name: Club Installation Agenda
     type: PDF
-    preview_image_url: /resources/RSAMDIO_Updated_logo-01.png
+    preview_image_url: /resources/5.club-installation-agenda.jpg
     view_url: /resources/club_installation_agenda.pdf
     download_url: /resources/club_installation_agenda.pdf
     description: Agenda and dais seating arrangement for the annual Club
@@ -29,21 +29,21 @@ resources:
       General Body Meeting
     name: Board Meeting / General Body Meeting Agenda
     type: PDF
-    preview_image_url: /resources/RSAMDIO_Updated_logo-01.png
+    preview_image_url: /resources/6.-⁠board-meeting-_-general-body-meeting-agenda.jpg
     view_url: /resources/board-meeting_general-body-meeting_agenda.pdf
     download_url: /resources/board-meeting_general-body-meeting_agenda.pdf
   - type_icon: picture_as_pdf
     name: Individual Development Programme (IDP) Agenda
     description: A concise agenda for conducting an IDP session.
     type: PDF
-    preview_image_url: /resources/RSAMDIO_Updated_logo-01.png
+    preview_image_url: /resources/7.individual-development-programme-idp-agenda.jpg
     view_url: /resources/idp_agenda.pdf
   - type_icon: picture_as_pdf
     name: Meeting Guidelines
     description: General guidelines on club meetings, standard agenda structure, and
       best practices.
     type: PDF
-    preview_image_url: /resources/RSAMDIO_Updated_logo-01.png
+    preview_image_url: /resources/6.⁠-⁠⁠meeting-guidelines.png
     view_url: /resources/board-meeting_general-body-meeting_guidelines.pdf
     download_url: /resources/board-meeting_general-body-meeting_guidelines.pdf
 ---
