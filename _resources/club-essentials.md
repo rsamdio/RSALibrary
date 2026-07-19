@@ -17,7 +17,7 @@ subgroups:
           while the Members Oath is recited collectively by all incoming members
           led and repeated line by line.
         type: PDF
-        preview_image_url: /resources/RSAMDIO_RotaractLogo_EN21.svg
+        preview_image_url: /resources/2.rotaract-oath-of-induction.jpg
         view_url: /resources/oath-of-induction.pdf
         download_url: /resources/oath-of-induction.pdf
       - type_icon: picture_as_pdf
@@ -25,7 +25,7 @@ subgroups:
         description: A ready reference of prayer that opens every meeting and ceremony
           uniting members in purpose and spirit.
         type: PDF
-        preview_image_url: /resources/RSAMDIO_RotaractLogo_EN21.svg
+        preview_image_url: /resources/8.rotaract-prayer.jpg
         view_url: /resources/rotaract-prayer.pdf
         download_url: /resources/rotaract-prayer.pdf
 resources:
@@ -35,7 +35,7 @@ resources:
       This serves as a ready reference for recitation at meetings and a daily
       reminder of the values every Rotaractor upholds.
     type: PDF
-    preview_image_url: /resources/RSAMDIO_RotaractLogo_rsamdio.png
+    preview_image_url: /resources/3.four-way-test.jpg
     view_url: /resources/four_way_test.pdf
     download_url: /resources/four_way_test.pdf
   - type_icon: picture_as_pdf
@@ -44,14 +44,14 @@ resources:
       listing each item along with its purpose, significance and role in the
       conduct of meetings and ceremonies.
     type: PDF
-    preview_image_url: /resources/RSAMDIO_RotaractLogo_rsamdio.png
+    preview_image_url: /resources/3.⁠-⁠⁠club-properties.png
     view_url: /resources/club_properties.pdf
     download_url: /resources/club_properties.pdf
   - type_icon: picture_as_pdf
     description: A quick reference guide to commonly used Rotaract and Rotary abbreviations.
     name: Rotary and Rotaract Abbreviations
     type: PDF
-    preview_image_url: /resources/RSAMDIO_RotaractLogo_EN21.svg
+    preview_image_url: /resources/1.rotary-and-rotaract-abbreviations.jpg
     view_url: /resources/abbreviations.pdf
   - type_icon: picture_as_pdf
     name: Standard Rotaract Club Constitution
@@ -60,7 +60,7 @@ resources:
       qualifications, officer roles, meeting procedures, financial governance,
       and the rights and responsibilities of every member.
     type: PDF
-    preview_image_url: /resources/RSAMDIO_RotaractLogo_EN21.svg
+    preview_image_url: /resources/4.⁠-⁠⁠standard-rotaract-club-constitution.png
     view_url: /resources/rotaract-club-standard-constitution-en.pdf
     download_url: /resources/rotaract-club-standard-constitution-en.pdf
   - type_icon: article
@@ -74,5 +74,5 @@ resources:
     type: DOCX
     view_url: /resources/rotaract-club-recommended-bylaws-en.docx
     download_url: /resources/rotaract-club-recommended-bylaws-en.docx
-    preview_image_url: /resources/RSAMDIO_RotaractLogo_EN21.svg
+    preview_image_url: /resources/5.⁠-⁠⁠rotaract-club-bylaws.png
 ---
