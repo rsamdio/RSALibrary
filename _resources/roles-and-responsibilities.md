@@ -12,7 +12,7 @@ subgroups:
         description: A reference guide outlining the roles and responsibilities of
           council members.
         type: PDF
-        preview_image_url: /resources/866828_o6cbn71.jpg
+        preview_image_url: /resources/1.jpg
         view_url: /resources/roles-and-responsibilities-of-distirct-council.pdf
         download_url: /resources/roles-and-responsibilities-of-distirct-council.pdf
       - type_icon: picture_as_pdf
