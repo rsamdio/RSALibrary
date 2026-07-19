@@ -12,13 +12,13 @@ subgroups:
         description: A reference guide outlining the roles and responsibilities of
           council members.
         type: PDF
-        preview_image_url: /resources/whatsapp-image-2026-07-19-at-12.08.08.jpeg
+        preview_image_url: /resources/1.⁠-⁠roles-and-responsibilities-of-rotaract-distict-council.png
         view_url: /resources/roles-and-responsibilities-of-distirct-council.pdf
         download_url: /resources/roles-and-responsibilities-of-distirct-council.pdf
       - type_icon: picture_as_pdf
         name: Roles and Responsibilities of Rotaract Club Board Members
         type: PDF
-        preview_image_url: /resources/rotaract.png
+        preview_image_url: /resources/2.⁠-⁠⁠roles-and-responsibilities-of-rotaract-club-board-members.png
         view_url: /resources/rotaract_club_board_roles_and_responsibilities.pdf
         download_url: /resources/rotaract_club_board_roles_and_responsibilities.pdf
         description: A reference guide outlining the roles and responsibilities of
