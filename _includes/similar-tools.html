@@ -6,7 +6,7 @@
                 Explore other interactive tools and resources from Rotaract South Asia MDIO that support your club operations.
             </p>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="flex flex-wrap justify-center gap-6">
             {% for tool in site.data.tools %}
             {% case tool.accent_color %}
                 {% when "emerald" %}{% assign card_icon = "bg-emerald-50 text-emerald-600" %}
@@ -14,9 +14,10 @@
                 {% when "amber" %}{% assign card_icon = "bg-amber-50 text-amber-600" %}
                 {% when "rose" %}{% assign card_icon = "bg-rose-50 text-rose-600" %}
                 {% when "indigo" %}{% assign card_icon = "bg-indigo-50 text-indigo-600" %}
+                {% when "violet" %}{% assign card_icon = "bg-violet-50 text-violet-600" %}
                 {% else %}{% assign card_icon = "bg-blue-50 text-blue-600" %}
             {% endcase %}
-            <article class="flex flex-col bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 rounded-2xl shadow-soft hover:shadow-hover transition-shadow p-5">
+            <article class="flex w-full flex-col bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 rounded-2xl shadow-soft hover:shadow-hover transition-shadow p-5 sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]">
                 <div class="mb-4 flex items-center justify-between gap-3">
                     <div class="inline-flex h-10 w-10 items-center justify-center rounded-xl {{ card_icon }}">
                         <span class="material-symbols-outlined text-xl">{{ tool.icon }}</span>
