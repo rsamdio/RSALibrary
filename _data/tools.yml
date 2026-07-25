@@ -36,7 +36,7 @@
   url: https://connect.rsamdio.org/rotaractnews
 
 - name: Pulse
-  description: Live room Q&A for Rotaract sessions, discussions & events.
+  description: Live rooms for Rotaract sessions, discussions & events.
   icon: forum
   accent_color: violet
   url: https://pulse.rsamdio.org/
