@@ -2,7 +2,7 @@
 
 ## Rotaract Library
 
-Rotaract Library is a public resource center for **Rotaract South Asia MDIO**, providing curated templates, checklists, and toolkits for Rotaract projects across South Asia.
+Rotaract Library is a public resource center for **Rotaract South Asia MDIO**, providing curated assets, templates, guides, checklists, and tools for Rotaract leaders across South Asia.
 
 Production site: `https://library.rsamdio.org/`
 
