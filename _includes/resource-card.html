@@ -34,9 +34,9 @@
   <div class="aspect-video w-full bg-slate-100 dark:bg-slate-800 relative overflow-hidden">
     {% if preview_src %}
       {% if include.lazy_images %}
-      <img alt="" width="640" height="360" class="w-full h-full object-cover group-hover/card:scale-105 transition-transform duration-500" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="{{ preview_src }}" data-lazy-alt="Preview"/>
+      <img alt="" width="640" height="360" class="absolute inset-0 h-full w-full object-contain group-hover/card:scale-105 transition-transform duration-500" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="{{ preview_src }}" data-lazy-alt="Preview"/>
       {% else %}
-      <img alt="Preview" class="w-full h-full object-cover group-hover/card:scale-105 transition-transform duration-500" src="{{ preview_src }}"/>
+      <img alt="Preview" class="absolute inset-0 h-full w-full object-contain group-hover/card:scale-105 transition-transform duration-500" src="{{ preview_src }}"/>
       {% endif %}
     {% endif %}
     <div class="absolute top-3 left-3 px-2 py-1 bg-white/90 dark:bg-surface-dark/90 backdrop-blur rounded text-xs font-bold text-slate-800 dark:text-slate-200 flex items-center gap-1 shadow-sm">
