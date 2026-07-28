@@ -63,6 +63,13 @@
         },
         { once: true }
       );
+
+      var params = new URLSearchParams(window.location.search);
+      var q = (params.get("q") || "").trim();
+      if (q) {
+        input.value = q;
+        window.lunr_search(q);
+      }
     }
   });
 

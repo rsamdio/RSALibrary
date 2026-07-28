@@ -2,7 +2,7 @@
 title: Rotaract South Asia MDIO identity
 icon: flag
 icon_color: fuchsia
-summary: Rotaract South Asia MDIO (RSAMDIO) logos and wordmarks for regional initiatives.
+summary: Rotaract South Asia MDIO identity is a Rotaract Library collection of RSAMDIO logos and wordmarks for regional initiatives and communications.
 nav_order: 140
 resources:
 - name: Rsamdio Rotaractlogo En21
@@ -62,3 +62,5 @@ resources:
   view_url: "/resources/rsamdio_only(white).png"
   download_url: "/resources/rsamdio_only(white).png"
 ---
+
+Rotaract South Asia MDIO identity collects [RSAMDIO]({{ site.data.site.publisher_url | default: 'https://rsamdio.org/' }}) logos and wordmarks for regional programs and communications. Prefer these files when representing Rotaract South Asia MDIO alongside club or district branding.

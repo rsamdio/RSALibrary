@@ -5,13 +5,13 @@ url: "https://library.rsamdio.org"
 
 markdown: kramdown
 theme: null
+encoding: "utf-8"
 
 exclude:
   - assets/css/site.tailwind.css
 
 plugins:
   - jekyll-sitemap
-  - jekyll-feed
 
 request_form_endpoint: "https://script.google.com/macros/s/AKfycbzNoSNmdYRuWAUNKfmcZK6Hb-C5SgD6NtYua3VFOe5bNF0qyONyeB4P5WuBSQSVDwSp/exec"
 
@@ -30,6 +30,10 @@ defaults:
       path: "_resources/template.md"
     values:
       published: false
+  - scope:
+      path: "admin"
+    values:
+      sitemap: false
 
 compress_html:
   clippings: all
@@ -40,4 +44,3 @@ compress_html:
   blanklines: false
   profile: false
   startings: [html, head, body]
-

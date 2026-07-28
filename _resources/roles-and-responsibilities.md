@@ -2,8 +2,7 @@
 title: Roles and Responsibilities
 icon: picture_as_pdf
 icon_color: blue
-summary: A reference guide outlining the roles and responsibilities of council
-  members and Rotaract club board positions.
+summary: Roles and Responsibilities is a Rotaract Library collection of district council and club board role guides curated by Rotaract South Asia MDIO for incoming leaders.
 nav_order: 0
 subgroups:
   - resources:
@@ -26,3 +25,5 @@ subgroups:
     title: Roles and Responsibilities
 resources: []
 ---
+
+Roles and Responsibilities helps Rotaract district council members and club board officers understand what each position is accountable for. Download the PDF guides before installations and board transitions so expectations stay clear across the year.

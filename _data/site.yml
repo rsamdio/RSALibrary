@@ -1,0 +1,23 @@
+# Single source of truth for product / publisher identity (GEO + JSON-LD + llms.txt)
+product_name: "Rotaract Library"
+product_url: "https://library.rsamdio.org"
+product_description: "A curated library of assets, templates, guides, checklists, and tools for Rotaract leaders."
+publisher_name: "Rotaract South Asia MDIO"
+publisher_short: "RSAMDIO"
+publisher_url: "https://rsamdio.org/"
+publisher_description: "Rotaract South Asia Multi District Information Organization (RSAMDIO) curates regional tools and resources for Rotaract leaders across South Asia."
+publisher_email: "rsamdio@gmail.com"
+logo_path: "/images/rsamdio.webp"
+og_image_path: "/images/rotaractlibrary.webp"
+same_as:
+  - "https://rsamdio.org/"
+  - "https://www.linkedin.com/company/rsamdio/"
+  - "https://go.rsamdio.org/socials"
+parent_organization:
+  name: "Rotary International"
+  url: "https://www.rotary.org/"
+  wikidata_id: "Q1760106"
+related_program:
+  name: "Rotaract"
+  wikidata_id: "Q2165432"
+ai_bots_policy: "allow"

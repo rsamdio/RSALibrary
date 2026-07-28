@@ -2,7 +2,7 @@
 title: Batch of 26-27 Badge
 icon: badge
 icon_color: violet
-summary: Batch of 26-27 badges and logo assets by Rotaract South Asia MDIO
+summary: Batch of 26-27 Badge is a Rotaract Library collection of badges and logo assets by Rotaract South Asia MDIO for the 2026–27 Rotary year.
 nav_order: 200
 resources:
 - name: Batch of 26-27
@@ -146,3 +146,5 @@ resources:
   view_url: "/resources/Batchof2627_Master.ai"
   download_url: "/resources/Batchof2627_Master.ai"
 ---
+
+Batch of 26-27 Badge provides PNG, SVG, and master artwork for [Rotaract South Asia MDIO (RSAMDIO)]({{ site.data.site.publisher_url | default: 'https://rsamdio.org/' }})’s 2026–27 badge set, including board member and DRR variants. Choose the format that fits your layout—raster PNG for quick use, SVG for scalable design, or the master files for production edits.

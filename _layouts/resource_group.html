@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% include hero.html %}
+{% include hero.html heading_level="p" %}
 
 {% assign resource_count = page.resources | size %}
 {% if page.subgroups and page.subgroups.size > 0 %}
@@ -52,6 +52,43 @@ layout: default
 
 <section class="py-10 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8 lg:px-12 bg-gradient-to-b from-slate-50 to-white dark:from-background-dark dark:to-surface-dark">
   <div class="mx-auto max-w-screen-sm md:max-w-5xl lg:max-w-6xl xl:max-w-[90rem] transition-all duration-300 px-0 sm:px-4 lg:px-8">
+    {% assign site_root = site.url | default: "" | append: site.baseurl %}
+    {% if site_root == "" %}
+      {% assign site_root = "/" | relative_url | absolute_url %}
+    {% endif %}
+    {% assign page_abs_url = site.url | append: page.url %}
+    {% unless site.url %}
+      {% assign page_abs_url = page.url | relative_url | absolute_url %}
+    {% endunless %}
+    <nav aria-label="Breadcrumb" class="mb-6 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+      <ol class="flex flex-wrap items-center gap-1.5">
+        <li>
+          <a href="{{ '/' | relative_url }}" class="hover:text-primary transition-colors">Home</a>
+        </li>
+        <li aria-hidden="true" class="text-slate-300 dark:text-slate-600">/</li>
+        <li class="text-slate-700 dark:text-slate-200 font-medium truncate max-w-[70vw]">{{ page.title }}</li>
+      </ol>
+    </nav>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": {{ site_root | append: "/" | jsonify }}
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ page.title | jsonify }},
+          "item": {{ page_abs_url | jsonify }}
+        }
+      ]
+    }
+    </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -60,7 +97,8 @@ layout: default
       {% if page.summary %}
       "description": {{ page.summary | jsonify }},
       {% endif %}
-      "url": "{% if site.url %}{{ site.url | append: page.url }}{% else %}{{ page.url | relative_url | absolute_url }}{% endif %}",
+      "url": {{ page_abs_url | jsonify }},
+      "isPartOf": { "@id": {{ site_root | append: "/#website" | jsonify }} },
       "mainEntity": {
         "@type": "ItemList",
         "name": {{ page.title | append: " resources" | jsonify }},
@@ -73,36 +111,7 @@ layout: default
           {% for card in subgroup.resources %}
           {% assign schema_position = schema_position | plus: 1 %}
           {% unless schema_first %},{% endunless %}
-          {
-            "@type": "ListItem",
-            "position": {{ schema_position }},
-            "item": {
-              "@type": "CreativeWork",
-              "name": {{ card.name | jsonify }},
-              {% if card.description %}
-              "description": {{ card.description | jsonify }},
-              {% endif %}
-              {% assign raw_view = card.view_url %}
-              {% assign raw_download = card.download_url %}
-              {% assign resource_url = nil %}
-              {% if raw_view %}
-                {% if raw_view contains "://" %}
-                  {% assign resource_url = raw_view %}
-                {% else %}
-                  {% assign resource_url = raw_view | relative_url | absolute_url %}
-                {% endif %}
-              {% elsif raw_download != "" %}
-                {% if raw_download contains "://" %}
-                  {% assign resource_url = raw_download %}
-                {% else %}
-                  {% assign resource_url = raw_download | relative_url | absolute_url %}
-                {% endif %}
-              {% endif %}
-              {% if resource_url %}
-              "url": {{ resource_url | jsonify }}
-              {% endif %}
-            }
-          }
+          {% include schema-list-item.html card=card position=schema_position %}
           {% assign schema_first = false %}
           {% endfor %}
           {% endfor %}
@@ -111,36 +120,7 @@ layout: default
           {% for card in page.resources %}
           {% assign schema_position = schema_position | plus: 1 %}
           {% unless schema_first %},{% endunless %}
-          {
-            "@type": "ListItem",
-            "position": {{ schema_position }},
-            "item": {
-              "@type": "CreativeWork",
-              "name": {{ card.name | jsonify }},
-              {% if card.description %}
-              "description": {{ card.description | jsonify }},
-              {% endif %}
-              {% assign raw_view = card.view_url %}
-              {% assign raw_download = card.download_url %}
-              {% assign resource_url = nil %}
-              {% if raw_view %}
-                {% if raw_view contains "://" %}
-                  {% assign resource_url = raw_view %}
-                {% else %}
-                  {% assign resource_url = raw_view | relative_url | absolute_url %}
-                {% endif %}
-              {% elsif raw_download != "" %}
-                {% if raw_download contains "://" %}
-                  {% assign resource_url = raw_download %}
-                {% else %}
-                  {% assign resource_url = raw_download | relative_url | absolute_url %}
-                {% endif %}
-              {% endif %}
-              {% if resource_url %}
-              "url": {{ resource_url | jsonify }}
-              {% endif %}
-            }
-          }
+          {% include schema-list-item.html card=card position=schema_position %}
           {% assign schema_first = false %}
           {% endfor %}
           {% endif %}
@@ -192,6 +172,12 @@ layout: default
 
 <section class="pb-12 sm:pb-16 md:pb-20 px-4 sm:px-6 md:px-8 lg:px-12 bg-background-light dark:bg-background-dark">
   <div class="mx-auto max-w-screen-sm md:max-w-5xl lg:max-w-6xl xl:max-w-[90rem] transition-all duration-300 px-0 sm:px-4 lg:px-8">
+    {% if content %}
+    <div class="prose prose-slate dark:prose-invert max-w-none mb-10">
+      {{ content }}
+    </div>
+    {% endif %}
+
     {% assign has_top_resources = false %}
     {% if page.resources and page.resources.size > 0 %}
       {% assign has_top_resources = true %}
@@ -245,12 +231,6 @@ layout: default
     {% else %}
     <div class="border border-dashed border-slate-300 dark:border-slate-700 rounded-xl p-8 text-center text-sm text-slate-500 dark:text-slate-400 bg-white/60 dark:bg-surface-dark/60">
       {{ page.placeholder | default: "No resources in this group yet. Check back soon for new assets, templates, guides, checklists, and tools." }}
-    </div>
-    {% endif %}
-
-    {% if content %}
-    <div class="prose prose-slate dark:prose-invert max-w-none mt-10">
-      {{ content }}
     </div>
     {% endif %}
 

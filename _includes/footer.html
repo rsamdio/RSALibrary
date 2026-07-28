@@ -4,11 +4,14 @@
       class="space-y-4 md:space-y-0 md:flex md:items-start md:justify-between text-center md:text-left"
     >
       <div class="space-y-1 md:text-right">
-        <div
-          class="tracking-[0.16em] font-semibold text-slate-700 dark:text-slate-100 text-xs sm:text-sm uppercase"
-        >
-          Rotaract South Asia MDIO
-        </div>
+          <a
+            href="{{ site.data.site.publisher_url | default: 'https://rsamdio.org/' }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="tracking-[0.16em] font-semibold text-slate-700 dark:text-slate-100 text-xs sm:text-sm uppercase hover:text-primary transition-colors"
+          >
+            {{ site.data.site.publisher_name | default: "Rotaract South Asia MDIO" }}
+          </a>
         <div>© 2026 All rights reserved.</div>
       </div>
       <div class="space-y-1">
@@ -17,7 +20,11 @@
         >
           Contact
         </div>
-        <div>rsamdio@gmail.com</div>
+        <div>
+          <a href="mailto:{{ site.data.site.publisher_email | default: 'rsamdio@gmail.com' }}" class="hover:text-primary transition-colors">
+            {{ site.data.site.publisher_email | default: "rsamdio@gmail.com" }}
+          </a>
+        </div>
       </div>
       <div class="space-y-1 md:text-right">
         <div
@@ -31,7 +38,7 @@
     <div class="h-px bg-slate-200 dark:bg-slate-800"></div>
     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
       <p class="text-xs sm:text-sm text-center md:text-left">
-        The tool is designed to help Rotaractors succeed in their leadership
+        The library is designed to help Rotaractors succeed in their leadership
         journey.
       </p>
       <div
@@ -48,11 +55,19 @@
           ></span
         >
         <span class="w-1 h-1 rounded-full bg-slate-300"></span>
-        <a href="/terms.html" class="hover:text-primary transition-colors"
+        <a href="{{ '/about/' | relative_url }}" class="hover:text-primary transition-colors"
+          >About</a
+        >
+        <span class="w-1 h-1 rounded-full bg-slate-300"></span>
+        <a href="{{ '/faq/' | relative_url }}" class="hover:text-primary transition-colors"
+          >FAQ</a
+        >
+        <span class="w-1 h-1 rounded-full bg-slate-300"></span>
+        <a href="{{ '/terms/' | relative_url }}" class="hover:text-primary transition-colors"
           >Terms</a
         >
         <span class="w-1 h-1 rounded-full bg-slate-300"></span>
-        <a href="/privacy.html" class="hover:text-primary transition-colors"
+        <a href="{{ '/privacy/' | relative_url }}" class="hover:text-primary transition-colors"
           >Privacy</a
         >
       </div>

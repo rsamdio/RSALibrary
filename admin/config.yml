@@ -2252,7 +2252,8 @@ collections:
           - { label: "Violet", value: "violet" }
           - { label: "Indigo", value: "indigo" }
           - { label: "Slate", value: "slate" }
-      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Summary", name: "summary", widget: "text", hint: "Short definition shown on cards and used as the default meta description." }
+      - { label: "SEO Description", name: "description", widget: "text", required: false, hint: "Optional. Overrides Summary in meta/OG description when set." }
       - { label: "Homepage order", name: "nav_order", widget: "number", default: 0, value_type: "int", hint: "Lower numbers appear first in the Resource Groups list on the homepage." }
       - { label: "Empty State Text", name: "placeholder", widget: "string", required: false }
       - label: "Subgroups"

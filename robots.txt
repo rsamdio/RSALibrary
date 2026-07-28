@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+# AI crawlers — allowed for GEO / citation (ai_bots_policy: allow)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://library.rsamdio.org/sitemap.xml

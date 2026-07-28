@@ -2,10 +2,7 @@
 title: Agenda for Club Meetings
 icon: picture_as_pdf
 icon_color: blue
-summary: A curated collection of standard agendas, seating arrangements and
-  conduct guidelines for Rotaract Club meetings and ceremonies. Prepared by
-  Rotaract South Asia MDIO as a recommendatory reference for Rotaract Club
-  Presidents and Secretaries
+summary: Agenda for Club Meetings is a Rotaract Library collection of installation, board, and IDP agendas curated by Rotaract South Asia MDIO for club presidents and secretaries.
 nav_order: 3
 resources:
   - type_icon: picture_as_pdf
@@ -47,3 +44,5 @@ resources:
     view_url: /resources/board-meeting_general-body-meeting_guidelines.pdf
     download_url: /resources/board-meeting_general-body-meeting_guidelines.pdf
 ---
+
+Agenda for Club Meetings offers recommendatory agendas and seating layouts for charter installations, club installations, board meetings, and IDP sessions. Presidents and secretaries can adapt these templates to local custom while keeping a clear ceremony flow.

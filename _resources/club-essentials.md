@@ -2,7 +2,7 @@
 title: Club Essentials
 icon: support
 icon_color: red
-summary: "Club Essentials. "
+summary: Club Essentials is a Rotaract Library collection of induction, protocol, meeting, and governance references curated by Rotaract South Asia MDIO for club boards.
 nav_order: 1
 subgroups:
   - title: Ceremonies and Protocols
@@ -76,3 +76,5 @@ resources:
     download_url: /resources/rotaract-club-recommended-bylaws-en.docx
     preview_image_url: /resources/5.⁠-⁠⁠rotaract-club-bylaws.png
 ---
+
+Club Essentials gathers everyday club references—oaths, prayers, the Four-Way Test, abbreviations, constitutions, and bylaws—so Rotaract boards can run ceremonies and meetings with consistent materials. Use these as recommendatory templates and adapt them to your club and district practice.

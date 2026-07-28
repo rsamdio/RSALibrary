@@ -2,6 +2,10 @@
   command = "npm ci && bundle install && bundle exec jekyll build"
   publish = "_site"
 
+[build.environment]
+  # Production Ruby (Netlify). Local may use Homebrew 4.x; Gemfile allows >= 3.2, < 4.1.
+  RUBY_VERSION = "3.2.2"
+
 [[headers]]
   for = "/assets/fonts/*"
   [headers.values]
@@ -42,6 +46,16 @@
   to = "https://library.rsamdio.org/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/terms.html"
+  to = "/terms/"
+  status = 301
+
+[[redirects]]
+  from = "/privacy.html"
+  to = "/privacy/"
+  status = 301
 
 [[redirects]]
   # Fallback 404 page for any unmatched route

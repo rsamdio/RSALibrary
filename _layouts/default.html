@@ -10,7 +10,14 @@ layout: compress
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    {% assign rsa_suffix = "Rotaract Library - An initiative by Rotaract South Asia MDIO" %}
+    {% assign site_meta = site.data.site %}
+    {% assign rsa_suffix = site_meta.product_name | append: " - An initiative by " | append: site_meta.publisher_name %}
+    {% assign site_root = site.url | default: "" | append: site.baseurl %}
+    {% if site_root == "" %}
+      {% assign site_root = "/" | relative_url | absolute_url %}
+    {% endif %}
+    {% assign org_id = site_root | append: "/#organization" %}
+    {% assign website_id = site_root | append: "/#website" %}
     <title>
       {% if page.seo_title %}
         {{ page.seo_title }}
@@ -22,8 +29,14 @@ layout: compress
         {{ rsa_suffix }}
       {% endif %}
     </title>
-    {% assign meta_description = page.description | default: site.description %}
-    <meta name="description" content="{{ meta_description }}" />
+    {% if page.description and page.description != "" %}
+      {% assign meta_description = page.description %}
+    {% elsif page.summary and page.summary != "" %}
+      {% assign meta_description = page.summary %}
+    {% else %}
+      {% assign meta_description = site.description %}
+    {% endif %}
+    <meta name="description" content="{{ meta_description | strip_html | strip_newlines | truncate: 300 }}" />
 
     {%- comment -%}
     Open Graph & Twitter cards
@@ -35,33 +48,37 @@ layout: compress
       <meta property="og:url" content="{{ canonical_url }}" />
     {% endif %}
     <meta property="og:type" content="{% if page.og_type %}{{ page.og_type }}{% else %}website{% endif %}" />
-    <meta property="og:site_name" content="Rotaract Library" />
+    <meta property="og:site_name" content="{{ site_meta.product_name }}" />
     <meta property="og:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.url == '/' or page.url == '/index.html' %}{{ rsa_suffix }}{% elsif page.title %}{{ page.title }} | {{ rsa_suffix }}{% else %}{{ rsa_suffix }}{% endif %}" />
-    <meta property="og:description" content="{{ meta_description }}" />
-    {% assign og_image_path = page.og_image | default: '/images/rotaractlibrary.webp' %}
+    <meta property="og:description" content="{{ meta_description | strip_html | strip_newlines | truncate: 300 }}" />
+    {% assign og_image_path = page.og_image | default: site_meta.og_image_path | default: '/images/rotaractlibrary.webp' %}
     {% assign og_image = og_image_path | relative_url | absolute_url %}
     <meta property="og:image" content="{{ og_image }}" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.url == '/' or page.url == '/index.html' %}{{ rsa_suffix }}{% elsif page.title %}{{ page.title }} | {{ rsa_suffix }}{% else %}{{ rsa_suffix }}{% endif %}" />
-    <meta name="twitter:description" content="{{ meta_description }}" />
+    <meta name="twitter:description" content="{{ meta_description | strip_html | strip_newlines | truncate: 300 }}" />
     <meta name="twitter:image" content="{{ og_image }}" />
     <link rel="icon" type="image/x-icon" href="{{ '/images/favicon.ico' | relative_url }}" />
     <link rel="icon" type="image/webp" href="{{ '/images/favicon.webp' | relative_url }}" />
     <link rel="shortcut icon" href="{{ '/images/favicon.ico' | relative_url }}" />
 
     {%- comment -%}
-    Global JSON-LD for site and organization (Google recommends JSON-LD)
+    Global JSON-LD for site and organization
     {%- endcomment -%}
+    {% assign search_action_target = site_root | append: "/?q=" | append: "{search_term}" %}
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Rotaract Library",
-      "url": "{% if site.url %}{{ site.url | append: site.baseurl }}{% else %}{{ '/' | relative_url | absolute_url }}{% endif %}",
+      "@id": {{ website_id | jsonify }},
+      "name": {{ site_meta.product_name | jsonify }},
+      "url": {{ site_root | jsonify }},
+      "description": {{ site_meta.product_description | jsonify }},
+      "publisher": { "@id": {{ org_id | jsonify }} },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "{% if site.url %}{{ site.url | append: site.baseurl }}{% else %}{{ '/' | relative_url | absolute_url }}{% endif %}?q={search_term}",
+        "target": {{ search_action_target | jsonify }},
         "query-input": "required name=search_term"
       }
     }
@@ -70,16 +87,34 @@ layout: compress
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Rotaract South Asia MDIO",
-      "url": "{% if site.url %}{{ site.url | append: site.baseurl }}{% else %}{{ '/' | relative_url | absolute_url }}{% endif %}",
-      "logo": "{{ '/images/rsamdio.webp' | relative_url | absolute_url }}"
+      "@id": {{ org_id | jsonify }},
+      "name": {{ site_meta.publisher_name | jsonify }},
+      "alternateName": {{ site_meta.publisher_short | jsonify }},
+      "url": {{ site_root | jsonify }},
+      "description": {{ site_meta.publisher_description | jsonify }},
+      "email": {{ site_meta.publisher_email | jsonify }},
+      "logo": {
+        "@type": "ImageObject",
+        "url": {{ site_meta.logo_path | relative_url | absolute_url | jsonify }}
+      }{% if site_meta.same_as and site_meta.same_as.size > 0 %},
+      "sameAs": [
+        {% for url in site_meta.same_as %}
+        {{ url | jsonify }}{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]{% endif %}{% if site_meta.parent_organization %},
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": {{ site_meta.parent_organization.name | jsonify }},
+        "url": {{ site_meta.parent_organization.url | jsonify }},
+        "sameAs": {{ "https://www.wikidata.org/wiki/" | append: site_meta.parent_organization.wikidata_id | jsonify }}
+      }{% endif %}
     }
     </script>
     {% if page.url == '/' or page.url == '/index.html' %}
     <link
       rel="preload"
       as="image"
-      href="{{ '/images/rsamdio.webp' | relative_url }}"
+      href="{{ site_meta.logo_path | default: '/images/rsamdio.webp' | relative_url }}"
       fetchpriority="high"
     />
     {% endif %}
@@ -130,4 +165,3 @@ layout: compress
     <script defer src="{{ '/assets/js/resource-group-share.js' | relative_url }}"></script>
   </body>
 </html>
-

@@ -2,8 +2,7 @@
 title: RZI Learning Materials
 icon: menu_book
 icon_color: pink
-summary: We’ve gathered all the RZI educational resources from our speakers and
-  organizing team into this single library for your convenience.
+summary: RZI Learning Materials is a Rotaract Library collection of Rotaract Zone Institute workbooks and session resources curated by Rotaract South Asia MDIO for district leaders.
 nav_order: 0
 resources:
   - type_icon: description
@@ -51,3 +50,5 @@ resources:
     preview_image_url: /resources/866828_o6cbn71-1.jpg
     view_url: /resources/rzi-resources-with-hyperlinks.pdf
 ---
+
+RZI Learning Materials brings Rotaract Zone Institute workbooks and session resources into one place. District leaders can download the DRR Elect workbook and related materials to plan learning into action after RZI.

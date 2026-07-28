@@ -1,0 +1,28 @@
+{% assign card = include.card %}
+{% include schema-item-type.html card=card %}
+{% assign raw_view = card.view_url %}
+{% assign raw_download = card.download_url %}
+{% assign resource_url = nil %}
+{% if raw_view %}
+  {% if raw_view contains "://" %}
+    {% assign resource_url = raw_view %}
+  {% else %}
+    {% assign resource_url = raw_view | relative_url | absolute_url %}
+  {% endif %}
+{% elsif raw_download != "" %}
+  {% if raw_download contains "://" %}
+    {% assign resource_url = raw_download %}
+  {% else %}
+    {% assign resource_url = raw_download | relative_url | absolute_url %}
+  {% endif %}
+{% endif %}
+{
+  "@type": "ListItem",
+  "position": {{ include.position }},
+  "item": {
+    "@type": {{ schema_item_type | jsonify }},
+    "name": {{ card.name | jsonify }}{% if card.description %},
+    "description": {{ card.description | jsonify }}{% endif %}{% if resource_url %},
+    "url": {{ resource_url | jsonify }}{% endif %}
+  }
+}

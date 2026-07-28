@@ -1,0 +1,35 @@
+# Rotaract Library
+> A curated library of assets, templates, guides, checklists, and tools for Rotaract leaders.
+
+## Publisher
+- Rotaract South Asia MDIO (RSAMDIO)
+- Contact: rsamdio@gmail.com
+- AI crawlers: allowed (ai_bots_policy: allow)
+
+## Primary pages
+- Home: http://localhost:4000/
+- About: http://localhost:4000/about/
+- FAQ: http://localhost:4000/faq/
+- Request a resource: http://localhost:4000/request/
+
+## Resource collections
+- Roles and Responsibilities: http://localhost:4000/roles-and-responsibilities/ — Roles and Responsibilities is a Rotaract Library collection of district council and club board role guides curated by Rotaract South Asia MDIO for incoming leaders.
+- RZI Learning Materials: http://localhost:4000/rzi-learning-materials/ — RZI Learning Materials is a Rotaract Library collection of Rotaract Zone Institute workbooks and session resources curated by Rotaract South Asia MDIO for district leaders.
+- Club Essentials: http://localhost:4000/club-essentials/ — Club Essentials is a Rotaract Library collection of induction, protocol, meeting, and governance references curated by Rotaract South Asia MDIO for club boards.
+- Rotaract Brand Assets: http://localhost:4000/rotaract-brand-assets/ — Rotaract Brand Assets is a Rotaract Library collection of official Rotary, Rotaract, and Interact logo files curated for consistent club communications.
+- Agenda for Club Meetings: http://localhost:4000/agenda-for-club-meetings/ — Agenda for Club Meetings is a Rotaract Library collection of installation, board, and IDP agendas curated by Rotaract South Asia MDIO for club presidents and secretaries.
+- Rotaract South Asia MDIO identity: http://localhost:4000/rsamdio-identity/ — Rotaract South Asia MDIO identity is a Rotaract Library collection of RSAMDIO logos and wordmarks for regional initiatives and communications.
+- Batch of 26-27 Badge: http://localhost:4000/batch-of-26-27-badge/ — Batch of 26-27 Badge is a Rotaract Library collection of badges and logo assets by Rotaract South Asia MDIO for the 2026–27 Rotary year.
+
+## Related tools
+- Club Invoice Calculator: https://dues.rsamdio.org/ — Estimate your Club Invoices with precision and ease.
+- Rotaract Buddy: https://buddy.rsamdio.org/ — AI-powered chatbot for your Rotary and Rotaract questions.
+- NAVIGATE: https://navigate.rsamdio.org/ — Navigate your Rotaract journey with guided pathways.
+- Publications Hub: https://publications.rsamdio.org/ — Access District publications and resources from across South Asia.
+- Rotaract Certify: https://certify.rsamdio.org/ — Celebrate and showcase your Rotaract contributions and achievements.
+- News Submission: https://connect.rsamdio.org/rotaractnews — Submit your updates for the official Rotaract News Magazine.
+- Pulse: https://pulse.rsamdio.org/ — Live rooms for Rotaract sessions, discussions & events.
+
+## Notes
+- Official Rotaract brand assets: http://localhost:4000/rotaract-brand-assets/
+- Resources are indicative templates; verify before official use.

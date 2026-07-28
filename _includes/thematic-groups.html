@@ -65,7 +65,9 @@
                                 <div class="w-10 h-10 rounded-xl {{ icon_bg }} flex items-center justify-center {{ icon_text }} flex-shrink-0">
                                     <span class="material-symbols-outlined text-xl">{{ group.icon }}</span>
                                 </div>
-                                <h3 class="text-base font-bold text-slate-900 dark:text-white min-w-0 flex-1">{{ group.title }}</h3>
+                                <h3 class="text-base font-bold text-slate-900 dark:text-white min-w-0 flex-1">
+                                    <a href="{{ group.url }}" class="hover:text-primary transition-colors" onclick="event.stopPropagation()">{{ group.title }}</a>
+                                </h3>
                                 <span class="material-symbols-outlined text-slate-400 flex-shrink-0 transition-transform group-open:rotate-180">expand_more</span>
                             </div>
                             {% if group.summary %}
@@ -82,7 +84,9 @@
                                     <span class="material-symbols-outlined text-2xl">{{ group.icon }}</span>
                                 </div>
                                 <div class="min-w-0">
-                                    <h3 class="text-lg font-bold text-slate-900 dark:text-white">{{ group.title }}</h3>
+                                    <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                                        <a href="{{ group.url }}" class="hover:text-primary transition-colors" onclick="event.stopPropagation()">{{ group.title }}</a>
+                                    </h3>
                                     {% if group.summary %}
                                     <p class="text-sm text-slate-500 dark:text-slate-400">{{ group.summary }}</p>
                                     {% endif %}

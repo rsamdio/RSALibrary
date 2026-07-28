@@ -1,0 +1,15 @@
+{% assign card = include.card %}
+{% assign schema_item_type = "CreativeWork" %}
+{% assign type_label = card.type | default: "" | upcase %}
+{% assign view_path = card.view_url | default: card.download_url | default: "" | downcase %}
+{% if type_label == "PDF" or view_path contains ".pdf" %}
+  {% assign schema_item_type = "DigitalDocument" %}
+{% elsif type_label == "AI" or view_path contains ".ai" %}
+  {% assign schema_item_type = "DigitalDocument" %}
+{% elsif type_label == "PNG" or type_label == "SVG" or type_label == "IMG" or type_label == "WEBP" or type_label == "JPG" or type_label == "JPEG" or type_label contains "PNG" or type_label contains "SVG" %}
+  {% assign schema_item_type = "ImageObject" %}
+{% elsif view_path contains ".png" or view_path contains ".svg" or view_path contains ".webp" or view_path contains ".jpg" or view_path contains ".jpeg" or view_path contains ".gif" %}
+  {% assign schema_item_type = "ImageObject" %}
+{% elsif view_path contains ".pdf" or view_path contains ".doc" or view_path contains ".ppt" %}
+  {% assign schema_item_type = "DigitalDocument" %}
+{% endif %}
