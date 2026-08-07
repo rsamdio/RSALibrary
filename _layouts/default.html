@@ -73,6 +73,10 @@ layout: compress
       "@type": "WebSite",
       "@id": {{ website_id | jsonify }},
       "name": {{ site_meta.product_name | jsonify }},
+      "alternateName": [
+        {{ "RSA Library" | jsonify }},
+        {{ "library.rsamdio.org" | jsonify }}
+      ],
       "url": {{ site_root | jsonify }},
       "description": {{ site_meta.product_description | jsonify }},
       "publisher": { "@id": {{ org_id | jsonify }} },
@@ -90,7 +94,7 @@ layout: compress
       "@id": {{ org_id | jsonify }},
       "name": {{ site_meta.publisher_name | jsonify }},
       "alternateName": {{ site_meta.publisher_short | jsonify }},
-      "url": {{ site_root | jsonify }},
+      "url": {{ site_meta.publisher_url | default: site_root | jsonify }},
       "description": {{ site_meta.publisher_description | jsonify }},
       "email": {{ site_meta.publisher_email | jsonify }},
       "logo": {
