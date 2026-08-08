@@ -40,3 +40,9 @@
   icon: forum
   accent_color: violet
   url: https://pulse.rsamdio.org/
+
+- name: Club Finder
+  description: Find Rotaract clubs across South Asia.
+  icon: location_on
+  accent_color: teal
+  url: https://clubs.rsamdio.org/

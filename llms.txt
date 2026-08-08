@@ -29,6 +29,7 @@
 - Rotaract Certify: https://certify.rsamdio.org/ — Celebrate and showcase your Rotaract contributions and achievements.
 - News Submission: https://connect.rsamdio.org/rotaractnews — Submit your updates for the official Rotaract News Magazine.
 - Pulse: https://pulse.rsamdio.org/ — Live rooms for Rotaract sessions, discussions & events.
+- Club Finder: https://clubs.rsamdio.org/ — Find Rotaract clubs across South Asia.
 
 ## Notes
 - Official Rotaract brand assets: http://localhost:4000/rotaract-brand-assets/
