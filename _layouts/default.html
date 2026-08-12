@@ -51,7 +51,7 @@ layout: compress
     <meta property="og:site_name" content="{{ site_meta.product_name }}" />
     <meta property="og:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.url == '/' or page.url == '/index.html' %}{{ rsa_suffix }}{% elsif page.title %}{{ page.title }} | {{ rsa_suffix }}{% else %}{{ rsa_suffix }}{% endif %}" />
     <meta property="og:description" content="{{ meta_description | strip_html | strip_newlines | truncate: 300 }}" />
-    {% assign og_image_path = page.og_image | default: site_meta.og_image_path | default: '/images/rotaractlibrary.webp' %}
+    {% assign og_image_path = page.og_image | default: site_meta.og_image_path | default: '/images/ogimage.webp' %}
     {% assign og_image = og_image_path | relative_url | absolute_url %}
     <meta property="og:image" content="{{ og_image }}" />
 

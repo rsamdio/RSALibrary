@@ -8,7 +8,7 @@ publisher_url: "https://rsamdio.org/"
 publisher_description: "Rotaract South Asia Multi District Information Organization (RSAMDIO) curates regional tools and resources for Rotaract leaders across South Asia."
 publisher_email: "rsamdio@gmail.com"
 logo_path: "/images/rsamdio.webp"
-og_image_path: "/images/rotaractlibrary.webp"
+og_image_path: "/images/ogimage.webp"
 same_as:
   - "https://rsamdio.org/"
   - "https://www.linkedin.com/company/rsamdio/"
