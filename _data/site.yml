@@ -7,11 +7,13 @@ publisher_short: "RSAMDIO"
 publisher_url: "https://rsamdio.org/"
 publisher_description: "Rotaract South Asia Multi District Information Organization (RSAMDIO) curates regional tools and resources for Rotaract leaders across South Asia."
 publisher_email: "rsamdio@gmail.com"
+twitter_handle: "@rsa_mdio"
 logo_path: "/images/rsamdio.webp"
 og_image_path: "/images/ogimage.webp"
 same_as:
   - "https://rsamdio.org/"
   - "https://www.linkedin.com/company/rsamdio/"
+  - "https://x.com/rsa_mdio"
   - "https://go.rsamdio.org/socials"
 parent_organization:
   name: "Rotary International"

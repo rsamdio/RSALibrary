@@ -56,6 +56,10 @@ layout: compress
     <meta property="og:image" content="{{ og_image }}" />
 
     <meta name="twitter:card" content="summary_large_image" />
+    {% if site_meta.twitter_handle %}
+    <meta name="twitter:site" content="{{ site_meta.twitter_handle }}" />
+    <meta name="twitter:creator" content="{{ site_meta.twitter_handle }}" />
+    {% endif %}
     <meta name="twitter:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.url == '/' or page.url == '/index.html' %}{{ rsa_suffix }}{% elsif page.title %}{{ page.title }} | {{ rsa_suffix }}{% else %}{{ rsa_suffix }}{% endif %}" />
     <meta name="twitter:description" content="{{ meta_description | strip_html | strip_newlines | truncate: 300 }}" />
     <meta name="twitter:image" content="{{ og_image }}" />
