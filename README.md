@@ -11,8 +11,8 @@ Production site: `https://library.rsamdio.org/`
 ## Tech stack
 
 - **Static site generator**: Jekyll 4
-- **Styling**: Tailwind CSS (via CDN; no build step)
-- **Search**: Client‑side Lunr.js
+- **Styling**: Tailwind CSS v3 (compiled automatically via Jekyll plugin or `npm run build:css`)
+- **Search**: Client-side Lunr.js
 - **CMS**: Decap CMS (Netlify CMS successor) at `/admin`
   - Git Gateway + Netlify Identity
   - All content is stored as Markdown in the repo
@@ -91,10 +91,12 @@ If you fork this repo, you should:
 Prerequisites:
 
 - Ruby and Bundler installed
+- Node.js and npm installed
 
 Setup and run:
 
 ```bash
+npm install
 bundle install
 bundle exec jekyll serve
 ```

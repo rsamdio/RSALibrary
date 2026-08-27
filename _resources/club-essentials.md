@@ -44,7 +44,7 @@ resources:
       listing each item along with its purpose, significance and role in the
       conduct of meetings and ceremonies.
     type: PDF
-    preview_image_url: /resources/3.⁠-⁠⁠club-properties.png
+    preview_image_url: /resources/3-club-properties.png
     view_url: /resources/club_properties.pdf
     download_url: /resources/club_properties.pdf
   - type_icon: picture_as_pdf
@@ -60,7 +60,7 @@ resources:
       qualifications, officer roles, meeting procedures, financial governance,
       and the rights and responsibilities of every member.
     type: PDF
-    preview_image_url: /resources/4.⁠-⁠⁠standard-rotaract-club-constitution.png
+    preview_image_url: /resources/4-standard-rotaract-club-constitution.png
     view_url: /resources/rotaract-club-standard-constitution-en.pdf
     download_url: /resources/rotaract-club-standard-constitution-en.pdf
   - type_icon: article
@@ -74,7 +74,7 @@ resources:
     type: DOCX
     view_url: /resources/rotaract-club-recommended-bylaws-en.docx
     download_url: /resources/rotaract-club-recommended-bylaws-en.docx
-    preview_image_url: /resources/5.⁠-⁠⁠rotaract-club-bylaws.png
+    preview_image_url: /resources/5-rotaract-club-bylaws.png
 ---
 
 Club Essentials gathers everyday club references—oaths, prayers, the Four-Way Test, abbreviations, constitutions, and bylaws—so Rotaract boards can run ceremonies and meetings with consistent materials. Use these as recommendatory templates and adapt them to your club and district practice.

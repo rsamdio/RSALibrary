@@ -26,7 +26,7 @@ resources:
       General Body Meeting
     name: Board Meeting / General Body Meeting Agenda
     type: PDF
-    preview_image_url: /resources/6.-⁠board-meeting-_-general-body-meeting-agenda.jpg
+    preview_image_url: /resources/6-board-meeting-_-general-body-meeting-agenda.jpg
     view_url: /resources/board-meeting_general-body-meeting_agenda.pdf
     download_url: /resources/board-meeting_general-body-meeting_agenda.pdf
   - type_icon: picture_as_pdf
@@ -40,7 +40,7 @@ resources:
     description: General guidelines on club meetings, standard agenda structure, and
       best practices.
     type: PDF
-    preview_image_url: /resources/6.⁠-⁠⁠meeting-guidelines.png
+    preview_image_url: /resources/6-meeting-guidelines.png
     view_url: /resources/board-meeting_general-body-meeting_guidelines.pdf
     download_url: /resources/board-meeting_general-body-meeting_guidelines.pdf
 ---

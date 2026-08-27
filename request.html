@@ -13,6 +13,12 @@ og_type: "website"
   </p>
 
   <form id="rsa-request-form" class="space-y-6">
+    <!-- Honeypot field for bot prevention -->
+    <div class="opacity-0 absolute top-[-9999px] left-[-9999px] -z-50" aria-hidden="true">
+      <label for="website">Website</label>
+      <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+    </div>
+    
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div>
         <label for="name" class="block text-sm font-medium text-slate-700 dark:text-slate-200">
@@ -146,6 +152,17 @@ og_type: "website"
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       if (!status) return;
+
+      // Bot prevention: honeypot check
+      const honeypot = document.getElementById("website");
+      if (honeypot && honeypot.value !== "") {
+        console.warn("Bot submission detected and prevented.");
+        form.reset();
+        status.textContent = "Thank you! Your request has been submitted to the Rotaract Library team.";
+        status.classList.remove("text-slate-500", "text-amber-600");
+        status.classList.add("text-emerald-600");
+        return;
+      }
 
       status.textContent = "Sending your request…";
       status.classList.remove("text-amber-600");
