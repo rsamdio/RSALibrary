@@ -88,7 +88,7 @@ bundle exec jekyll build
 | **Resource Cards** | 69 | Embedded in resource groups |
 | **Static Assets** | 222 | `resources/` (Pure ASCII filenames) |
 | **Ecosystem Tools** | 8 | `_data/tools.yml` |
-| **Custom Plugins** | 4 | `_plugins/` (clean_sitemap.rb, llms_txt_generator.rb, search_index_generator.rb, tailwind_build.rb) |
+| **Custom Plugins** | 5 | `_plugins/` (clean_sitemap.rb, llms_txt_generator.rb, resources_feed_generator.rb, search_index_generator.rb, tailwind_build.rb) |
 | **Layout Templates** | 4 | `_layouts/` (compress.html, default.html, page.html, resource_group.html) |
 | **Includes** | 12 | `_includes/` |
 | **Data Files** | 2 | `_data/` (site.yml, tools.yml) |

@@ -36,6 +36,7 @@ module Jekyll
       lines << "- About: #{base}/about/"
       lines << "- FAQ: #{base}/faq/"
       lines << "- Request a resource: #{base}/request/"
+      lines << "- Public resources feed (JSON): #{base}/resources.json"
       lines << ""
       lines << "## Resource collections"
 

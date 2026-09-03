@@ -15,3 +15,6 @@ _resources/template.md
 AGENTS.md
 SESSION_BOOTSTRAP.md
 .agent-memory/
+
+# Design prototypes
+generated-pageTemplate.html
